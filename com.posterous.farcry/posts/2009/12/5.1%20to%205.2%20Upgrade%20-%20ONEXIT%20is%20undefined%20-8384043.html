@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2009/12/almadudler-seriously-good-lemonade-complete-w.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2009/12/afternoon-tea-at-the-peninsula-hong-kong.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>5.1 to 5.2 Upgrade - ONEXIT is undefined </h3>
+<div class='post_info'>
+<span class='post_time'>December  6 2009,  5:32 PM</span>
+<span class='author'>&nbsp;by Rob</span>
+</div>
+</div>
+<div class='post_body'><p>The move from FarCry 5.1 to 5.2 can be a bit tricky. 5.2 fixes a few incompatibilities that FarCry had with the new Coldfusion 9. Here is one such problem you may run into. If you get the error:</p>
+<p>| Detail | [empty string] | <br />| ErrNumber | 0 | <br />| Message | Element ONEXIT is undefined in ARGUMENTS. | <br />| Resolvedname | ARGUMENTS |</p>
+<p>This might be due to a webskin call like the following:</p>
+<p><code>&lt;skin:view objectid="#stobj.objectid#" typename="#stobj.typename#"&nbsp;webskin="upload" onExit="#arguments.onExit#" /&gt;</code></p>
+<p>The issue is with the *onExit* attribute. It seems to have a conflict with Coldfusion 9 so the attribute got renamed to *onExitProcess*. To fix this error simply change the code to be more like the following:</p>
+<p><code>&lt;skin:view objectid="#stobj.objectid#" typename="#stobj.typename#"&nbsp;webskin="upload" onExitProcess="#arguments.onExitProcess#" /&gt;</code></p>
+<p>And all should be well.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>upgrading</div>
+</div>
+<div class='post_responses'>
+<h4>2174 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

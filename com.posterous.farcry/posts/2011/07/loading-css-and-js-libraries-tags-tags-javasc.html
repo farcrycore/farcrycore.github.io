@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/08/maintenance-milestones-6011-6014-released.html">Previous</a>
+&nbsp; 
+<a href="../../../index-2.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/07/the-tomek-tutorials.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Loading CSS and JS libraries</h3>
+<div class='post_info'>
+<span class='post_time'>July 31 2011,  5:51 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>In dynamic CMS frameworks you often find yourself needing to load many different JavaScript or CSS libraries into a page. This becomes particularly complex when plugins enter the mix, needing to load libraries. In FarCry this problem is solved using skin:registerJS / skin:loadJS and skin:registerCSS / skin:loadCSS. The "load" tags tell FarCry to add libraries to a stack to be inserted into the head at the end of the request. The register tags make it easy to define a library in one place, then load them many places without redundant data. Added benefits of loadJS and loadCSS:<p /> </p>
+<ul>
+<li>automatically minification</li>
+<li>de-duping - libraries with the same id are only loaded once</li>
+<li>overriding libraries - you can override a library defined in a plugin by re-registering it in your project</li>
+<li>inline code - code between the open and closing tags is added to the end of the library, even if no actual files are specified</li>
+<li>including multiple files in a single library</li>
+</ul>
+<p><br />Here are some examples of how different libraries would be updated:</p>
+<div><br />Example 1:&nbsp;
+<div>&lt;link media="screen" rel="stylesheet" type="text/css" href="/css/960.css"&gt;</div>
+<div>/yourproject/config/_serverSpecificVarsAfterInit.cfm:&nbsp;</div>
+<div>&lt;skin:registerCSS id="960" baseHREF="/css" lFiles="960.css" /&gt;<br /> headerwebskin.cfm:&nbsp;</div>
+<div>&lt;skin:loadCSS id="960" /&gt;<p />Example 2:&nbsp;</div>
+<div>&lt;!--[if lt IE 7]&gt;</div>
+<div>&lt;script type="text/javascript" src="/js/DD_belatedPNG_0.0.8a-min.js"&gt;&lt;/script&gt;</div>
+<div>&lt;![endif]--&gt;<br />/yourproject/config/_serverSpecificVarsAfterInit.cfm:&nbsp;</div>
+<div>&lt;skin:registerJS id="png" condition="lt IE 7" baseHREF="/js" lFiles="DD_belatedPNG_0.0.8a-min.js" /&gt;<br /> headerwebskin.cfm:&nbsp;</div>
+<div>&lt;skin:loadJS id="png" /&gt;<p />Example 3:&nbsp;</div>
+<div>&lt;script type="text/javascript" src="https://apis.google.com/js/plusone.js" &gt;&lt;/script&gt;<br /> /plusoneplugin/config/_serverSpecificVarsAfterInit.cfm:&nbsp;</div>
+<div>&lt;skin:registerJS id="plusone" lFiles="<a href="https://apis.google.com/js/plusone.js">https://apis.google.com/js/plusone.js</a>" /&gt;<br /> plusonewebskin.cfm:&nbsp;</div>
+<div>&lt;skin:loadJS id="plusone" /&gt;<p />If you look at a page's source now you will see HTML like this:<br />&lt;!--<br />ID: 960<br />FILES: /css/960.css<br />--&gt;<br />&lt;link rel="stylesheet" type="text/css" href="/cache/960--1309753095000-C3608969AFF7EA8450DDC43B11362F20-D41D8CD98F00B204E9800998ECF8427E-D41D8CD98F00B204E9800998ECF8427E.css" media="screen" &gt;<p /> <strong>Combining libraries into a single file</strong></div>
+<div>Most web experts recommend that a website serve as few CSS and JS files as possible. FarCry's library loading functionality can take care of this too:</div>
+<div><br />After converting all your libraries to use loadJS and loadCSS, review your source and make a note of the groups of files that can be combined. A typical example might be to combine jQuery with your site specific JavaScript.<p /> Register these combined libraries in /yourproject/config/_serverSpecificVarsAfterInit.cfm:<br />&lt;skin:registerJS id="combined-project" lCombineIDs="jquery,projectjs" /&gt;<p />Load this new library in your pages.<br /> &lt;skin:loadJS id="combined-project" /&gt;<p />If FarCry sees this combined library in the stack, it will automatically remove instances of it's child libraries.<p /><strong>Q&amp;A</strong><br />Q: Will the sequence of skin:loadJS calls be preserved by FarCry?<br /> A: Yes, though loading a combined library overrides the position of any libraries it contains. Looking back at the example, if combined-project is loaded then any other attempts to load projectjs will be ignored.<p />Q: Are combined libraries minified too?<br /> A: Yes. All CSS and JS libraries are minified.<p />Q: Can external libraries be combined with internal ones?<br />A: No, external libraries and internal libraries can't be mixed at this point.<p />Q: Are the media and condition attributes preserved in combined libraries?<br /> A: No, a combined library needs to redefine all of the relevant attributes, including media and condition.<p /><br />Cheers<br />Blair</div>
+</div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>css, javascript, tags</div>
+</div>
+<div class='post_responses'>
+<h4>793 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jul 31 2011,  8:30 PM</div>
+<div class='response_name'>Geoffrey Bowers (Facebook) responded:</div>
+</div>
+<div class='response_body'>Have added this to the tutorial section of the WIKI with a few amendments -- thanks Blair, great article.<p>Loading Javascript & CSS Libraries<br /><a href="https://farcry.jira.com/wiki/pages/viewpage.action?pageId=16875543" rel="nofollow">https://farcry.jira.com/wiki/pages/viewpage.action?pageId=16875543</a></p></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<item>
+	<title>Related Content: Custom Webtop Tabs</title>
+	<link>http://farcry.posterous.com/related-content-custom-webtop-tabs</link>
+	<pubDate>Fri Sep 09 01:16:48 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="webskins"><![CDATA[webskins]]></category>
+	
+		<category domain="tag" nicename="webtop"><![CDATA[webtop]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/related-content-custom-webtop-tabs</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div class='p_embed p_image_embed'>
+<a href="http://getfile6.posterous.com/getfile/files.posterous.com/farcry/QYz8KFrUALUBSEo0XOIDjjhtY6lMS6AZHiQzJTzZhM7pYbaBS6FKfnxI4Q5j/relatedcontent_2.png.scaled.1000.jpg"><img alt="Relatedcontent_2" height="261" src="http://getfile4.posterous.com/getfile/files.posterous.com/farcry/HwTuEAS6JrtjBCGfXcDxjjEE4aCdgoXqd2krOQuxD3K5AUMhYtZdFJjgzfvl/relatedcontent_2.png.scaled.500.jpg" width="500" /></a>
+</div>
+<p></p><div><div><div><div><div><div> <div><div>Following up on some comments on the dev forum, Blair posted a really crafty bit of code that shows any and all related content for a specific content item. &nbsp;</div></div><p /><div><div>Ever wondered what content an image in the image library has been attached to? What content might be affected by removing something from the file library? This will shine a light on that little mystery :)</div></div><p /><div>The code sample not only how to extract the relationships out of the COAPI but also how damn easy it is to have your very own tab views attached to a web top overview; just name the view <b>webtopOverviewTabSomething.cfm</b>, stick it in the right folder (e.g.. ./webskin/types for everything) and you are done.</div><p /><div>Code Sample:&nbsp;<a href="https://farcry.jira.com/wiki/display/FCDEV60/Custom+Overview+Tab+-+Related+Content">Custom Overview Tab - Related Content</a></div><p /><div>Enjoy!</div> </div></div></div></div></div></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Following up on some comments on the dev forum, Blair posted a really crafty bit of code that shows any and all related content for a specific content item. Ever wondered what content an image in the image library has been attached to? What conten...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Sep 09 01:16:48 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>related-content-custom-webtop-tabs</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

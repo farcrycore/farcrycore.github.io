@@ -1,0 +1,129 @@
+<item>
+	<title>Core Milestone 6.0.9 Released</title>
+	<link>http://farcry.posterous.com/core-milestone-609-released</link>
+	<pubDate>Tue Feb 22 22:44:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="release"><![CDATA[release]]></category>
+	
+		<category domain="tag" nicename="releasenotes"><![CDATA[releasenotes]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/core-milestone-609-released</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>The complete list of changes for <a href="https://farcry.jira.com/browse/FC#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel">6.0.x maintenance branch</a> is available online.</p>
+<p>Download the ZIP for for the 6.0.9 core milestone here: <a href="http://org.farcrycore.s3.amazonaws.com/core/m609.zip">http://org.farcrycore.s3.amazonaws.com/core/m609.zip </a></p>
+<p>Or alternatively you can update from Subversion (SVN) at this address:<br />svn checkout <a href="https://farcry.jira.com/svn/FC/tags/milestone-6-0-9">https://farcry.jira.com/svn/FC/tags/milestone-6-0-9</a></p>
+<h2>Bug</h2>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-542">FC-542</a>] -         dmimage: image handling in the media library </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-738">FC-738</a>] -         Replacing an image does not create an archived version </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-912">FC-912</a>] -         Image Autogeneration requires ftAllowUpload set to True </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-992">FC-992</a>] -         Resorting Library Items Saves Without Confirmation </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1020">FC-1020</a>] -         Problems with Image Upload in Media Libary </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1066">FC-1066</a>] -         Form tool data type image does not validate filtype on upload </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1127">FC-1127</a>] -         Microsoft Word Templates (.dot) become 4-byte files when trying to view or download </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1843">FC-1843</a>] -         'Overview' section: pending draft content does not display </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1857">FC-1857</a>] -         IE6 Image Library next page error </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1944">FC-1944</a>] -         Selected elements from library not appearing in parent window </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-1970">FC-1970</a>] -         Objectadmin/pagination bug in overview screens </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2012">FC-2012</a>] -         Custom type / add new item by related array through library </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2013">FC-2013</a>] -         Adding image vi a container in library throws error </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2019">FC-2019</a>] -         Forgot password - generated password is always the same </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2083">FC-2083</a>] -         array.cfc validate issue when editing user groups </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2093">FC-2093</a>] -         formtool array rendertype=list cannot be unselected </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2128">FC-2128</a>] -         Includes not following correct precedence </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2165">FC-2165</a>] -         If selecting "add" new item in the array form tool, and then cancel - the system will generate (incomplete) objects </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2181">FC-2181</a>] -         Display problems in IE6 when creating/editing content from the objectAdmin </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2226">FC-2226</a>] -         object overview jquery tab </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2238">FC-2238</a>] -         Image formtool errors on cropping/padding when either width or height is set to 0 </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2244">FC-2244</a>] -         dmArchive "preview" shows current object </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2270">FC-2270</a>] -         Bug setting permissions in scaffold for type classes </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2373">FC-2373</a>] -         Rule is created twice in the container </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2395">FC-2395</a>] -         Error when viewing security log: 	Element STPROPMETADATA.FTLISTDATATYPENAME is undefined in ARGUMENTS. </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2399">FC-2399</a>] -         User Activity over time page fails </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2401">FC-2401</a>] -         No option to set default thumbnail image size </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2404">FC-2404</a>] -         Error uploading new image </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2405">FC-2405</a>] -         Image library edit - thumbnails won't create if replaced. </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2406">FC-2406</a>] -         dmFile's property description should be longchar, not string </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2407">FC-2407</a>] -         Validation for category (ftRenderType="dropdown") don't work </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2408">FC-2408</a>] -         When restarting installer, structDelete() session.oInstall is needed </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2409">FC-2409</a>] -         Button "Select Exactly How To Crop Your Image" produces an error </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2410">FC-2410</a>] -         After selecting an new image via "inline upload", nothing happens (no upload starts) </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2411">FC-2411</a>] -         Try to add a new image produces a display error in Internet Explorer 8 </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2416">FC-2416</a>] -         Error in css class in /core/tags/formtools/buttonPanel.cfm (p600) </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2419">FC-2419</a>] -         Linux specific bugs </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2420">FC-2420</a>] -         image formtool errors when underlying image is missing </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2421">FC-2421</a>] -         "join" formtool specifies that "checkbox" is a valid render type when it is not </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2423">FC-2423</a>] -         Content Types that extends farcry.core.packages.types.types gets wrong data in library </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2424">FC-2424</a>] -         image.cfc - workaround for a missing 'mode' attribute in the &lt;cfimage&gt; tag </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2425">FC-2425</a>] -         getFUList() fails on postgresql; requires integer setting for bind parameter </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2426">FC-2426</a>] -         No ability to hide tray when logged in </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2427">FC-2427</a>] -         Last changes to "longchar.cfc" does break the functionality of the "image.cfc" </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2431">FC-2431</a>] -         The commited patch revision 11475 broke the "HandpickedRule" </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2432">FC-2432</a>] -         Error - Editing HandpickedRule - Complex object types cannot be converted to simple values </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2433">FC-2433</a>] -         New cropping tool for images doesn't work </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2440">FC-2440</a>] -         object admin JS error on object creation </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2441">FC-2441</a>] -         Core farLogin displayLogin webskin has incorrect reference to application.fapi.getLink.  Referenced as application.getLink </li>
+</ul>
+<h2>Improvement</h2>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-1147">FC-1147</a>] -         ftlimit should not restrict the total number of characters </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2196">FC-2196</a>] -         library formtool language is ambiguous; suggested label changes </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2402">FC-2402</a>] -         Visual image cropping UI </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2403">FC-2403</a>] -         Option for image quality </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2422">FC-2422</a>] -         Allow fapi.cfc to be extended in plugins / projects </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2435">FC-2435</a>] -         Ability to have different public and webtop login urls </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2436">FC-2436</a>] -         Pagination should include first/last links by default </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2437">FC-2437</a>] -         Allow formtools.cfc extensions to be used in objectadmin / libraries </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2438">FC-2438</a>] -         Allow to delete images </li>
+</ul>
+<p>Enjoy!</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[The complete list of changes for 6.0.x maintenance branch is available online. Download the ZIP for for the 6.0.9 core milestone here: http://org.farcrycore.s3.amazonaws.com/core/m609.zip Or alternatively you can update from Subversion (SVN) at th...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Feb 22 22:44:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>core-milestone-609-released</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Mickael Shahinian]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Feb 24 01:53:08 -0800 2011</wp:comment_date>
+			<wp:comment_date_gmt>Thu Feb 24 01:53:08 -0800 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[links to zip files are broken.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Mar 09 22:34:26 -0800 2011</wp:comment_date>
+			<wp:comment_date_gmt>Wed Mar 09 22:34:26 -0800 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Download should be good to go now :)]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

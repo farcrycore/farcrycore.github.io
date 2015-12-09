@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>fandango-source-available.html</string>
+		</array>
+		<array>
+			<string>farcry-coapi-helicopter-view.html</string>
+		</array>
+		<array>
+			<string>farcry-developer-cheat-sheet-v01.html</string>
+		</array>
+		<array>
+			<string>farcry-express-ready-to-run-install.html</string>
+		</array>
+		<array>
+			<string>google-analytics-v20-released.html</string>
+		</array>
+		<array>
+			<string>great-farcry-learning-resources.html</string>
+		</array>
+		<array>
+			<string>webskin-tracer-farcry-developer-tool.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

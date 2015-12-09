@@ -1,0 +1,51 @@
+<item>
+	<title>Container Table Clean Up </title>
+	<link>http://farcry.posterous.com/container-table-clean-up</link>
+	<pubDate>Thu Nov 05 22:41:00 -0800 2009</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="containersrules"><![CDATA[containersrules]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/container-table-clean-up</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>Great little clean up tip on the forums courtesy of Chris Kent. <p /> As a consequence of how containers are created and managed, you may&nbsp;quickly build up records in the "container" table of your FarCry app that do not have any publishing rules. Cleaning up these records can help keep your database leaner and meaner. <p /> Essentially you want to remove any "container" that does not have any related records in the "container_arules" table: <p /> <code> 
+DELETE FROM container 
+WHERE container.objectID NOT IN 
+(SELECT DISTINCT parentid FROM container_arules) 
+</code> <p /> Any required containers records with publishing rules will stay. Any required containers records without publishing rules will be re-created automatically when the pages are next hit. <p /> Don't forget to backup your database if you're going to attempt any direct manipulations of the schema.</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Great little clean up tip on the forums courtesy of Chris Kent. As a consequence of how containers are created and managed, you may quickly build up records in the "container" table of your FarCry app that do not have any publishing rules. Cleanin...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Nov 05 22:41:00 -0800 2009</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>container-table-clean-up</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Jeff Coughlin]]></wp:comment_author>
+			<wp:comment_author_email>jeff@jeffcoughlin.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Nov 06 07:07:30 -0800 2009</wp:comment_date>
+			<wp:comment_date_gmt>Fri Nov 06 07:07:30 -0800 2009</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[You can also vote to have related records automatically deleted upon parent record deletion at http://bugs.farcrycms.org/browse/FC-1063]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

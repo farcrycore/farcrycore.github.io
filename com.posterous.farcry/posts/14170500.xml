@@ -1,0 +1,34 @@
+<item>
+	<title>New FAPI function: getContentObjects()</title>
+	<link>http://farcry.posterous.com/new-fapi-function-getcontentobjects</link>
+	<pubDate>Sun Mar 21 23:21:08 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="fapi"><![CDATA[fapi]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/new-fapi-function-getcontentobjects</guid>
+	<description></description>
+	<content:encoded><![CDATA[There are a couple of dopplegangers for this functionality in core, buried in FourQ and the database gateways. Both are awkward, and offer little more than arguments for the where and order by clauses. All are about to be deprecated and replaced with getContentObjects() in FarCry 6.0.1. <p /> application.fapi.getContentObjects() massively improves on older methods by: <br />- using dynamic arguments for filtering <br />- handling filters on date columns that can have null values <br />- automatically filtering results by their status <br />- using cfqueryparam for all filter values <p /> The arguments are: <br />- typename (req) <br />- lProperties (default=objectid) <br />- status (default=request.mode. <br />lValidStatus) <br />- orderBy (default=unordered) <br />- [property filters]* <p /> Property filters are arguments in the form propertyname_comparison=value. Supported comparisons are: <br />- eq, neq (equality filters) <br />- in, notin (list filters) <br />- like (standard DB like comparison) <br />- isnull (boolean value to specify whether to return null properties or not) <br />- gt, gte, lt, lte (standard comparisons, null dates always pass these filters) <p /> Examples: <br />qLatestNews = application.fapi.getContentObjects(typename="dmNews",lProperties="objectid,title",publishDate_lt=now(),expiryDate_gt=now(),orderBy="publishDate desc") <br />qLockedHTML = application.fapi.getContentObjects(typename="dmHTML",locked_eq=1) <br />qNotActiveUsers = application.fapi.getContentObjects(typename="dmUser",userstatus_in="inactive,pending") <p /> This FAPI function is only intended to replace the 90% of queries we use the most in webskins. Other functionality like filters on related tables, grouping, and aggregates will still be handled in custom SQL. <p /> Cheers, Blair]]></content:encoded>
+	<excerpt:encoded><![CDATA[There are a couple of dopplegangers for this functionality in core, buried in FourQ and the database gateways. Both are awkward, and offer little more than arguments for the where and order by clauses. All are about to be deprecated and replaced w...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Mar 21 23:21:08 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>new-fapi-function-getcontentobjects</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

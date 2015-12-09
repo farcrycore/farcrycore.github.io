@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/01/FarCry%20Formtools%20Moves%20to%20JQuery%20UI%20-10693998.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/01/Version%20Controlling%20FarCry%20Core-10424773.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Working on a Webtop Dashboard </h3>
+<div class='post_info'>
+<span class='post_time'>January 27 2010,  4:53 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>      When you first login into the FarCry webtop you're presented with a fairly simple overview of what the various sections of the webtop are about.<p />  <div class='p_embed p_image_embed'>
+<img src='../../../image/2010/01/6192595-moz-screenshot-6.png'>
+</div>
+<p />  This is a actually placeholder for developers to put in a more interesting overview for a specific FarCry CMS implementation.&nbsp; But in line with our thinking for the next generation FarCry, we want "placeholders" to be the very best they can be from the start.&nbsp; That is, still give folks the option to change the Overview but start with something most people will find very useful and a great starting point for customisation.<p />  So I'm working on a simple dash board for FarCry 6.0. The left hand column has content that you own (ie. where your profile has been assigned as the owner) and the right hand column has information that might be of interest.&nbsp; It's pretty simple at this stage but will have its own webskin you can override easily within your project (or plugins).<p />  <div class='p_embed p_image_embed'>
+<img src='../../../image/2010/01/6192596-moz-screenshot-5.png'>
+</div>
+<p />  Would you find this useful? What else do you think should go in there?</div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>formality, webtop</div>
+</div>
+<div class='post_responses'>
+<h4>2781 views and 7 responses</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 27 2010,  5:07 PM</div>
+<div class='response_name'>AJ Mercer responded:</div>
+</div>
+<div class='response_body'>Maybe recent comments<p>If you are a sys admin, maybe audit log (eg failed logins)<br />Who is logged in - check before bouncing server</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 27 2010,  6:11 PM</div>
+<div class='response_name'>smebberson (Twitter) responded:</div>
+</div>
+<div class='response_body'>That's pretty much exactly the same content that FarCry 4 had on the dashboard. I actually liked the move away from that, as with big deployments it used to take ages to load.</div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 27 2010,  9:00 PM</div>
+<div class='response_name'>Isabella Bowers responded:</div>
+</div>
+<div class='response_body'>@ajmercer "Recent Comments" is actually what is represented in "Recent Activity". In a generic sense there is a problem with binding content to a specific role like Sys Admin because the presence of that role will depend entirely on the installation. I do like the idea of a "who's logged on" pod though. <br /> <br />@smebberson The current prototype has DRAFT and PENDING content in a similar fashion to older dash boards. The draft (and review) content is filtered to the specific owner of the content item which is new and more relevant. Note neither of these queries are likely to have any specific performance issues. As to the rest -- "Recent Activity" is new, list of items to be "Reviewed" is new. <br /> <br />I was thinking of adding any approved content with a publishdate in the future. And like wise any approved content that has past its expirydate date.</div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 27 2010, 11:59 PM</div>
+<div class='response_name'>Phil Kemp responded:</div>
+</div>
+<div class='response_body'>I don't know if you're already trying to implement this, but here's an idea..<p>If the page will have it's own webskin, maybe you could have loads of skins that show different parts, such as MyDrafts, Comments, WaitingForApproval, AdminLogs etc. and then all we would need to do for our own overview page is just call &lt;skin:mydrafts /> or something like that? That way, everyone is happy with what comes as default, it's easy to make it your own, and easy to add your own custom stuff to all this.</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 28 2010,  2:15 AM</div>
+<div class='response_name'>Marco van den Oever responded:</div>
+</div>
+<div class='response_body'>I also like the addition of a who's logged on section, maybe all sections under each other instead of left right, or placed in a way that all sections are equally next to each other.</div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 28 2010, 11:47 PM</div>
+<div class='response_name'>Geoff Bowers responded:</div>
+</div>
+<div class='response_body'>@philkemp am working on a webtop dashboard "form" (like a content type without a database table).  So you will be able to override the views from within your own project or plugins. Lots of ideas based on what we've done for clients here over the years, but want to keep this relatively simple and generic in the initial release so it has a broad appeal.<p>@marco the appearance of a table depends on the presence of relevant content so its difficult to make the two columns have clean horizontals.  Might look at a 70/30 two column split with the smaller column holding things like "who's online"</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Jan 29 2010, 12:05 PM</div>
+<div class='response_name'>Derek responded:</div>
+</div>
+<div class='response_body'>Maybe we could vote on proposed ideas? If you have lots of ideas it could be narrowed down pretty quickly by the community.</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

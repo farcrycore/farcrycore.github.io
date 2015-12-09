@@ -1,0 +1,32 @@
+<item>
+	<title>Hinting at the upcoming dynamic caching model for FarCry</title>
+	<link>http://farcry.posterous.com/hinting-at-the-upcoming-dynamic-caching-model</link>
+	<pubDate>Thu Dec 22 21:24:42 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/hinting-at-the-upcoming-dynamic-caching-model</guid>
+	<description></description>
+	<content:encoded><![CDATA[<blockquote class="twitter-tweet"><p>Catching up with geek talk and @<a href="https://twitter.com/farcry">farcry</a> developments: Varnish caching for noobs<a href="http://t.co/lmCDOVVR" title="http://wp.me/p20hGW-kx">wp.me/p20hGW-kx</a> / cc @<a href="https://twitter.com/modius">modius</a></p>&mdash; erietta (@erietta) <a href="https://twitter.com/erietta/status/149675801678315520">December 22, 2011</a></blockquote> <p /><div>Eri (former Daemonite) and Jason (Daemonite in charge of Development) talk Varnish Cache.  Then Jason goes onto sneak a few interesting comments about ongoing development of our new dynamic caching model for FarCry framework.</div> <p /><blockquote class="gmail_quote" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0.8ex; border-left-width: 1px; border-left-color: rgb(204,204,204); border-left-style: solid; padding-left: 1ex;"> <span style="font-family: arial,verdana,sans-serif; font-size: 13px; line-height: 20px; text-align: left; background-color: rgb(255,255,255);">Now we have 1 single cache which does both objects and html snippets and it dynamically resizes itself depending on what’s going..</span></blockquote> <p /><div>Enjoy! </div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Catching up with geek talk and @farcry developments: Varnish caching for noobswp.me/p20hGW-kx / cc @modius— erietta (@erietta) December 22, 2011 Eri (former Daemonite) and Jason (Daemonite in charge of Development) talk Varnish Cache. Then Jason g...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Dec 22 21:24:42 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>hinting-at-the-upcoming-dynamic-caching-model</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

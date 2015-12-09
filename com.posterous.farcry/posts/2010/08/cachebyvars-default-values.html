@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/08/farcry-60-contributor-guide-released.html">Previous</a>
+&nbsp; 
+<a href="../../../index-4.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/08/farcry-inline-request-profiling-logging.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>cacheByVars default values</h3>
+<div class='post_info'>
+<span class='post_time'>August 16 2010,  8:11 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>cacheByVars is a view decorator who's values are used by the caching layer to identify unique views of the same webskin and object. For example, a single webskin has a paginated result set that means there is a different output depending on page number using something like URL.page. <p /> The vars that might impact the caching are accessed and hashed BEFORE the webskin is executed in order to identify if that execution can be avoided. Unfortunately, there can be a problem if the webskin/view cfparam's one of these variables: the cache layer looks for an item with a null for that variable and doesn't find it, then afterwards caches the item where the variable DOES have a value. <p /> You'll see a fix for this coming through in 6.0.6, where we've added support for defining a default cacheByVars value in the decorator:</p>
+<p>&lt;!--- @@cacheByVars: url.page:1 ---&gt; <p /> In cases where the variable is not found by the caching layer, it is  treated as being equal to the specified value instead. Variables with no  defaults are still supported.&nbsp;</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>caching</div>
+</div>
+<div class='post_responses'>
+<h4>3220 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

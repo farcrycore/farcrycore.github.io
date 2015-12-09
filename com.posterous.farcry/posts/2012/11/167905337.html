@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2012/11/beta-bootstrap-design-skeleton-on-railo-expre.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2012/11/cropping-images-right-there-and-then.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Post Processed Webskin Magic</h3>
+<div class='post_info'>
+<span class='post_time'>November  8 2012,  7:56 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>Ever wanted to just add a link to a YouTube or Vimeo video in your content and have the system convert it to the right embed code? How about a Tweet, or a Gist? &nbsp;If the embed changes (or your design changes!) how cool would it be to just update a central location and have all your embeds update?</p>
+<p>Oh, and ever tried to man handle a large embed in a rich text editor like tinyMCE? &nbsp;It can be more than a bit messy.</p>
+<p>One seriously cool solution is to post-process your content. Have contributors add URLs into their content and then let the view automatically determine what the right embed should be.</p>
+<p>Great news!</p>
+<p>As of 6.2.3. Post processing can be added to a webskin using the "postprocess", and those transformations will be applied before the webskin is cached:</p>
+<p><code>&lt;!--- @@postprocess: youtube(width=720,height=405);gist ---&gt;</code></p>
+<p>This can be applied more selectively with a function or a tag:</p>
+<p><code>&lt;cfset result = application.fc.lib.postprocess.apply(stObj.body,"youtube(width=720,height=405);gist")&gt;
+
+
+&lt;skin:postprocess functions="youtube(width=720,height=405);gist"&gt;#stObj.body#&lt;/skin:postprocess&gt;</code></p>
+<p>The function strings must be a semi-colon (;) separated list of functions in the form:</p>
+<p><code>[libraryname.]function[(arg1=val1,arg2=val2)]</code></p>
+<p>With:</p>
+<ul>
+<li>an optional library name (this is the name of a component in the lib package in core, your project, or any plugin)</li>
+<li>optional arguments (must be named)</li>
+</ul>
+<p>These functions have been included in core by default:</p>
+<ul>
+<li>youtube([width],[height])</li>
+<li>vimeo([width],[height])</li>
+<li>gist</li>
+<li>twitter</li>
+<li>removewhitespace</li>
+</ul>
+<p>Enjoy!</p></div>
+<div class='post_responses'>
+<h4>289 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

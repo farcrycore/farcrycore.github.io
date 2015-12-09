@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>building-complex-queries-with-getcontentobjec.html</string>
+		</array>
+		<array>
+			<string>core-milestone-6010-released.html</string>
+		</array>
+		<array>
+			<string>core-milestone-609-released.html</string>
+		</array>
+		<array>
+			<string>resizing-images-across-your-entire-library.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

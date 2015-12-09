@@ -1,0 +1,73 @@
+<item>
+	<title>Skinning FarCry CMS 6.0 with Mat Bryant &amp; Geoff Bowers </title>
+	<link>http://farcry.posterous.com/skinning-farcry-cms-60-with-mat-bryant-and-ge</link>
+	<pubDate>Wed Feb 24 21:48:00 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="events"><![CDATA[events]]></category>
+	
+		<category domain="tag" nicename="skinning"><![CDATA[skinning]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/skinning-farcry-cms-60-with-mat-bryant-and-ge</guid>
+	<description></description>
+	<content:encoded><![CDATA[<blockquote class="posterous_medium_quote">
+<p>FarCry CMS is built from the ground up to be customisable, extensible, and pluggable.&nbsp; Mat Bryant &amp; Geoff Bowers show how you can make your FarCry installation your own; building custom content types, skinning/theming websites, creating plugins and leveraging the FarCry Core framework to do your bidding.</p>
+</blockquote>
+<p>CFMEETUP:<br /> <a href="http://www.meetup.com/coldfusionmeetup/calendar/12651086/" class="moz-txt-link-freetext">http://www.meetup.com/coldfusionmeetup/calendar/12651086/</a><br /> Thurs. Feb 25, 6:00pm US ET (UTC/GMT-5)<br /> (which is like 10am Friday, Sydney time -- i think)</p>
+<p>Looks like I'm going to compere while Mat codes up a storm :)<p />  We're going hardcore, re-skinning the Daemon website from an off the shelf HTML template set. We'll throw in some customisations as needed. So basically a full blown bona fide project rather than some pre-baked set demo piece. We'll probably get through a few templates and I'm hoping we can get across the main principles of making a FarCry installation your own.<p />  For those who missed last week's installment  <strong>"FarCry CMS 6.0", with Geoff Bowers</strong>:</p>
+<ul>
+<li>Overview <a href="http://www.meetup.com/coldfusionmeetup/calendar/12607716/" class="moz-txt-link-freetext">http://www.meetup.com/coldfusionmeetup/calendar/12607716/</a></li>
+<li>Streamed recording <a href="http://experts.na3.acrobat.com/p43685781/" class="moz-txt-link-freetext">http://experts.na3.acrobat.com/p43685781/</a></li>
+</ul>
+<p>Enjoy!<p />  PS. we'll try and get a cut up of the recordings as MP4 for a podcast next week</p>
+<p><a href="http://www.carehart.org/cfmeetuprecordings/20100225_CF%20Meetup_%20FarCry,%20tailoring%20your%20own%20CMS,%20Geoff%20Bowers_0.mp4">http://www.carehart.org/cfmeetuprecordings/20100225_CF%20Meetup_%20FarCry,%20...</a></p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[FarCry CMS is built from the ground up to be customisable, extensible, and pluggable. Mat Bryant & Geoff Bowers show how you can make your FarCry installation your own; building custom content types, skinning/theming websites, creating plugins and...]]></excerpt:encoded>	
+
+	<wp:post_date>Wed Feb 24 21:48:00 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>skinning-farcry-cms-60-with-mat-bryant-geoff</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Feb 25 16:48:59 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Thu Feb 25 16:48:59 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Streamed recording for &quot;FarCry, tailoring your own CMS&quot;, with Geoff Bowers, Matthew Bryant: 
+http://experts.na3.acrobat.com/p24607337/]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[David Levin]]></wp:comment_author>
+			<wp:comment_author_email>dave@angrysam.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Nov 08 10:04:51 -0800 2011</wp:comment_date>
+			<wp:comment_date_gmt>Tue Nov 08 10:04:51 -0800 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Is there an online demonstration of the administration area of FarCry CMS 6? I'd like to play around with it but I only see demos of version 5.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

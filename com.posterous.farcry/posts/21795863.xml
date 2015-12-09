@@ -1,0 +1,34 @@
+<item>
+	<title>Core Milestone 6.0.4 Released</title>
+	<link>http://farcry.posterous.com/core-milestone-604-released</link>
+	<pubDate>Thu Jul 01 22:07:08 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="releasenotes"><![CDATA[releasenotes]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/core-milestone-604-released</guid>
+	<description></description>
+	<content:encoded><![CDATA[The complete list of changes for 6.0.4 maintenance release is available here: <br /><a href="https://farcry.jira.com/browse/FC/fixforversion/10350">https://farcry.jira.com/browse/FC/fixforversion/10350</a> <p /> Download the ZIP for for the 6.0.4 core milestone here: <br /><a href="https://farcry.jira.com/source/browse/~tarball=zip/FC/tags/milestone-6-0-4/milestone-6-0-4.zip">https://farcry.jira.com/source/browse/~tarball=zip/FC/tags/milestone-6-0-4/mi...</a> <p /> Or alternatively you can update from Subversion (SVN) at this address: <br /><a href="https://farcry.jira.com/svn/FC/tags/milestone-6-0-4">https://farcry.jira.com/svn/FC/tags/milestone-6-0-4</a> <p /> ** Bug <br />* [FC-2314] - ajaxTimeout not in view tax [FC2304] <p /> ** Improvement <br />* [FC-2308] - Flushing host content page when rule is updated <br />* [FC-2309] - Disable refObjects for system content types <br />* [FC-2310] - Ability to rebuild a particular page's cache, or the entire website's <p /> Enjoy!]]></content:encoded>
+	<excerpt:encoded><![CDATA[The complete list of changes for 6.0.4 maintenance release is available here: https://farcry.jira.com/browse/FC/fixforversion/10350 Download the ZIP for for the 6.0.4 core milestone here: https://farcry.jira.com/source/browse/~tarball=zip/FC/tags/...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Jul 01 22:07:08 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

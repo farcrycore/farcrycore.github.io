@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/02/wake-me-up-before-you-go-go-way-more-girls-th.html">Previous</a>
+&nbsp; 
+<a href="../../../index-5.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/02/skinning-farcry-cms-60-with-mat-bryant-geoff.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Changing a form's ft:object label</h3>
+<div class='post_info'>
+<span class='post_time'>February 25 2010,  3:52 PM</span>
+<span class='author'>&nbsp;by Rob</span>
+</div>
+</div>
+<div class='post_body'><p>When you are making a custom form that is backed by a ContentType, you might sometimes want to display the label differently then it is defined in the ContentType's metadata. For example, lets say you want to change the "Username" label on the log in screen to "Staff ID" - a form backed by farLogin. <p /> There are a couple ways to change the label on a global level, from extending the ContentType into your project to using FarCry's internationalization mechanism; however, using either one of those solutions is a bit over kill when you just want to change a single label on a single page. <p /> If you have a look at the ft:object's (the default way to render a ContentType's property as a form control - Example A below) documentation ( <a href="http://docs.farcrycore.org/trunk/tags/farcry-core-tags-ft-object.html">http://docs.farcrycore.org/trunk/tags/farcry-core-tags-ft-object.html</a> ) you'll notice there is no "label" attribute. The reason ft:object does not have a "label" attribute is because ft:object can take a list of ContentType's properties it should render (see Example D below). <p /> Ok, enough backstory, how do you change just the label of a single ft:object call? There are two ways to do it depending on how your form is setup. <p /> First you can just have the ft:object not render a label at all. Just set the IncludeLabel attribute to false and the control will render without the label. However, if you are trying to change the label of a form control that is on a longer form, this method might not be the best. While IncludeLabel="false" does indeed not include the label, it also suppress's some surrounding div's that might make your form look out of wack. If you just want the raw control form control, however, this is for you. <p /> The second way is if you want everything to work exactly as it normally does, but you just want the label different (finally some brass tacks!). What you have to do is setup a structure that will override parts of the internal FarCry form structure (see Example C below). When you pass in a structure to the stPropMetadata attribute in the form of [structure].[field_name].ftLabel, you can then set the label to be whatever you like. If you are using an ft:object with several fields, you can override any or just one of them using this technique by having [field_name] match the name of the lFields. <p /> One small word or warning however. The second, stPropMetadata, method is like using a "style" attribute on an HTML element. It is helpful when you need it, but should be used sparingly and if possible should be avoided - but good to know it's there when you are in a pinch. <p /> <p><a href="https://gist.github.com/315178">https://gist.github.com/315178</a></p></p></div>
+<div class='post_responses'>
+<h4>1823 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

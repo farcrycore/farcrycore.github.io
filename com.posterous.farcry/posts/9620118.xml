@@ -1,0 +1,53 @@
+<item>
+	<title>Multi-Site Options </title>
+	<link>http://farcry.posterous.com/multi-site-options</link>
+	<pubDate>Fri Jan 08 00:32:30 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="installation"><![CDATA[installation]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/multi-site-options</guid>
+	<description></description>
+	<content:encoded><![CDATA[      FarCry has two distinct approaches to managing multiple web sites under a single installation: &#8220;multiple sites&#8221; and &#8220;sub-sites&#8221;. <p />  As a general rule of thumb, if sites do not share content then they should be treated as distinct projects - the multiple sites approach. On the other hand, if a site shares a significant amount of content with another site then you may consider creating a single application with embedded sub-sites.<p />  --// Multiple Sites<p />  The &#8220;Multiple Site&#8221; approach follows creating distinct projects for each web application. These sites may share a common code base through the use of plugins.&nbsp; Specifically each application has its own logical database.<p />  <div class='p_embed p_image_embed'>
+<img alt="Moz-screenshot-3" height="256" src="http://getfile1.posterous.com/getfile/files.posterous.com/farcry/UDMoRLKIksKrVwnqCZON1pILoQtn4j6VNemTbgQsb9eGgLchURKDAclLL1xl/moz-screenshot-3.png" width="497" />
+</div>
+<p />  --// Sub-Sites<p />  The &#8220;Sub-Site&#8221; approach uses a single application to manage all the different sub-sites. All content is housed in a single logical database. The sub-sites each load a unique set of plugins at run time; the combination of plugins determining the look and feel and specific functionality available to each sub-site.<p />  The information hierarchy of each sub-site is managed in a separate branch of the site overview tree, allowing each subsite to have its own unique sitemap. Dynamic content is typically segmented between sub-sites using categories.<p />  <div class='p_embed p_image_embed'>
+<a href="http://getfile5.posterous.com/getfile/files.posterous.com/farcry/MBe0lDDLrGCirrBQ0ANUUGmJnqLPfwIchw717uUomI7JGXJjS9zMK7ISU76j/moz-screenshot-2.png"><img alt="Moz-screenshot-2" height="335" src="http://getfile6.posterous.com/getfile/files.posterous.com/farcry/gddGL0YHRVRzsNi6RkIGJ0bCkP3ZprinYDKXX9pw4rfyckgNb740I9uxFldT/moz-screenshot-2.png.scaled.500.jpg" width="500" /></a>
+</div>
+<p />  Daemon has a "Sub Sites" plugin available for commercial license holders that greatly simplifies the configuration and development of sub-site installations. Contact us if you're interested.]]></content:encoded>
+	<excerpt:encoded><![CDATA[FarCry has two distinct approaches to managing multiple web sites under a single installation: “multiple sites” and “sub-sites”. As a general rule of thumb, if sites do not share content then they should be treated as distinct projects - the multi...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Jan 08 00:32:30 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Geoff Bowers]]></wp:comment_author>
+			<wp:comment_author_email>modius@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Jan 08 00:54:14 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Fri Jan 08 00:54:14 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I should note in the case of multiple-sites (ie. separate applications sharing similar code bases) the &quot;sharing&quot; is typically a copy of the entire code base via an external, rather than having each app reference the one physical code base.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

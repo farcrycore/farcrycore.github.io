@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2012/11/solr-4-update-for-farcry-a-longs-ways-off.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2012/10/farcry-builder-v10-content-type-magic.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Mobile & Tablet Webskins</h3>
+<div class='post_info'>
+<span class='post_time'>November  6 2012,  8:02 PM</span>
+<span class='author'>&nbsp;by Isabella Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>One of the cool new features of FarCry 6.2 is the introduction of Mobile and Tablet webskins.  While fully responsive designs are cool and all, very often its helpful to deliver *different* views to different device formats.</p>
+<p>With FarCry you can add device detection based on client user agent string, and device specific webskins for mobile and tablets.</p>
+<p>Mobile webskins are prefixed with mobile* (e.g. mobilePageStandard, mobileBody, mobileTypeBody, etc), and similarly Tablet webskins are prefixed with tablet*. Desktop webskins continue to use the prefix display*. You must ensure the mobile* and tablet* webskin prefixes have been added to the Webskin security section of the Anonymous role for the new device specific webskins to be accessible.</p>
+<p>Additionally, device detection and device specific webskins must be enabled in your projects `farcryConstructor.cfm` if you wish to use them, e.g:</p>
+<p>&lt;cfset THIS.bUseDeviceDetection = true /&gt; <br /> &lt;cfset THIS.bUseMobileWebskins = true /&gt; <br /> &lt;cfset THIS.bUseTabletWebskins = false /&gt;</p>
+<p>(Remember to do an updateapp after changing these settings in the farcryConstructor!)</p>
+<p>To switch between device types (i.e. to provide a link to "Full Site" or "Mobile Site") you can include some JavaScript from core and a HTML anchor (or other clickable element) with a specially crafted class name. In your headers (e.g. displayHeaderStandard and mobileHeaderStandard) load the JavaScript like this (ensure the webskin tag library has been imported):</p>
+<p>&lt;skin:loadJS id="jquery" /&gt; <br /> &lt;skin:loadJS id="farcry-devicetype" /&gt;</p>
+<p>And in your footer add links such as (note the double # in case you're putting this inside a cfoutput tag):</p>
+<p>&lt; a class="fc-switch-device-desktop" href="http://##"&gt;Full Site&lt;/a&gt; <br /> OR<br /> &lt; a class="fc-switch-device-mobile" href="http://##"&gt;Mobile Site&lt;/a&gt;</p>
+<p>(Similarly for switching to tablet webskins you would use the classname "fc-switch-device-tablet" and place the relevant JS in your tabletHeaderStandard, etc).</p>
+<p>One final note is that any objects that make use of the "displayMethod" property (particularly dmHTML) will automatically detect the appropriate webskin based on the current device type. So if you have a dmHTML object with a displayMethod of "displayPage3Col" and you are currently viewing the site as a "mobile" device the framework will automatically look for a webskin called "mobilePage3Col" and try to use it if it exists, otherwise if you haven't implemented a mobile view for that displayMethod it will fall back to "displayPage3Col" (i.e. the desktop version of the page).</p></div>
+<div class='post_responses'>
+<h4>163 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Nov  6 2012,  8:20 PM</div>
+<div class='response_name'>Geoff Bowers responded:</div>
+</div>
+<div class='response_body'>Added a reference page in the WIKI for Mobile and Tablet Specific webskins: <a href="https://farcry.jira.com/wiki/display/FCDEV60/Mobile+and+Tablet+Specific+Webskins" rel="nofollow">https://farcry.jira.com/wiki/display/FCDEV60/Mobile+and+Tablet+Specific+Webskins</a></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

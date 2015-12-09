@@ -1,0 +1,54 @@
+<item>
+	<title>Typeahead formtool</title>
+	<link>http://farcry.posterous.com/typeahead-formtool</link>
+	<pubDate>Tue Aug 28 21:49:15 -0700 2012</pubDate>
+	
+	<dc:creator><![CDATA[Blair]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/typeahead-formtool</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div>This is a new formtool in 6.2 that can be used with uuid and array properties (that means that type=&quot;uuid&quot; or type=&quot;array&quot;, and ftType=&quot;typeahead&quot;), turning the field into a type-ahead or autocomplete input.</div> <p /><div><div class='p_embed p_image_embed'>
+<img alt="Typeahead_uuid_select" height="261" src="http://getfile4.posterous.com/getfile/files.posterous.com/farcry/Qjtai6A73YhwbtFR5cZnX2GBuzJocGrqq7RrgJfnfNlgbBxPzz23nzpvrsBj/typeahead_uuid_select.png" width="422" />
+</div>
+<br /></div><p /><div>Unlike the normal uuid and array formtools, typeahead expects a single content type in the ftJoin attribute. We may add support for multiple content types in the future, but one is enough for almost all the use cases of an autocomplete field. It DOES support ftAllowCreate - notice that there is a &quot;Create New Image&quot; option in the above snap.</div> <p /><div>Examples</div><div>UUID Field</div><span style="font-family: courier new,monospace;">&lt;cfproperty </span><br /><span style="font-family: courier new,monospace;">    name=&quot;someImage&quot; type=&quot;uuid&quot; hint=&quot;Related content items.&quot; required=&quot;no&quot; default=&quot;&quot; </span><br /> <span style="font-family: courier new,monospace;">    ftseq=&quot;43&quot; ftfieldset=&quot;Related Content&quot; ftwizardStep=&quot;News Body&quot; ftlabel=&quot;One image&quot;</span><br /><span style="font-family: courier new,monospace;">   </span><span style="font-family: courier new,monospace;"> </span>fttype=&quot;typeahead&quot; ftJoin=&quot;dmImage&quot; /&gt;<br /> <p /> <div style="font-family: courier new,monospace;"><div class='p_embed p_image_embed'>
+<img alt="Typeahead_uuid_novalue" height="28" src="http://getfile4.posterous.com/getfile/files.posterous.com/farcry/PDMKGaLqAvFoarnYHNLWfmdKLIE6iAYFNdsbrhfvnAAQEsuo3WO0LoNxyHoR/typeahead_uuid_novalue.png" width="421" />
+</div>
+<br /></div><p />Array Field<br /><span style="font-family: courier new,monospace;">&lt;cfproperty </span><br /><span style="font-family: courier new,monospace;">    name=&quot;multipleImages&quot; type=&quot;array&quot; hint=&quot;Related content items.&quot; required=&quot;no&quot; default=&quot;&quot; </span><br /> <span style=""> </span><span style="font-family: courier new,monospace;">ftseq=&quot;44&quot; ftfieldset=&quot;Related Content&quot; ftwizardStep=&quot;News Body&quot; ftlabel=&quot;Many images&quot;</span><br /> <span style="font-family: courier new,monospace;">  </span><span style="font-family: courier new,monospace;">fttype=&quot;typeahead&quot; ftJoin=&quot;dmImage&quot; /&gt;</span><p />  <div><span style="font-family: courier new,monospace;"><div class='p_embed p_image_embed'>
+<img alt="Typeahead_array_selected" height="29" src="http://getfile9.posterous.com/getfile/files.posterous.com/farcry/rvjavchZwGty39uvZdQUgTTqUziBD7j3lkJWSJyFK4lQZgFjTreMlAxE32zm/typeahead_array_selected.png" width="421" />
+</div>
+<br /></span></div><p />Put data inline (the above examples make AJAX requests for matches)<br /><span style="font-family: courier new,monospace;">&lt;cfproperty </span><br /><span style="font-family: courier new,monospace;">  </span><span style="font-family: courier new,monospace;">name=&quot;anotherImage&quot; type=&quot;uuid&quot; hint=&quot;Related content items.&quot; required=&quot;no&quot; default=&quot;&quot; </span><br /> <span style="font-family: courier new,monospace;">  </span><span style="font-family: courier new,monospace;">ftseq=&quot;45&quot; ftfieldset=&quot;Related Content&quot; ftwizardStep=&quot;News Body&quot; ftlabel=&quot;Another image&quot;</span><br /> <div><div><span style="font-family: courier new,monospace;"><span style="">  </span>fttype=&quot;typeahead&quot; ftJoin=&quot;dmImage&quot; ftInlineData=&quot;true&quot; /&gt;</span></div></div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[This is a new formtool in 6.2 that can be used with uuid and array properties (that means that type="uuid" or type="array", and ftType="typeahead"), turning the field into a type-ahead or autocomplete input. Put data inline (the above examples mak...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Aug 28 21:49:15 -0700 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>typeahead-formtool</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Aug 29 17:07:47 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Wed Aug 29 17:07:47 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Sweet!]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

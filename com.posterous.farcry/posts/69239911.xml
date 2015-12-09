@@ -1,0 +1,214 @@
+<item>
+	<title>Array Upload: A multi-file uploader to array formtool</title>
+	<link>http://farcry.posterous.com/array-upload-a-multi-file-uploader-to-array-f</link>
+	<pubDate>Fri Sep 09 00:56:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="formtool"><![CDATA[formtool]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/array-upload-a-multi-file-uploader-to-array-f</guid>
+	<description></description>
+	<content:encoded><![CDATA[
+
+
+
+
+<div><span>Awesome new formtool added to the p600 maintenance branch -- scheduled for milestone 6.0.16</span></div>
+<p>
+</p><div><span>The <strong>Array Upload</strong> allows you to nominate a specific content type, and a file or image property therein. For example, dmImage or dmFile. Then you can select multiple files, have them upload simultaneously, create the underlying content items and attach them to your content. Sweet!&nbsp;</span></div>
+<div>
+<p><div class='p_embed p_image_embed'>
+<a href="http://getfile4.posterous.com/getfile/files.posterous.com/farcry/DFHl41a4Zo1vY4G57ddfGM9Fm7oBuLCK7ifP3vCBsq2JEiOFzxYj4A6hIcph/arrayupload_uploading_2.png.scaled.1000.jpg"><img alt="Arrayupload_uploading_2" height="259" src="http://getfile2.posterous.com/getfile/files.posterous.com/farcry/gTV6RqpWj917SJriYDB1ULNv67SeXWZ58gQEczUrtYZsGytFosFhT344NrCW/arrayupload_uploading_2.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+</div>
+<div>Look at those three images all uploading inline! Yep, that's three images selected from the existing image library (the thumbs) and three additional images uploading together.</div>
+<div>
+<p><div class='p_embed p_image_embed'>
+<a href="http://getfile1.posterous.com/getfile/files.posterous.com/farcry/51PnpoJbEvNrC4Y5iY2TggjkR4veyezKypaAr4BASAmCqi8Eey9v4LEmpTHB/arrayupload_reorder_2.png.scaled.1000.jpg"><img alt="Arrayupload_reorder_2" height="259" src="http://getfile9.posterous.com/getfile/files.posterous.com/farcry/Hc52pjLBmbgmoF0XndA53gLZIVX3NzOAI7HIEBYgvfRlEb6C23wAWv9pimuS/arrayupload_reorder_2.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+</div>
+<div>You can list items in the array in "List" or the new "Tile" format (shown). All the drag and drop reordering magic you would expect is there.</div>
+<div>
+<p><div class='p_embed p_image_embed'>
+<a href="http://getfile8.posterous.com/getfile/files.posterous.com/farcry/dr2HZmmiaN0hykBI9o7hz6mdZLTZhugxQuMKijHLOhE43JaVRa3U1k2le45K/arrayupload_edit_2.png.scaled.1000.jpg"><img alt="Arrayupload_edit_2" height="259" src="http://getfile6.posterous.com/getfile/files.posterous.com/farcry/00MMeGb3pSB2STrcufCqO4F19TmmgeNjQPFcnrnkaglDmG7KrL8faUKEcPC1/arrayupload_edit_2.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>
+</div>
+<div>And there's a new instant edit handler for related content! The standard Array form tool lets you nominate your own libraryEdit.cfm view, but for <strong>Array Upload</strong> you just list the properties you need to manage.</div>
+<p>
+</p><div>While you could use Array Upload for all kinds of scenarios, it's just plain marvellous for content where you want to attach a bunch of files; image galleries, file lists and more.</div>
+<p>
+</p><div>Enjoy!</div>
+<p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p>
+
+
+
+]]></content:encoded>
+	<excerpt:encoded><![CDATA[Awesome new formtool added to the p600 maintenance branch -- scheduled for milestone 6.0.16 The Array Upload allows you to nominate a specific content type, and a file or image property therein. For example, dmImage or dmFile. Then you can select ...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Sep 09 00:56:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>array-upload-a-multi-file-uploader-to-array-f</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Sep 09 01:07:12 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Fri Sep 09 01:07:12 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Awesome bit of UI magic, Blair. Love yer work :)]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Sep 09 05:32:01 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Fri Sep 09 05:32:01 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[That is really sweet.  Great job Blair.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Jeff Coughlin]]></wp:comment_author>
+			<wp:comment_author_email>jeff@jeffcoughlin.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Mon Sep 12 06:54:24 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Mon Sep 12 06:54:24 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I agree.  This is awesomeness.  The auto-upload progress bars are pretty sweet too.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sat Oct 01 02:51:03 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Sat Oct 01 02:51:03 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Excellent work Blair. Thanks.. May I ask when this will be available for 6.1? We are about to launch a new website on 6.1 and would love to use this feature.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sat Oct 01 18:09:00 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Sat Oct 01 18:09:00 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[It should be there now. If its not that's an oversight -- we &lt;br/&gt;regularly merge p600 into p610 and trunk. ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Feb 02 01:16:12 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Thu Feb 02 01:16:12 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[It's a really silly question but how do we use this feature? Any documentations? We are on 6.1.3..]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Feb 02 06:12:01 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Thu Feb 02 06:12:01 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Tunç,
+
+There isn't any documentation that I can find, but all you need to do is add a cfproperty tag with ftType=&quot;arrayupload&quot; and it will use this formtool.  You can find the various options for the formtool by looking at the CFC.  You can find it at /farcry/core/packages/formtools/arrayupload.cfc
+
+At the top of that file you wlil see a  list of cfproperty tags.  These are all the &quot;ft&quot; attributes you can use to change the functionality of the formtool.  You will need an ftJoin=&quot;dmImage&quot; or ftJoin=&quot;dmFile&quot; but there are lots of other attributes you can use as well.  If I ever get a moment ( unlikely :( ) perhaps I can add a page to the wiki explaining all the options.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Feb 02 15:09:14 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Thu Feb 02 15:09:14 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Thanks for that Sean! Couldn't have said it better myself. ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Feb 16 05:57:24 -0800 2012</wp:comment_date>
+			<wp:comment_date_gmt>Thu Feb 16 05:57:24 -0800 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Hi Sean
+
+Thanks you very much for explaining this as easy as posible.. Addition to your instructions I have also needed to add ftFileProperty=imgSource&quot; as it was giving me an error.
+
+I think this is the best Farcry feature for me now :) What a time saver when you are adding 10 photos to a product!]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Mar 16 05:25:19 -0700 2012</wp:comment_date>
+			<wp:comment_date_gmt>Fri Mar 16 05:25:19 -0700 2012</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Nice feature !!]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

@@ -1,0 +1,34 @@
+<item>
+	<title>Core Milestone 6.0.3 Released</title>
+	<link>http://farcry.posterous.com/core-milestone-603-released</link>
+	<pubDate>Mon Jun 28 17:00:55 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="releasenotes"><![CDATA[releasenotes]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/core-milestone-603-released</guid>
+	<description></description>
+	<content:encoded><![CDATA[The complete list of changes for 6.0.3 maintenance release is available here: <br /><a href="https://farcry.jira.com/browse/FC/fixforversion/10341">https://farcry.jira.com/browse/FC/fixforversion/10341</a> <p /> Download the ZIP for for the 6.0.3 core milestone here: <br /><a href="http://org.farcrycore.s3.amazonaws.com/core/m603.zip">http://org.farcrycore.s3.amazonaws.com/core/m603.zip</a> <p /> Or alternatively you can update from Subversion (SVN) at this address: <br /><a href="https://farcry.jira.com/svn/FC/tags/milestone-6-0-3">https://farcry.jira.com/svn/FC/tags/milestone-6-0-3</a> <p /> ** Bug <br /> * [FC-2006] - No download popup when using download link <br /> * [FC-2076] - No form validation when including editOwn.cfm in project outside of webtop <br /> * [FC-2135] - Core login redirect doesn't allow for full URL redirects <br /> * [FC-2152] - When some (not all) users login they will get the following error message:variable permissiontype is undefined  <br /> * [FC-2172] - formtool: category does not respond to ftSelectMultiple="false" <br /> * [FC-2184] - Railo does not like date strings with space delimiter <br /> * [FC-2190] - Webtop overview Breadcrumbs links Case sensitive issue <br /> * [FC-2192] - Confirmation link in registration email errors <br /> * [FC-2197] - dmNavigation Overview throws error in webtop (with fix) <br /> * [FC-2223] - farFU.cfc camelHump issue on delete Nav <br /> * [FC-2239] - jQuery version of webskinAjaxLoader() - showLoadIndicator / indicatorText <br /> * [FC-2257] - Installer gets "stuck on step two of the wizard. No errors are reported. <br /> * [FC-2259] - Category no longer gets validated with required <br /> * [FC-2274] - Install: sql syntax error creating stats tables <br /> * [FC-2284] - Problems with using getLink with strings that need to be urlencoded <br /> * [FC-2289] - getRelatedContent is not thread safe, causes errors <br /> * [FC-2293] - Edit Config - XMLFormat <br /> * [FC-2295] - objectbroker.cfc referencing form scope directly without checking to see if it exists <br /> * [FC-2298] - Canceling the creation of a new content item from a library picker adds an empty item instead <br /> * [FC-2299] - UUID fields don't validate required fields <br /> * [FC-2300] - Library picker does not support extended arrays <p />  <br />** Improvement <br /> * [FC-1805] - Allow developers to generate their own library search filter function <br /> * [FC-1902] - core dmInclude teaser property is "string" should be "longchar" to follow with other teaser properties. <br /> * [FC-2080] - Addition of url.objectid validation in requestscope <br /> * [FC-2156] - Add property "permission" to Category <br /> * [FC-2195] - Trailing dash on freindly URLs <br /> * [FC-2212] - Change webskin ancestors to use In Memory Caching <br /> * [FC-2263] - Need to have image formtool to autogenerate thumbnail if hidden <br /> * [FC-2264] - Teaser on dmInclude needs to be longchar <br /> * [FC-2282] - Add category filtering to getContentObjects <br /> * [FC-2285] - Ability to restrict a particular container to specified rules <br /> * [FC-2287] - Friendly URL redirects are adding 'updateapp' to the query string <br /> * [FC-2290] - Ability to override the webtop header background colour <br /> * [FC-2297] - Bot defence code needs a way to remove items form the list <br /> * [FC-2302] - Optimised FU cache initialisation <br /> * [FC-2303] - Log and report updateapp information <br /> * [FC-2304] - add ajax timeout parameter to fourq.getView() <p /> Enjoy!]]></content:encoded>
+	<excerpt:encoded><![CDATA[The complete list of changes for 6.0.3 maintenance release is available here: https://farcry.jira.com/browse/FC/fixforversion/10341 Download the ZIP for for the 6.0.3 core milestone here: http://org.farcrycore.s3.amazonaws.com/core/m603.zip Or alt...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Jun 28 17:00:55 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/09/dont-use-dmlink-to-schedule-content-items-in.html">Previous</a>
+&nbsp; 
+<a href="../../../index-4.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/09/tracking-development-activity-in-the-farcry-c.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Working With Breadcrumbs</h3>
+<div class='post_info'>
+<span class='post_time'>September  9 2010, 12:10 AM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>      The breadcrumb tag (./core/tags/webskin/breadcrumb.cfm) works based on where in the site overview tree it thinks your content is based. But when you are dealing with content types that don't have a home in the tree, that's a bit trickier; it ultimately defaults to the home page (or in truth application.fapi.getnavid("home")). <p />  Of course there is a simple fix. The Breadcrumb tag is a bit more cunning and will look in the tree for a navigation alias that matches the content typename of the view being rendered.&nbsp; For example, if you are using the breadcrumb tag with a dmNews content item it looks for an alias of "dmnews" (literallly application.fapi.getnavid("dmnews")).<p />  To add an alias, simply open up the relevant menu (ie. dmnavigation) content item, and type in the typename as an alias to the navigation node in the tree. No coding required :)<p />  Here's an example of an alias for a "podcast" content type hooking up the breadcrumb, for both a type view (or listing view) and a full page display of a single content item.<p />  <p />  <br />   <p><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/09/14802301-46e65fc1-277e-4839-b6fa-2864726141dc.png'>
+<img src='../../../image/2010/09/14802302-2e5b7764-ba55-4c81-8a21-6b25f9b1dde7.png'>
+</div>
+</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>tree, view</div>
+</div>
+<div class='post_responses'>
+<h4>6017 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

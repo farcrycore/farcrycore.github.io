@@ -1,0 +1,82 @@
+<item>
+	<title>Google User Directory</title>
+	<link>http://farcry.posterous.com/google-user-directory</link>
+	<pubDate>Sun Sep 09 23:54:00 -0700 2012</pubDate>
+	
+	<dc:creator><![CDATA[Blair]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/google-user-directory</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>The JanRain plugin (which lets users log in with accounts from Facebook and Twitter) is excellent for public logins - but what about internal logins? At Daemon we found that JanRain authentication was TOO flexible for applications where we simply wanted federated logins for our team. <a href="https://developers.google.com/accounts/docs/OAuth2Login">Google oAuth</a> is exactly what we were after, and it has the added advantage of letting us disable old users from a central location. So we've created a new plugin to integrate it into FarCry.</p>
+<p />
+<div>Here is how to set it up:</div>
+<p />
+<div><span style="font-size: medium;"><span style="font-size: medium;">Part 1: Google Configuration</span></span></div>
+<div><ol>
+<li>Open the <a href="https://code.google.com/apis/console/">Google API Console</a> in a browser</li>
+<li>Create a new project<br /><div class='p_embed p_image_embed'>
+<img alt="Api_createproject" height="317" src="http://getfile3.posterous.com/getfile/files.posterous.com/farcry/q4q3F2HHDseAmYCdbjmMxiiviC9K1VHurKcUgi2OTV0CAPj1cmsvB5kRmUeg/api_createproject.png" width="350" />
+</div>
+</li>
+<li>In API Access, create a client ID<br /><div class='p_embed p_image_embed'>
+<a href="http://getfile7.posterous.com/getfile/files.posterous.com/farcry/j0p1RGy8hP4LLNZGCzDBHjKK39HvVIHAIFZTfEgjymEwc5l4UpmErjV0V4kz/api_createclientidlink.png"><img alt="Api_createclientidlink" height="255" src="http://getfile8.posterous.com/getfile/files.posterous.com/farcry/9Ntsen1u2QUzLfr5PKALEtwwYq154kRfcb0QxqbbiALMiDcBTaV1TGhLMbcH/api_createclientidlink.png.scaled.500.jpg" width="500" /></a>
+</div>
+<br />You will need to add the links FarCry will be using to this config:
+<ul>
+<li>redirect uri: http://[your domain here]/index.cfm?type=gudLogin&amp;view=displayLogin</li>
+<li>javascript origin: http://[your domain here]</li>
+</ul>
+</li>
+<li>You will need the Client ID and Client Secret - either copy them, or keep the window open<br /> <div class='p_embed p_image_embed'>
+<a href="http://getfile7.posterous.com/getfile/files.posterous.com/farcry/wxhh1kekISNIjl5di4tAHriQwow6om59ip4J3glDCGTQx8SH3EdiEzSIviON/api_copydetails.png"><img alt="Api_copydetails" height="154" src="http://getfile8.posterous.com/getfile/files.posterous.com/farcry/utMwIhHH0KPhFZQEdlIfXkub7tVEQppmuVM041D2sy4Dt7jbRSX4d6gXIrS3/api_copydetails.png.scaled.500.jpg" width="500" /></a>
+</div>
+</li>
+</ol></div>
+<div><span style="font-size: medium;"><span style="font-size: medium;">Part 2: FarCry Configuration</span></span></div>
+<div>
+<div><ol>
+<li>Add the googleud plugin (<a href="https://farcry.jira.com/svn/GUD/trunk">https://farcry.jira.com/svn/GUD/trunk</a>) to the project; milestone for an official "Version 1" will be added soon</li>
+<li>Update the application</li>
+<li>Put the Google Client ID and Client Secret into the Google User Directory config</li>
+<li>Deploy the new content types - gudUser and gudGroup</li>
+<li>Create a Google user group (Admin -&gt; General Admin -&gt; User Directory -&gt; Group Groups) for your email domain</li>
+<li>Add your group to the appropriate FarCry roles (Admin -&gt; General Admin -&gt; Roles &amp; Permissions -&gt; Roles)</li>
+</ol>
+<div><span style="font-size: medium;"><span style="font-size: medium;">But wait, there's more!</span></span></div>
+</div>
+</div>
+<div>Often you will have an existing account in the application you have added GoogleUD to. This can lead to issues with:</div>
+<div>
+<ul>
+<li>history tracking</li>
+<li>content ownership</li>
+<li>the old account won't be disabled if the Google account is</li>
+</ul>
+<div>So in the Webtop there is a utility for merging an existing account into your Google login account.</div>
+</div>
+<div><div class='p_embed p_image_embed'>
+<img alt="Farcry_merge" height="358" src="http://getfile3.posterous.com/getfile/files.posterous.com/farcry/VOTdutwBrcUiIDEVKiDeur9DqbeTjw5QxHv9cyjygsSIUklouRkA9Z2kwB5s/farcry_merge.png" width="196" />
+</div>
+</div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[The JanRain plugin (which lets users log in with accounts from Facebook and Twitter) is excellent for public logins - but what about internal logins? At Daemon we found that JanRain authentication was TOO flexible for applications where we simply ...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Sep 09 23:54:00 -0700 2012</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>google-user-directory</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

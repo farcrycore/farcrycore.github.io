@@ -1,0 +1,48 @@
+<item>
+	<title>FarCry opensource GPL vs commercial licensing</title>
+	<link>http://farcry.posterous.com/farcry-opensource-gpl-vs-commercial-licensing</link>
+	<pubDate>Sun Mar 13 20:08:00 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/farcry-opensource-gpl-vs-commercial-licensing</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>Have been fielding some queries for clients recently about the GPL and the Drupal platform. &nbsp;Thought this story might be of interest to FarCry users and by extension the licensing of FarCry opensource vs commercial. &nbsp;</p>
+<p>Specifically my client wanted to know whether or not they could protect their own IP under a non-GPL codebase using Drupal. &nbsp;This is simply not possible. Drupal is very militant about enforcing the GPL licensing to the letter.<p />From the Drupal Licensing FAQ:</p>
+<p>--------------------------------------<br />7: If I write a module or theme, do I have to license it under the GPL?<p />Yes. Drupal modules and themes are a derivative work of Drupal. If you distribute them, you must do so under the terms of the GPL version 2 or later. You are not required to distribute them at all, however. (See question 8 below.)<p />However, when distributing your own Drupal-based work, it is important to keep in mind what the GPL applies to. The GPL on code applies to code that interacts with that code, but not to data. That is, Drupal's PHP code is under the GPL, and so all PHP code that interacts with it must also be under the GPL or GPL compatible. Images, JavaScript, and Flash files that PHP sends to the browser are not affected by the GPL because they are data. However, Drupal's JavaScript, including the copy of jQuery that is included with Drupal, is itself under the GPL as well, so any Javascript that interacts with Drupal's JavaScript in the browser must also be under the GPL or a GPL compatible license.<p />When distributing your own module or theme, therefore, the GPL applies to any pieces that directly interact with parts of Drupal that are under the GPL. Images and Flash files you create yourself are not affected. However, if you make a new image based off of an image that is provided by Drupal under the GPL, then that image must also be under the GPL.</p>
+<p>If you commit that module or theme to Drupal's CVS repository, however, then all parts of it must be under the GPL version 2 or later, and you must provide the source code. That means the editable form of all files, as described above.<p />8: If I write a module or theme, do I have to give it away to everyone?<p />No. The GPL requires that if you make a derivative work of Drupal and distribute it to someone else, you must provide that person with the source code under the terms of the GPL so that they may modify and redistribute it under the terms of the GPL as well. However, you are under no obligation to distribute the code to anyone else. If you do not distribute the code but use it only within your organization, then you are not required to distribute it to anyone at all.<p />However, if your module is of general use then it is often a good idea to contribute it back to the community anyway. You can get feedback, bug reports, and new feature patches from others who find it useful.<br />--------------------------------------</p>
+<p>In summary..</p>
+<p>Any code that is a derivative or directly extends Drupal must be released under the GPL. Your only "protection" of IP under the GPL is non-distribution. &nbsp;That is, as a single organisation you are not compelled to distribute your GPL based code. &nbsp;</p>
+<p>Unfortunately, if any third-party to your business interacts with that code, for example a supplier or contractor not directly employed by your business, this is classified as "distribution". &nbsp;The third-party would be allowed to redistribute the code under the GPL. &nbsp;You cannot enforce a contract with the third-party to prevent redistribution.</p>
+<p>Unfortunately, the law is unclear about "accidental" distribution. For example, an employee (with or without intent) distributes the code against your wishes. You may be able to discipline the employee, but third-parties that receive the distributed code could argue quite strongly that the code was distributed in good faith and that as its GPL they can do what they want with it under terms of that license.</p>
+<p>In all cases, your business would continue to be the copyright holder of the code, but *anyone* would be able to reuse it under the GPL, once it had been distributed.</p>
+<p>The FarCry publishing platform is a bit more flexible in this regard as we have:</p>
+<ul>
+<li>a single copyright holder, Daemon Pty Limited</li>
+<li>a commercial license option that removes the obligations of the GPL</li>
+<li>we have an exception to the GPL that allows the creation of plugins under the LGPL license</li>
+</ul>
+<p>Did I mention that I am *not* a lawyer, and this opinion should not be construed as legal advice ;)</p>
+<p>Enjoy!</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Have been fielding some queries for clients recently about the GPL and the Drupal platform. Thought this story might be of interest to FarCry users and by extension the licensing of FarCry opensource vs commercial. Specifically my client wanted to...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Mar 13 20:08:00 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>farcry-opensource-gpl-vs-commercial-licensing</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

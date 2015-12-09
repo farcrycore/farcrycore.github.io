@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/08/cachebyvars-default-values.html">Previous</a>
+&nbsp; 
+<a href="../../../index-4.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/07/quick-summary-of-farcry-view-decorators.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>FarCry inline request profiling & logging</h3>
+<div class='post_info'>
+<span class='post_time'>August 16 2010,  8:05 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>      Profiling code and logging output for a request is painful. It usually involves checking the IP address or URL variable to make sure only a developer sees it, and has to be outputed using cfdump/cfoutput followed by an abort.<p />  Blair has added support for profile=1. Just tack it onto the end of your URL when you are developing. (You'll need to wait for 6.0.6 <a href="https://farcry.jira.com/browse/FC-2330" class="moz-txt-link-freetext">https://farcry.jira.com/browse/FC-2330</a> or be running from the p600 maintenance branch)<p />  <div class='p_embed p_image_embed'>
+<img src='../../../image/2010/08/13819338-p_1.png'>
+</div>
+<p />  If the "tray menu" is showing (ie. you have logged into the webtop earlier with admin permmissions), this mode starts tracking calls to application.fapi.addProfilePoint(section,label) and application.fapi.addRequestLog(text).<p />  The profile functionality is a little bit primitive at this stage, but it's enough to show relative times between points. FarCry Core has a few points already in place to track request initialisation and view execution.<p />  <div class='p_embed p_image_embed'>
+<img src='../../../image/2010/08/13819339-p_2.png'>
+</div>
+<p />  The logging is also simple; a list of strings. Timestamps are recorded but not outputed. Core has logging for cache hits and misses.<p />  <div class='p_embed p_image_embed'>
+<img src='../../../image/2010/08/13819340-p_3.png'>
+</div>
+<p />  Enjoy!</div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>logging, performance</div>
+</div>
+<div class='post_responses'>
+<h4>2969 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

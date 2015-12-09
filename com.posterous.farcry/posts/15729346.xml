@@ -1,0 +1,60 @@
+<item>
+	<title>Core Milestone 6.0.1 Released</title>
+	<link>http://farcry.posterous.com/core-milestone-601-released</link>
+	<pubDate>Thu Apr 08 05:11:17 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="releasenotes"><![CDATA[releasenotes]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/core-milestone-601-released</guid>
+	<description></description>
+	<content:encoded><![CDATA[      The complete list of changes for 6.0.1 maintenance release is available here:<br /> <a href="http://bugs.farcrycms.org/browse/FC/fixforversion/10331" class="moz-txt-link-freetext">http://bugs.farcrycms.org/browse/FC/fixforversion/10331</a><p />  Download the ZIP for for the 6.0.1 core milestone here:<br /> <a href="http://org.farcrycore.s3.amazonaws.com/core/m601.zip" class="moz-txt-link-freetext">http://org.farcrycore.s3.amazonaws.com/core/m601.zip</a><p />  Or alternatively you can update from Subversion (SVN) at this address:<br /> <a href="http://modius.svn.cvsdude.com/farcry/core/tags/milestone-6-0-1" class="moz-txt-link-freetext">http://modius.svn.cvsdude.com/farcry/core/tags/milestone-6-0-1</a><p />  <b>Bugs</b><br /> [FC-2115] - combine.cfc can not find /webtop/thirdparty/msdropdown/dd.css<br /> [FC-2130] - Railo chokes trying to create stats when installing<br /> [FC-2177] - Page layout dropdown selection is in alphabetical order descending (instead of ascending)<br /> [FC-2178] - z-index of .webskin-tracer needs to be a really high number like 10000<br /> [FC-2179] - Test in buttons don't always line up correctly<br /> [FC-2182] - Filtering link not available to IE6 users when using objectAdmin<br /> [FC-2185] - Buttons with the same value but different text have the same resource bundle key<br /> [FC-2188] - Overview dashboard not operational<br /> [FC-2193] - Library picker fails for sub-directory installations<br /> [FC-2197] - dmNavigation Overview throws error in webtop (with fix)<br /> [FC-2198] - If a containers displayMethod does not exist and error occurs<br /> [FC-2200] - url.restartInstaller no longer restarts installer<br /> [FC-2205] - looking at the type: dmNavigation and couldn't find a displayPageStandard<br /> [FC-2206] - Library picker not refreshing after attaching items in google chrome<br /> [FC-2207] - altexpansion attribute in webtop.xml don't work for other section than site<br /> [FC-2208] - farfu webskins should be excluded from template choices in dminclude<br /> [FC-2210] - content types flagged as bUseInTree that are not in tree cause error on overview<br /> [FC-2211] - File formtool has two (conflicting) attributes for file extensions<br /> [FC-2217] - object admin row numbers reset on pagination<br /> [FC-2218] - objectadmin object counter does not continue incrementing on 2nd and subsequent pages.<br /> [FC-2219] - Packed version of jquery-validate errors in IE6<br /> [FC-2222] - ft:object doesn't add server side errors with the correct uniform markup<br /> [FC-2225] - Scaffolding link/button doesn't respond when clicked<br /> [FC-2228] - Bug in ftWatch related to multiselect lists<br /> [FC-2230] - formtool category: can't remove category selection<br /> [FC-2232] - Apostrophes in content labels breaks FU management screen<br /> [FC-2246] - Custom TinyMCE configs don't work because single and double quotes are escaped into XML format<p />  <b>Improvements</b><br /> [FC-1861] - Change to allow NULLs for datetime properties<br /> [FC-2183] - formtool: category; provide async fetching of data<br /> [FC-2201] - formtool: image; should be able to select the source image as a uuid<br /> [FC-2209] - Content overview and content sub section overview are missing permission check<br /> [FC-2215] - Default ObjectBrokerMaxObjects to default to 1000<br /> [FC-2241] - upgrade jquery-iu to version 1.8<p />  <b>New Features</b><br /> [FC-2199] - new attributes to genericNav<br /> [FC-2224] - FAPI function for retrieving a set of content<p />  <b>Upgrader</b><br /> [FC-2216] - Removing the deploy farFU script]]></content:encoded>
+	<excerpt:encoded><![CDATA[The complete list of changes for 6.0.1 maintenance release is available here:http://bugs.farcrycms.org/browse/FC/fixforversion/10331 Download the ZIP for for the 6.0.1 core milestone here:http://org.farcrycore.s3.amazonaws.com/core/m601.zip Or alt...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Apr 08 05:11:17 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Tunç]]></wp:comment_author>
+			<wp:comment_author_email>admin@motorspor.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Apr 09 05:23:35 -0700 2010</wp:comment_date>
+			<wp:comment_date_gmt>Fri Apr 09 05:23:35 -0700 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Thanks for that. I have downloaded the ZIP one. When I logged in it shows version 6-1-0 of Farcry code. Is it 6-0-1 or 6-1-0? Just curious if I have downloaded the wrong thing.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Apr 09 05:37:19 -0700 2010</wp:comment_date>
+			<wp:comment_date_gmt>Fri Apr 09 05:37:19 -0700 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Whoops!  That should just be 6.0.1 :)]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

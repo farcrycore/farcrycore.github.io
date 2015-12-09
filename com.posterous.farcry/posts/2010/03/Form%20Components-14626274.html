@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/04/getNavID()%20replaces%20application.navid-15505834.html">Previous</a>
+&nbsp; 
+<a href="../../../index-5.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/03/new-fapi-function-getcontentobjects.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Form Components</h3>
+<div class='post_info'>
+<span class='post_time'>March 26 2010,  9:35 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>Ever wondered what the components in ./packages/form are all about? Form components unlock the power of formtools just like content types, but are not persisted in the database. Think "forms", think formtools. <p /> Formtools you say? Formtools are one of the things that make working with FarCry awesome. <p /> Let me count the ways: <br />- the library of standard form inputs <br />- automatic javascript and server side validation <br />- handling of fields that need multiple inputs (like dates) <br />- managed file upload <br />- library pickers <br />- image manipulation <br />- uniform formatting <br />- ajax functionality <br />- and much more <p /> The "formtools" engine is all about sophisticated forms that basically build themselves. <p /> But in FarCry 4.x formtools could only be used with content types. A developer was out of luck if they needed a form for data that wasn't destined for the database. Which was a problem when it came to refactoring FarCry's security architecture to support custom user directories and the configuration UI. <p /> Thus "forms" components were born. "Forms" are identical to content types, but all the database persistence functions have been overriden to support in-session storage only. From the point of view of the COAPI framework they can do everything a normal type could do. <p /> This means that a form component can be used in: <br />- ft:object to output a form <br />- ft:processformobjects can detect and process form component posts <p /> For completeness an extra function got added to forms, "process", which is also processed on a successful form post. This makes it possible to keep the UI metadata and data processing in the same component. <p /> A side benefit of all this is that forms can have their own webskins. Since 5.0 the login pages have been overridable the same way as any other webskin. This "side benefit" turns out to be one of the most fantastics things about "forms" but hey, that's another post entirely. <p /> There are a couple of gotcha's to watch out for: <br />- form webskins can't easily be cached because they aren't associated with persistent data <br />- forms can't have array properties since the array formtool makes use of the database <p /> Enjoy "forms". <p /> Cheers, Blair</div>
+<div class='post_responses'>
+<h4>2084 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

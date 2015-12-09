@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/09/array-upload-a-multi-file-uploader-to-array-f.html">Previous</a>
+&nbsp; 
+<a href="../../../index-2.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/08/maintenance-milestones-6011-6014-released.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>FarCry 6.1 (codename: Mayonnaise) Core Milestone Released</h3>
+<div class='post_info'>
+<span class='post_time'>August  8 2011,  7:09 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>
+<div>
+<div>There is now an official milestone for 6.1.0 and a corresponding maintenance branch. There is no official distro at this time -- just the ./core framework milestone. You can certainly upgrade existing projects if you have a mind, but we'll be releasing a friendlier distribution for folks new to FarCry in the very near future.</div>
+<p />
+<div><strong>milestone-6-1-0</strong></div>
+<div><a href="https://farcry.jira.com/svn/FC/tags/milestone-6-1-0">https://farcry.jira.com/svn/FC/tags/milestone-6-1-0</a>&nbsp;</div>
+<p />
+<div><strong>6.1.0 maintenance branch (p610)</strong></div>
+<a href="https://farcry.jira.com/svn/FC/branches/p610">https://farcry.jira.com/svn/FC/branches/p610</a>&nbsp;</div>
+<p />
+<div><strong># Key Features</strong></div>
+<div>
+<div>
+<ul>
+<li>Precision; allow the developer to nominate the exact precision of a property and have the database schema update accordingly</li>
+<li>Better support options for new databases; a clean component architecture for adding new database gateways (only supports MSSQL &amp; mySQL at this time)</li>
+<li>Indexation; allow developers to nominate database indices that are automatically deployed, dropped and altered as needed&nbsp;</li>
+<li>Model schema tables that are not FarCry content types. Sometimes you just need a table without all the framework baggage; for example, refObjects and the nested tree model</li>
+<li>Options for deploying and undeploying multiple objects, and mass property changes. This would make installers and updaters a breeze not to mention make development of customisations even simpler&nbsp;</li>
+</ul>
+</div>
+</div>
+Previous posts discussing features:<span>
+</span><div>
+<ul>
+<li><a href="http://farcry.posterous.com/mayonaise-coapi-conflict-resolution">http://farcry.posterous.com/mayonaise-coapi-conflict-resolution</a></li>
+<li><a href="http://farcry.posterous.com/mayonaise-61-beta-release-fourq-overhaul">http://farcry.posterous.com/mayonaise-61-beta-release-fourq-overhaul</a></li>
+</ul>
+</div>
+<strong># Additional Release Notes Version FarCry 6.1 (Mayonnaise)</strong><span>
+</span><p />
+<div>There are also a variety of bug fixes and minor enhancements swept up in the release that have been closed out. And probably a few older issues that need to be closed out as a result of underlying changes in the framework -- we'll close these out in the maintenance branch as we find them.</div>
+<p />
+<div>## Bug</div>
+<div>
+<ul>
+<li>&nbsp; &nbsp; * [FC-364] - Deployment of array properties for custom rules isn't reflected in admin GUI</li>
+<li>&nbsp; &nbsp; * [FC-722] - Altertype functions need to be cflocked</li>
+<li>&nbsp; &nbsp; * [FC-2018] - Forgot password - hashed password is sent in the email when password hashing is enabled</li>
+<li>&nbsp; &nbsp; * [FC-2344] - Error when logging in to webtop - fourq createData() - Element TABLEMETADATA is undefined</li>
+<li>&nbsp; &nbsp; * [FC-2346] - Date values do not appear to contain times; all default to 12am</li>
+<li>&nbsp; &nbsp; * [FC-2358] - "typename" property not being set for dmHTML_aObjectIDs</li>
+<li>&nbsp; &nbsp; * [FC-2360] - Redirected back to home page after logging into webtop in subdirectory install</li>
+<li>&nbsp; &nbsp; * [FC-2361] - Fix hardcoded URL references to /webtop to be dynamic</li>
+<li>&nbsp; &nbsp; * [FC-2362] - Incorrect path for dmImage thumbnail on webtopOverviewSummary webskin</li>
+<li>&nbsp; &nbsp; * [FC-2367] - Editing a navigation node detaches child objects</li>
+<li>&nbsp; &nbsp; * [FC-2368] - dmNavigation - choosing "mirror" or "internal redirect" and then not picking an object locks you out of the edit form</li>
+<li>&nbsp; &nbsp; * [FC-2369] - Fix refObjects utility no longer works</li>
+<li>&nbsp; &nbsp; * [FC-2370] - TinyMCE GZip calculates incorrect path to cache folder</li>
+<li>&nbsp; &nbsp; * [FC-2371] - Friendly URL is not parsed correctly if it begins with two slashes (//)</li>
+<li>&nbsp; &nbsp; * [FC-2372] - farLogin form does not redirect user properly after switching projects or UD</li>
+<li>&nbsp; &nbsp; * [FC-2374] - Duplicate refObjectIDs created</li>
+<li>&nbsp; &nbsp; * [FC-2375] - Several references to getTablename() remain though the method no longer exists</li>
+<li>&nbsp; &nbsp; * [FC-2408] - When restarting installer, structDelete() session.oInstall is needed</li>
+<li>&nbsp; &nbsp; * [FC-2421] - "join" formtool specifies that "checkbox" is a valid render type when it is not</li>
+<li>&nbsp; &nbsp; * [FC-2428] - Child content deleted when editing navigation node</li>
+<li>&nbsp; &nbsp; * [FC-2456] - Cannot deploy new config</li>
+<li>&nbsp; &nbsp; * [FC-2484] - Typo in BaseGateway.cfc</li>
+<li>&nbsp; &nbsp; * [FC-2485] - db.cfc references a missing variables.paths['default'] path.</li>
+<li>&nbsp; &nbsp; * [FC-2487] - getContentObjects with categories is failing because of missing cfsqltype setting</li>
+<li>&nbsp; &nbsp; * [FC-2493] - COAPI repair fails to set default in database on boolean properties</li>
+<li>&nbsp; &nbsp; * [FC-2508] - pingFU not working</li>
+<li>&nbsp; &nbsp; * [FC-2512] - setData doesn't initialise object defaults when falling back to createData</li>
+<li>&nbsp; &nbsp; * [FC-2513] - genericNav activeClass attribute not applied to home node</li>
+<li>&nbsp; &nbsp; * [FC-2518] - Order of processing of _serverSpecificVarsAfterInit.cfm files should be plugins followed project</li>
+<li>&nbsp; &nbsp; * [FC-2521] - BaseGateway: "key doesn't exist in struct"</li>
+<li>&nbsp; &nbsp; * [FC-2522] - Google sitemap generation borked on external link data model changes</li>
+</ul>
+</div>
+## Deprecated<span>
+</span><div>
+<ul>
+<li>&nbsp; &nbsp; * [FC-1010] - Removing 3.0 widgets library</li>
+</ul>
+</div>
+## Improvement<span>
+</span><div>
+<ul>
+<li>&nbsp; &nbsp; * [FC-73] - Choose XML as an optional store of the tree data</li>
+<li>&nbsp; &nbsp; * [FC-111] - fourq property types needs a CUSTOM data type</li>
+<li>&nbsp; &nbsp; * [FC-923] - Logic order in the dmHTML and some minor bugs</li>
+<li>&nbsp; &nbsp; * [FC-1810] - dmNavigation: Allow the ability to add external targetable links directly to the navigation folder</li>
+<li>&nbsp; &nbsp; * [FC-2359] - Need to allow custom configuration for richtext on a per-field basis</li>
+<li>&nbsp; &nbsp; * [FC-2439] - Refactor "Forgot password" functionality</li>
+<li>&nbsp; &nbsp; * [FC-2476] - The framework does not pick up webskins if the folder is a different case to the cfc</li>
+<li>&nbsp; &nbsp; * [FC-2489] - dmcron grid should show full dates for start/end</li>
+<li>&nbsp; &nbsp; * [FC-2516] - FarCry's request finalisation happens before plugin/project onRequestEnd templates</li>
+</ul>
+</div>
+## New Feature<span>
+</span><div>
+<ul>
+<li>&nbsp; &nbsp; * [FC-2511] - Use of loadJS/loadCSS with external libraries</li>
+</ul>
+</div>
+## Refactoring<span>
+</span><div>
+<ul>
+<li>&nbsp; &nbsp; * [FC-1013] - Remove deprecated references to bTreeNode metadata in altertype.cfc</li>
+</ul>
+</div>
+## Task<span>
+</span><div>
+<ul>
+<li>&nbsp; &nbsp; * [FC-191] - Define all farcry content property types</li>
+</ul>
+</div>
+<p />
+<div>Enjoy!</div>
+
+</div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>release</div>
+</div>
+<div class='post_responses'>
+<h4>714 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Aug  8 2011,  7:23 PM</div>
+<div class='response_name'>Geoff Bowers responded:</div>
+</div>
+<div class='response_body'>Milestone build ZIP available at:<br /><a href="http://www.farcrycore.org/builds/" rel="nofollow">http://www.farcrycore.org/builds/</a></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

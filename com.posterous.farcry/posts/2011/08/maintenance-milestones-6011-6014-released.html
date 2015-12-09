@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/08/farcry-61-codename-mayonnaise-core-milestone.html">Previous</a>
+&nbsp; 
+<a href="../../../index-2.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/07/loading-css-and-js-libraries-tags-tags-javasc.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Maintenance Milestones 6.0.11-6.0.14 Released</h3>
+<div class='post_info'>
+<span class='post_time'>August  8 2011,  6:27 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>  <div> <div>Maintenance milestones have been silently released over the last half year without so much as a peep from me. &nbsp;Apologies for that. &nbsp;A bunch of great little patches in that lot. &nbsp;To update all you need do is replace your ./core folder with the milestone and restart the FarCry application.</div><p /><div>Distros and zips to follow shortly on <a href="http://www.farcrycore.org/builds">http://www.farcrycore.org/builds</a></div><p /><div># Version 6.0.11 (4-March-2011)</div><p /></div>## Bug<div><div>&nbsp; &nbsp; * [FC-2449] - image formtool source delete option ui update</div><div>&nbsp; &nbsp; * [FC-2454] - loadJS &amp; loadCSS lCombineIDs caching issue</div><div>&nbsp; &nbsp; * [FC-2455] - Fapi.getContentObjects) not respecting "time" value</div><div>&nbsp; &nbsp; * [FC-2458] - Bold heading tags in webtop formtools so that they differentiate from themselves a little better</div></div><p />## Improvement<div><div>&nbsp; &nbsp; * [FC-2151] - Form validation does not show message on longchar</div><div>&nbsp; &nbsp; * [FC-2453] - Ability to specify basic cache headers (for reverse proxies) in webskins</div><div>&nbsp; &nbsp; * [FC-2457] - While dependent images are being generated the user should see "working" message</div><p /><div><div># Version 6.0.12 (21-March-2011)</div></div></div><p />## Bug<div><div><div>&nbsp; &nbsp; * [FC-2460] - farfu lookup fails on postgresql</div><div>&nbsp; &nbsp; * [FC-2464] - ObjectAdmin tag doesn't apply filters for non-MSSQL databases</div></div></div><p />## Improvement<div><div><div>&nbsp; &nbsp; * [FC-1942] - webskin with dash in file name throws error on startup / reinit</div><div>&nbsp; &nbsp; * [FC-2463] - updates to ft:objectadmin for easy button adding&nbsp;</div><p /><div><div># Version 6.0.13 (13-May-2011)</div></div></div></div><p />## Bug<div><div><div><div>&nbsp; &nbsp; * [FC-2068] - Oracle library search in types.cfc needs a lower()</div><div>&nbsp; &nbsp; * [FC-2465] - Objectadmin filtering: bad SQL Where clause for Oracle</div><div>&nbsp; &nbsp; * [FC-2466] - User directory dropdown on login doesn't work</div><div>&nbsp; &nbsp; * [FC-2467] - The objectadmin tag ignores the permissionset attribute</div><div>&nbsp; &nbsp; * [FC-2469] - skin:loadCSS doesn't respect the media specified in skin:registerCSS</div><div>&nbsp; &nbsp; * [FC-2470] - Errror when clicking Complete on Reflected Containers in Webtop</div><div>&nbsp; &nbsp; * [FC-2471] - Javascript error when Imagesource field was a dmImage</div><div>&nbsp; &nbsp; * [FC-2473] - Library picker doesn't work on forms using a developer specified prefix</div><div>&nbsp; &nbsp; * [FC-2480] - Tabs do not work when managing friendly urls</div><div>&nbsp; &nbsp; * [FC-2482] - Element MODE.AJAX is undefined in REQUEST (cssInHead)</div><div>&nbsp; &nbsp; * [FC-2483] - Webtop redirect after login not working</div><div>&nbsp; &nbsp; * [FC-2486] - Element URL.WEBTOPLOGIN is undefined in APPLICATION when trying to log into the webtop</div></div></div></div><p />## Improvement<div><div><div><div>&nbsp; &nbsp; * [FC-2468] - Form spam protections doesn't work when the form is being cached in a reverse proxy</div><div>&nbsp; &nbsp; * [FC-2478] - displayLibraryAdd and displayLibraryEdit need to look for an existing edit.cfm for the library object if libraryAdd.cfm/libraryEdit.cfm does not exist</div><p /></div><div><div># Version 6.0.14 (10-June-2011)</div></div></div></div><p />## Bug<div><div><div><div>&nbsp; &nbsp; * [FC-487] - database error when repairing fileSize property of dmFile after upgrade</div><div>&nbsp; &nbsp; * [FC-724] - After publishing a new Nav Node (with FUs activated), link to the page don't work until App Scope is updated.</div><div>&nbsp; &nbsp; * [FC-726] - Copy Policy Group Does not apply permissions</div><div>&nbsp; &nbsp; * [FC-864] - objectadmin: hitting enter in filter does not apply filter</div><div>&nbsp; &nbsp; * [FC-973] - cache.cfm tag occasionally output Javascript/HTML, which breaks XML generation--need a suppress output option</div><div>&nbsp; &nbsp; * [FC-1044] - Cannot create friendly URL's with nav items that have blank targets</div><div>&nbsp; &nbsp; * [FC-1356] - Can't Upload File Larger Than 100MB Using the Flash Upload Tool</div><div>&nbsp; &nbsp; * [FC-1797] - ERROR: "Element CONTAINERID is undefined in URL"</div><div>&nbsp; &nbsp; * [FC-1955] - content type component inherited metadata incorrectly aggregated</div><div>&nbsp; &nbsp; * [FC-2189] - Filtering - change default on Enter/Return key to Apply Filter rather than Clear Filter</div><div>&nbsp; &nbsp; * [FC-2272] - Object admin filter problem when hitting enter/return</div><div>&nbsp; &nbsp; * [FC-2490] - Bad default for ftLibraryDataTypename</div><div>&nbsp; &nbsp; * [FC-2491] - In IE7 the action button bunch up and jump around on hover</div><div>&nbsp; &nbsp; * [FC-2492] - 404 redirect fails</div><div>&nbsp; &nbsp; * [FC-2496] - The url exit functionality of ft:processform bypasses onrequestend configs</div><div>&nbsp; &nbsp; * [FC-2500] - When requesting approval, "All Approvers" isn't unselected when choosing a user</div><div>&nbsp; &nbsp; * [FC-2501] - Error when displaying 404 and 500 templates under the project</div><div>&nbsp; &nbsp; * [FC-2502] - checkPermission() in farBarnacle may grant access when a role has no explicit permission on any node in the tree</div></div></div></div><p />## Improvement<div><div><div><div>&nbsp; &nbsp; * [FC-379] - buildLink.cfm: &nbsp;XHTML-friendly output</div><div>&nbsp; &nbsp; * [FC-439] - Unable to save multiple selection form values (object extended with an array property)</div><div>&nbsp; &nbsp; * [FC-711] - formtools/datetime.cfc edit function: add switch to conceal time from user</div><div>&nbsp; &nbsp; * [FC-1002] - buildlink: allow anchors in links</div><div>&nbsp; &nbsp; * [FC-1043] - Add possibility to use content templates for dmNavigation when aObjectIDs is empty (/core/tags/navajo/display.cfm)</div><div>&nbsp; &nbsp; * [FC-2132] - [Enter] key does not correctly send the default action (ie. first button) when submitting</div><div>&nbsp; &nbsp; * [FC-2494] - In pagination tag call all pagination html as return variable</div><div>&nbsp; &nbsp; * [FC-2499] - General arraylist improvements</div><p /><div>## New Feature</div><div>&nbsp; &nbsp; * [FC-930] - Add Formtool Metadata to Allow For New Library Option Only</div></div></div></div><p />## Task<div><div><div><div>&nbsp; &nbsp; * [FC-1442] - image config: needs to be removed completely</div><div>&nbsp; &nbsp; * [FC-1574] - Remove use of Prototype JS in farcryButton</div></div><p /><div>Enjoy!</div><p /><div>PS. you can always follow the latest FarCry Core activity here&nbsp;<a href="https://farcry.jira.com/browse/FC">https://farcry.jira.com/browse/FC</a></div><p /></div> </div>  </div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>release</div>
+</div>
+<div class='post_responses'>
+<h4>619 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Aug  8 2011,  7:24 PM</div>
+<div class='response_name'>Geoff Bowers responded:</div>
+</div>
+<div class='response_body'>Milestone build m6014.zip available:<br /><a href="http://www.farcrycore.org/builds/" rel="nofollow">http://www.farcrycore.org/builds/</a></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

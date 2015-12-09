@@ -1,0 +1,47 @@
+<item>
+	<title>The Tomek Tutorials</title>
+	<link>http://farcry.posterous.com/the-tomek-tutorials</link>
+	<pubDate>Sun Jul 10 18:42:52 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="tutorial"><![CDATA[tutorial]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/the-tomek-tutorials</guid>
+	<description></description>
+	<content:encoded><![CDATA[ <div>Recently stumbled across these excellent little tutorials from FarCry developer Tomek.&nbsp;</div><blockquote type="cite"><div><a href="http://kott.fm/tomek/2011/04/09/using-the-farcry-profiling-api-webskin-tracer/">Using the FarCry Profiling API &amp; Webskin Tracer</a></div><div>The FarCry profiling API that became available with FC6.0.6 is a godsend for figuring out why some pages load slowly. For example, I have a couple of ‘displayTypeBody’ pages that load in 7 seconds, while normal HTML pages generally load in less than 0.3 seconds. Huge difference!&nbsp;</div><p /><div><a href="http://kott.fm/tomek/2011/03/13/creating-a-duplicate-button-in-farcry/">Creating a “Duplicate” button in FarCry</a></div><div>Recently I was tasked with creating a “duplicate” button for the event type in FarCry. It turns out that while adding a button is actually easy, the hard part was ensuring that the rest of the default buttons didn’t disappear.</div><p /><div><a href="http://kott.fm/tomek/2011/02/10/resetting-individual-types-etc-in-farcry/">Resetting individual types etc., in FarCry</a></div><div>Recently, I have had the need to programmatically reload type metadata for a specific type in FarCry. Since I’m usually working on a dev copy on my laptop (which is underpowered), I don’t want to take the time to reset all the types together. This is especially useful if you need to do something similar...</div></blockquote><div>Enjoy!&nbsp;</div>  ]]></content:encoded>
+	<excerpt:encoded><![CDATA[Recently stumbled across these excellent little tutorials from FarCry developer Tomek. Using the FarCry Profiling API & Webskin TracerThe FarCry profiling API that became available with FC6.0.6 is a godsend for figuring out why some pages load slo...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Jul 10 18:42:52 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>the-tomek-tutorials</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sun Sep 04 12:58:49 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Sun Sep 04 12:58:49 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Thanks for the shoutout! I've bundled the tutorials under a series, which you can see here: http://kott.fm/tomek/series/farcry-tutorials/. I've also added a new one, on creating a view of all the categories and their content. You can find that here: http://kott.fm/tomek/2011/09/04/automatic-category-lists-in-farcry-a-la-wordpress/]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/06/FarCry%20Community%20Bug%20Database,%20WIKIs%20&amp;%20Fisheye-20701729.html">Previous</a>
+&nbsp; 
+<a href="../../../index-4.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/06/smebberson-just-saw-this-tweet-on-the-nationa.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Subversion Repositories for FarCry</h3>
+<div class='post_info'>
+<span class='post_time'>June 21 2010,  4:21 AM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><div class="moz-text-flowed" style="">
+<div class="moz-text-flowed">Looks like the new SVN repos are bedded down and working just fine -- for committers I may need to tweak your account to get things going.  If you depend on the SVN repo for your deployments, please read carefully -- the new repos are quite different in structure.</div>
+<p />
+<div class="moz-text-flowed"><strong>Authentication</strong></div>
+<p />
+<div class="moz-text-flowed">Anonymous access is available for read-only checkouts across all modules.</div>
+<p />
+<div class="moz-text-flowed">HTTPS has been enforced for access to the repo.</div>
+<p />
+<div class="moz-text-flowed">Committers with *write* access; you will need to have a user account with Jira Studio in order to write to the repo.  You should be able to use your standard user that was created for access to the old <a href="http://bugs.farcrycms.org">http://bugs.farcrycms.org</a> for everything on the site -- if you don't have one, create one and let me know the account name. Your Jira Studio user account needs to be both in the "Developer" group, and set to an account type of "Developer". If anything seems to not work as expected ping me and I'll double check this is set up properly for your login.</div>
+<p />
+<div class="moz-text-flowed"><strong>New Repository Structure</strong></div>
+<p />
+<div class="moz-text-flowed">The structure of each repo module follows a regular pattern:</div>
+<div class="moz-text-flowed">/PROJECT-KEY/</div>
+<div class="moz-text-flowed"> ./trunk</div>
+<div class="moz-text-flowed"> ./branches</div>
+<div class="moz-text-flowed"> ./tags</div>
+<p />
+<div class="moz-text-flowed">Where /PROJECT-KEY/ is the short key code for the Jira Studio project.</div>
+<p />
+<div class="moz-text-flowed">For example...</div>
+<p />
+<div class="moz-text-flowed">FarCry Core has a project code of FC:</div>
+<div class="moz-text-flowed">
+<ul>
+<li>Bug database --&gt; <a href="http://farcry.jira.com/browse/FC">http://farcry.jira.com/browse/FC</a></li>
+<li>Fisheye --&gt; <a href="http://farcry.jira.com/source/browse/FC">http://farcry.jira.com/source/browse/FC</a></li>
+<li>SVN repo trunk --&gt; <a href="http://farcry.jira.com/svn/FC/trunk">http://farcry.jira.com/svn/FC/trunk</a></li>
+</ul>
+</div>
+<div class="moz-text-flowed">FarCry CMS plugin has a project code of CMS:</div>
+<div class="moz-text-flowed">
+<ul>
+<li>Bug database --&gt; <a href="http://farcry.jira.com/browse/CMS">http://farcry.jira.com/browse/CMS</a></li>
+<li>Fisheye --&gt; <a href="http://farcry.jira.com/source/browse/CMS">http://farcry.jira.com/source/browse/CMS</a></li>
+<li>SVN repo trunk --&gt; <a href="http://farcry.jira.com/svn/CMS/trunk">http://farcry.jira.com/svn/CMS/trunk</a></li>
+</ul>
+</div>
+<div class="moz-text-flowed"><strong>Subversion Checkouts</strong></div>
+<p />
+<div class="moz-text-flowed">Essentially its a brand new repo.  Even though the repo history has been preserved, all the revision numbers are different.  This means to relocate existing repos you will more than likely have to delete and re-checkout the repo (as opposed to using the Subversion "relocate" feature).  I highly recommend thinking through the best workflow for getting your established workspaces/deployments onto the new repos.</div>
+<p />
+<div class="moz-text-flowed"><strong>Old Repo Archive</strong></div>
+<p />
+<div class="moz-text-flowed">The old SVN repos hosted at cvsdude.com will be maintained for at least another 6 months, and possibly much longer.  The repos have been set to read-only, so any commits you attempt will be rejected.  However, you can continue to pull milestones from this location for the forseeable future.</div>
+<p />
+<div class="moz-text-flowed">That's all for now :)</div>
+<p />
+</div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>community</div>
+</div>
+<div class='post_responses'>
+<h4>2047 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

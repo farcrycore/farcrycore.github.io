@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/01/How%20do%20you%20structure%20your%20source%20code?%20-9874746.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/01/You%20have%20been%20denied%20access%20to%20this%20item-9700034.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Firing a ft:processForm with skin:buildLink</h3>
+<div class='post_info'>
+<span class='post_time'>January 11 2010,  9:01 PM</span>
+<span class='author'>&nbsp;by Rob</span>
+</div>
+</div>
+<div class='post_body'><p>As you likely know ft:processForm is used quite frequently in FarCry to handle form posts - the "action page" for the old-school developers out there. A very simple ft:processForm tag looks like the following: <p /> <p><a href="https://gist.github.com/274936">https://gist.github.com/274936</a></p><p /> The above code simply outputs "Blarg" and a timestamp. To get this code to run, you would typically create an ft:form with an ft:button like so: <p /> <p><a href="https://gist.github.com/274940">https://gist.github.com/274940</a></p><p /> The "value" attribute on the ft:button corresponds to the "action" attribute on the ft:processForm. The "value" to "action" matching will cause the block of code to run (thereby supporting many buttons to many actions on the same form). <p /> ft:button has several attributes to alter the display the button <a href="http://docs.farcrycore.org/trunk/tags/farcry-core-tags-ft-button.html">http://docs.farcrycore.org/trunk/tags/farcry-core-tags-ft-button.html</a> - renderType, Class, and Style for example. <p /> However, sometimes you need more control over a form submission element. Perhaps you need a graphic *and* a bit of text, or you want to wrap a div with a link (which isn't valid, but who am I to judge.)  In cases where you need more control over the contents of the form submission link you can use skin:buildLink. <p /> To use skin:buildLink you simply supply the "href" attribute with the javascript function "btnSubmit". The "btnSubmit" function is what ft:button winds up calling. "btnSubmit" takes two parameters - the form name, and the action to perform. To change the ft:button example above to be a skin:buildLink call we could do the following: <p /> <p><a href="https://gist.github.com/274939">https://gist.github.com/274939</a></p><p /> Of course, you have to include the skin tag library as well as the formtool library: <p /> <p><a href="https://gist.github.com/274937">https://gist.github.com/274937</a></p></p></div>
+<div class='post_responses'>
+<h4>1567 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

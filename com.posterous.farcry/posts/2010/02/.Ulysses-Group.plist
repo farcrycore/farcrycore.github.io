@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>bellabowers-meets-mr-james.html</string>
+		</array>
+		<array>
+			<string>Changing%20a%20form's%20ft:object%20label-12319224.html</string>
+		</array>
+		<array>
+			<string>dmWebskinAncestor%20Performance%20Troubles-12009721.html</string>
+		</array>
+		<array>
+			<string>FarCry%20Code%20Timeline%20Visualisation%20-12406989.html</string>
+		</array>
+		<array>
+			<string>repository-changes-for-formality-60-release.html</string>
+		</array>
+		<array>
+			<string>skinning-farcry-cms-60-with-mat-bryant-geoff.html</string>
+		</array>
+		<array>
+			<string>wake-me-up-before-you-go-go-way-more-girls-th.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

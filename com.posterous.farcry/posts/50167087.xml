@@ -1,0 +1,48 @@
+<item>
+	<title>FarCry Running Railo in Cloudbees</title>
+	<link>http://farcry.posterous.com/farcry-running-railo-in-cloudbees</link>
+	<pubDate>Tue Apr 19 21:07:05 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/farcry-running-railo-in-cloudbees</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div class='p_embed p_image_embed'>
+<a href="http://getfile4.posterous.com/getfile/files.posterous.com/farcry/q3dcRUbslfNPVZ468Jur0CHSXJZEPCVhI5QawgYYykWmxDlKP0F8YrOzHel7/cloudbees01.png"><img alt="Cloudbees01" height="254" src="http://getfile6.posterous.com/getfile/files.posterous.com/farcry/VazJ5jeMK1Q6t8MIzDmiwbkGBx8sflfpUqPLm2DbcWISyWqXvBnDCutTWQfx/cloudbees01.png.scaled.500.jpg" width="500" /></a>
+</div>
+<p></p><div> <div> <span>We've been mucking around internally with a few cloud solutions and what options we have for getting FarCry running. &nbsp;Turns out its not too hard to get a standard FarCry install running on Railo with mySQL in the <a href="http://www.cloudbees.com/run.cb">CloudBees RUN@cloud</a> platform (formally Spike Washburn's Stax). If you are interested in helping us get FarCry hooked up under PaaS (platform as a service) drop us a line. </span></div> </div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[We've been mucking around internally with a few cloud solutions and what options we have for getting FarCry running. Turns out its not too hard to get a standard FarCry install running on Railo with mySQL in the CloudBees RUN@cloud platform (forma...]]></excerpt:encoded>	
+
+	<wp:post_date>Tue Apr 19 21:07:05 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>farcry-running-railo-in-cloudbees</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[jonlowforever]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu May 05 01:00:10 -0700 2011</wp:comment_date>
+			<wp:comment_date_gmt>Thu May 05 01:00:10 -0700 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Awesome! Would love to see an example of this and/or a guide to the install. Great to see Farcry in the cloud! ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

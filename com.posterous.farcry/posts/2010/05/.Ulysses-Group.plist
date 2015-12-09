@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>application.fapi.flushCache%20can%20selectively%20flush%20caches-18793739.html</string>
+		</array>
+		<array>
+			<string>Core%20Milestone%205.2.8%20Released-19496331.html</string>
+		</array>
+		<array>
+			<string>Core%20Milestone%206.0.2%20Released-18852457.html</string>
+		</array>
+		<array>
+			<string>FarCry%20Auto-Docs%20&amp;%20Dictionaries%20Updated-18792322.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

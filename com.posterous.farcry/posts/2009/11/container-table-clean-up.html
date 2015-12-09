@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2009/11/the-motley-farcry-52-community-bundle-release.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2009/11/new-farcry-security-tag.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Container Table Clean Up </h3>
+<div class='post_info'>
+<span class='post_time'>November  5 2009, 10:41 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>Great little clean up tip on the forums courtesy of Chris Kent. <p /> As a consequence of how containers are created and managed, you may&nbsp;quickly build up records in the "container" table of your FarCry app that do not have any publishing rules. Cleaning up these records can help keep your database leaner and meaner. <p /> Essentially you want to remove any "container" that does not have any related records in the "container_arules" table: <p /> <code> 
+DELETE FROM container 
+WHERE container.objectID NOT IN 
+(SELECT DISTINCT parentid FROM container_arules) 
+</code> <p /> Any required containers records with publishing rules will stay. Any required containers records without publishing rules will be re-created automatically when the pages are next hit. <p /> Don't forget to backup your database if you're going to attempt any direct manipulations of the schema.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>containersrules</div>
+</div>
+<div class='post_responses'>
+<h4>2125 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Nov  6 2009,  7:07 AM</div>
+<div class='response_name'>Jeff Coughlin responded:</div>
+</div>
+<div class='response_body'>You can also vote to have related records automatically deleted upon parent record deletion at <a href="http://bugs.farcrycms.org/browse/FC-1063" rel="nofollow">http://bugs.farcrycms.org/browse/FC-1063</a></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

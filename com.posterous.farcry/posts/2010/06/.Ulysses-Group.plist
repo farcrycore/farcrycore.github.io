@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>20408845.html</string>
+		</array>
+		<array>
+			<string>Core%20Milestone%206.0.3%20Released-21439603.html</string>
+		</array>
+		<array>
+			<string>FarCry%20Community%20Bug%20Database,%20WIKIs%20&amp;%20Fisheye-20701729.html</string>
+		</array>
+		<array>
+			<string>FarCry%20Documentation%20Plugin-21593791.html</string>
+		</array>
+		<array>
+			<string>lunch-at-aria-today-yeah-its-good-to-be-me.html</string>
+		</array>
+		<array>
+			<string>smebberson-just-saw-this-tweet-on-the-nationa.html</string>
+		</array>
+		<array>
+			<string>Subversion%20Repositories%20for%20FarCry-20701024.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

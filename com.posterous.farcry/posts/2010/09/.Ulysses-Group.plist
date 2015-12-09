@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>core-milestone-606-released.html</string>
+		</array>
+		<array>
+			<string>cyberetto-southern-highlands-this-weekend-was.html</string>
+		</array>
+		<array>
+			<string>dont-use-dmlink-to-schedule-content-items-in.html</string>
+		</array>
+		<array>
+			<string>farcry-cms-community-distro-release-for-606.html</string>
+		</array>
+		<array>
+			<string>farcry-core-quasar-facelift.html</string>
+		</array>
+		<array>
+			<string>generating-the-google-news-sitemap-in-farcry.html</string>
+		</array>
+		<array>
+			<string>google-sitemaps-in-farcry-cms.html</string>
+		</array>
+		<array>
+			<string>indexing-what-you-want-with-verity-plugin.html</string>
+		</array>
+		<array>
+			<string>mayonaise-61-beta-release-fourq-overhaul.html</string>
+		</array>
+		<array>
+			<string>tracking-development-activity-in-the-farcry-c.html</string>
+		</array>
+		<array>
+			<string>working-with-breadcrumbs.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

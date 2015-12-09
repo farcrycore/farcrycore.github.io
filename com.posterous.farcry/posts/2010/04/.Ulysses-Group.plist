@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>Core%20Milestone%206.0.1%20Released-15729346.html</string>
+		</array>
+		<array>
+			<string>friendly-urls-microsoft-url-rewrite-module-fo.html</string>
+		</array>
+		<array>
+			<string>getNavID()%20replaces%20application.navid-15505834.html</string>
+		</array>
+		<array>
+			<string>working-with-file-uploads-greater-than-4mb-on.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

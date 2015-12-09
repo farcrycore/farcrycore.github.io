@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/09/cyberetto-southern-highlands-this-weekend-was.html">Previous</a>
+&nbsp; 
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/09/farcry-core-quasar-facelift.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Mayonaise (6.1) Beta Release: FourQ Overhaul</h3>
+<div class='post_info'>
+<span class='post_time'>September 25 2010,  4:33 AM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>FarCry had the very first ColdFusion ORM (well at least that I'm aware&nbsp;of); the FourQ ORM created back during the Neo alpha, the initial port of ColdFusion to Java. It gets its name from the gist of something Mike Nimer said to me, "a database component only needs four queries" or words to that effect. I think we were discussing whether or not getter and setters were a good thing. <p /> FourQ is different to other ORMs in the ColdFusion world. Things like Transfer, Reactor and even the ColdFusion Hibernate implementation all work on the basis of creating objects to match your relational database tables. That is, you have a database schema, and then you build objects to work with it. With FourQ you build components, and the ORM creates the database tables for you. If you make changes to your component, the framework changes the database schema to match. <p /> FourQ works great but its accumulated years of debris -- adding new features has become impossible. FourQ needs an overhaul, the open heart surgery Kano style**. <p /> So if you could make improvements to FourQ what would you do? Well in no particular order I'd love to see...</p>
+<ul>
+<li><strong>Precision</strong>; allow the developer to nominate the exact precision of a property and have the database schema update accordingly</li>
+<li>Better <strong>support for new databases</strong>; a clean component architecture for adding new database gateways</li>
+<li><strong>Indexation</strong>; allow developers to nominate database indices that are&nbsp;automatically deployed, dropped and altered as needed&nbsp;</li>
+<li><strong>Model schema tables</strong> that are not FarCry content types. Sometimes you just need a table without all the framework baggage; for example, refObjects and the nested tree model</li>
+<li>Options for <strong>deploying and undeploying multiple objects</strong>, and mass property changes. This would make installers and updaters a breeze not to mention make development of customisations even simpler&nbsp;</li>
+</ul>
+<p>Blair's been heading up our efforts on the next major phase of the FarCry masterpiece, codenamed Mayonaise. Incredibly, with a Chev Chelios thumper in place, all these features are available for testing right now, in the FarCry 6.1 beta. Support is only available for mySQL and MS SQL at this time -- we're looking for help creating other supported database gateways so please get in touch. <p /> For early access download: <br /><a href="http://org.farcrycore.s3.amazonaws.com/nightly/community-6-1-b0925.zip">http://org.farcrycore.s3.amazonaws.com/nightly/community-6-1-b0925.zip</a> <br />svn checkout <a href="https://farcry.jira.com/svn/REL/trunk/community">https://farcry.jira.com/svn/REL/trunk/community</a> farcry <p /> Enjoy! <p /> ** Open Heart Surgery: Kano's signature fatality has him ripping the heart out of his opponent's chest, then hoisting the still beating organ in the air in triumph.</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>release, roadmap</div>
+</div>
+<div class='post_responses'>
+<h4>4870 views and 5 responses</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Oct  5 2010,  6:50 PM</div>
+<div class='response_name'>pat branley responded:</div>
+</div>
+<div class='response_body'>why would i use fourQ over the CF9 ORM stuff ?</div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Oct  5 2010,  8:53 PM</div>
+<div class='response_name'>Geoff Bowers responded:</div>
+</div>
+<div class='response_body'>FourQ and CF9 ORM are quite different.  The real question is whether or not CF9 ORM features would be worthwhile integrating into FarCry.<p>There is a fundamental difference in approach between CF9 ORM and FourQ. With FourQ you create an object (cf component) which then gets expressed as a data model; if you change the component, the model (ie database schema) is automatically updated. CF9 ORM only works with existing schemas; you create components to match your tables. </p><p>At this stage the FourQ and FarCry view layer services offer more than CF9 ORM and EH Cache.  While there is significant overlap in functionality, i'm not sure its worth the effort at this time to refactor FarCry to use CF9ORM/EHCache services instead of its own services. </p><p>Mind you, it would certainly be possible to develop a plugin to swap out the relevant fourq object broker calls for cf9 ORM hibernate calls. Or to extend the view cache layer to leverage EhCache, if there was significant motivation to do so.</p><p>With respect to compatibility, FourQ should work on CF7/8, Railo and OpenBD. CF9 ORM is stuck with CF9.</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Oct  5 2010,  9:49 PM</div>
+<div class='response_name'>pat branley responded:</div>
+</div>
+<div class='response_body'>   <div> <p><span>Good points.&lt;o:p>&lt;/o:p></span></p> <p><span></span></p> <div> <p><b><span>From:</span></b><span></span></p></div></div></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Oct  9 2010,  2:09 PM</div>
+<div class='response_name'>Chris Kent responded:</div>
+</div>
+<div class='response_body'>Just trying 6.1, some great new features<p>- The new COAPI manager is going to be a real time saver when deploying new modifications, review and apply all changes in one hit.</p><p>- Like the ability to set indexes in the content types, will be able to set these prior to install and then they will be applied as standard for each install  without having to modify each db table for all installs</p><p>- Webtray rebuild page and rebuild all anther great new feature</p></div>
+</li>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Oct 10 2010,  3:37 PM</div>
+<div class='response_name'>Geoff Bowers responded:</div>
+</div>
+<div class='response_body'>@chris you'll be happy to know that web-tray "rebuild page" and "rebuild all" are also available in the 6.0.x maintenance releases :)</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

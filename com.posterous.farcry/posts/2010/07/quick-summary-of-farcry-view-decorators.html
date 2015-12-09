@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/08/farcry-inline-request-profiling-logging.html">Previous</a>
+&nbsp; 
+<a href="../../../index-4.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/07/core-milestone-605-released.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Quick Summary of FarCry View Decorators</h3>
+<div class='post_info'>
+<span class='post_time'>July 21 2010, 12:37 AM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>A view decorator is a little bit of metadata that you can stick at the top of your view in FarCry to change its behaviour and the way its documented. FarCry Core framework is pretty clever and can work out a default in most cases depending on the file naming convention you have used. However, its good practice to be explicit about your decorators so be sure to put them in.</p>
+<p>Adding them to your view couldn't be easier. Just add each decorator on its own line, in a ColdFusion comment, at the top of your view.</p>
+<p>&lt;!--- @@Displayname: Full Page Display ---&gt;<br />&lt;!--- @@Description: Complete view of the case study. ---&gt;<br />&lt;!--- @@Viewstack: page ---&gt;<br />&lt;!--- @@Viewbinding: object ---&gt;<br />&lt;!--- @@Cachestatus: 1 ---&gt;<br />&lt;!--- @@Cachetimeout: 60 ---&gt;<br />&lt;!--- @@Fualias: page ---&gt;</p>
+<p>What follows is a little cheat sheet of the most common decorators and how they work.</p>
+<p><strong>@@cachestatus: 0, 1, -1</strong></p>
+<p>Cache status determines whether or not a view should participate in the dynamic caching layer of FarCry. 0 is the default and simply means, "no directive given". 1 says "turn on caching". -1 prohibits the view from being cached under any circumstances, even if a parent view has been instructed to be cached.</p>
+<p><strong>@@Cachetimeout: minutes (default 24hrs)</strong></p>
+<p>Cache time out is the number of minutes the view should remain in the cache.  This defaults to an entire day.  It's not unusual to have long time outs for FarCry caches. Unlike other CMSs, the FarCry caching service is clever and will automatically flush caches where content has been updated rather than waiting for the full time out.</p>
+<p><strong>@@Cachetypewatch: list of typenames</strong></p>
+<p>Cache type watch setting looks for changes in the nominated content types.  If you add a new content item to the system, a view with a "type watch" will automatically get flushed.  This is great for listing views that show stuff like the latest news items or whatever.</p>
+<p><strong>@@Cachebyvars: list of scoped variable names</strong></p>
+<p>Sometimes you want the view to have a different cache for different values of a variable. This is easily achieved by nominating the list of variables that make up that difference.  For example, an archive page which uses a url parameter like &amp;year=2010 would ideally have a different cache for each value for year.</p>
+<p><strong>@@Viewstack: page, body, fragment, ajax, any</strong></p>
+<p>View stack is a little quirky.  It's basically an instruction to the friendly url service to help it identify what type of view your output should be, ie. "where in the stack".  Normally this is determined by convention.  If you name your view with a prefix of displayPage, then it will be assigned a value of "page", displayBody and its "body", and just about everything else is "fragment", for example displayTeaserStandard.cfm</p>
+<p><strong>@@Viewbinding: type, object, any</strong></p>
+<p>View binding determines what part of the model should be bound to your view.  Use "type" when its a type view, that is a view on a group of objects pertaining to a content type. And use "object" if you are rendering a specific content instance or record.</p>
+<p><strong>@@Fualias: friendly URL alias for the view</strong></p>
+<p>Friendly URL alias is great.  You can rename your view, as it appears on the URL, to just about anything you like.  So for a view with a file name of displayRSSFeed.cfm you get a default URL containing "displayRSSFeed".  Using fualias you could change this to simply "rss".</p>
+<p><strong>@@Displayname: name of the template</strong><br /><strong>@@Description: overview of template usage</strong></p>
+<p>Displayname and Description are used by the framework and documentation plugin to provide a friendly name and additional information about the view when its relevant.  It's highly recommended you fill these in so your users get friendly and intuitive labels.</p>
+<p> </p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>caching, decorator, friendlyurl, view</div>
+</div>
+<div class='post_responses'>
+<h4>3925 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

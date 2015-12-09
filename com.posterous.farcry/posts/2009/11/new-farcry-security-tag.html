@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2009/11/container-table-clean-up.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2009/10/pagination-tags.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>New FarCry security tag</h3>
+<div class='post_info'>
+<span class='post_time'>November  4 2009,  5:52 PM</span>
+<span class='author'>&nbsp;by mattyb</span>
+</div>
+</div>
+<div class='post_body'><p>Whilst doing some refactoring of the webtop login I have added a new tag... see it in action below... I'm sure you can think of a thousand ways to use it in your project.</p>
+<p>NOTE: It seems comments are stripped out so if anyone knows how to keep them in the code blocks... power to ya.</p>
+<p><strong>OLD AND BUSTED</strong><br /><code>
+ &lt;cfif not application.security.checkPermission("Admin")&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;cfset application.factory.oAuthentication.logout() /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;cfif not ListContains( cgi.script_name, "#application.url.farcry#/login.cfm" )&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;extjs:bubble message="You do not have permission to access the webtop" /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;cflocation url="#application.url.farcry#/login.cfm?returnUrl=#replace(URLEncodedFormat(cgi.script_name&amp;'?'&amp;cgi.query_string),'##','%23','ALL')#" addtoken="No"&gt;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;cfabort&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/cfif&gt;
+&lt;/cfif&gt;
+</code><p /><strong>NEW HOTNESS</strong><br /><code>
+&lt;cfif not findNoCase( "login.cfm", cgi.script_name )&gt;
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;sec:checkLoggedIn /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;sec:checkLoggedIn lPermissions="admin" message="You do not have permission to access the webtop" /&gt;
+&lt;/cfif&gt;
+</code></p></div>
+<div class='post_responses'>
+<h4>1679 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

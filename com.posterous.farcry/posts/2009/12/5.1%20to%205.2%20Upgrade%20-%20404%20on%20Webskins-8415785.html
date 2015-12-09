@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2009/12/farcry-dev-camp-podcasts.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2009/12/almadudler-seriously-good-lemonade-complete-w.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>5.1 to 5.2 Upgrade - 404 on Webskins</h3>
+<div class='post_info'>
+<span class='post_time'>December  7 2009,  3:32 PM</span>
+<span class='author'>&nbsp;by Rob</span>
+</div>
+</div>
+<div class='post_body'>Friendly URLs got a bit of an update in 5.2, and as a result you might <br />get 404 errors on some of your webskins. This will likely take the <br />shape of a hard 404 page display. I've mostly ran into the change on <br />webtop webskins. The error will look something like the following: <p /> <code> 
+Not Found 
+The requested URL /farcry-ud-login/displayLoginRedirection was not 
+found on this server. 
+</code> <p /> As you can see the URL is a bit friendlier than in 5.1. The <br />"farcry-ud-login" is actually the file farLogin.cfc. The new URL <br />display is derived from the "displayname" attribute on the cfc: <br />displayname="Farcry UD Login" in this example. I am getting a bit off <br />topic here; the point being that the webskin has not moved, nor has <br />the code that looks for the webskin, only the display of the <br />ContentType in the URL has changed. <p /> The only reason I mention the friendly URL / webskin bit here is <br />because I initially thought that change was causing the error; <br />however, the problem is linked to the "farcry" alias you likely have <br />in Apache. The crux of the fix is you'll need to update your friendly <br />URL re-write rule. A typical FarCry rewrite rule looks like the <br />following: <p /> <code> 
+RewriteCond %{REQUEST_URI} 
+!(/CFIDE|/farcry|/webtop|/flex2gateway|/flashservices|/papi|/mxunit|/javaloader|/tests) 
+RewriteRule ^([a-zA-Z0-9\/\-\%:\[\]\{\}\|\;\&lt;\&gt;\?\,\*\!\@\#\$\ 
+\(\)\^_`~]*)$ /index.cfm?furl=$1 [L,PT,QSA] 
+</code> <p /> and to fix the 404 you'll need to update it like so: <p /> <code> 
+RewriteCond %{REQUEST_URI} 
+!(/CFIDE|/farcry|/webtop|/flex2gateway|/flashservices|/papi|/mxunit|/javaloader|/tests)(/|$) 
+RewriteRule ^([a-zA-Z0-9\/\-\%:\[\]\{\}\|\;\&lt;\&gt;\?\,\*\!\@\#\$\ 
+\(\)\^_`~]*)$ /index.cfm?furl=$1 [L,PT,QSA] 
+</code> <p /> Note the addition of the "(/|$)" in the rewrite condition. <p /> Once you've made that change and restarted Apache, all should be well.</div>
+<div class='post_responses'>
+<h4>2108 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

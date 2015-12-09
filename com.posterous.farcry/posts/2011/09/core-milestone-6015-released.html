@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/10/fandango-meet-fandango-the-new-mollio.html">Previous</a>
+&nbsp; 
+<a href="../../../index-2.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/09/related-content-custom-webtop-tabs.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Core Milestone 6.0.15 Released</h3>
+<div class='post_info'>
+<span class='post_time'>September 11 2011, 10:13 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><p>Maintenance release includes patches to image management, proxy caching tweaks, and two great little features:</p>
+<div>
+<ul>
+<li>copy or duplicate content items from a content admin grid</li>
+<li>loadJS/loadCSS from external libraries; eg. Google CDN, etc</li>
+</ul>
+</div>
+<p>The complete list of changes for 6.0.15 maintenance release is available here under "Filters &gt; All":</p>
+<ul>
+<li><a href="https://farcry.jira.com/browse/FC/fixforversion/10530">https://farcry.jira.com/browse/FC/fixforversion/10530</a></li>
+</ul>
+<p>Download the ZIP for for the 6.0.15 core milestone here:</p>
+<ul>
+<li><a href="http://org.farcrycore.s3.amazonaws.com/core/m6015.zip">http://org.farcrycore.s3.amazonaws.com/core/m6015.zip</a></li>
+</ul>
+<p>Or alternatively you can update from Subversion (SVN) at this address:</p>
+<ul>
+<li>svn checkout <a href="https://farcry.jira.com/svn/FC/tags/milestone-6-0-15">https://farcry.jira.com/svn/FC/tags/milestone-6-0-15</a></li>
+</ul>
+<h3>Bug</h3>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-387">FC-387</a>] - category.addCategory DSN arguments</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-761">FC-761</a>] - Possible Apache SCRIPT_NAME bug</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2412">FC-2412</a>] - New image formtool enhancements have issues with case sensitive file systems</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2445">FC-2445</a>] - application.fapi.flushCache should check whether the thing we're flushing exists in stCOAPI</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2459">FC-2459</a>] - No function endCrop() on $fc.imageformtool</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2472">FC-2472</a>] - Refactored image formtool doesn't handle uuid source field properly</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2477">FC-2477</a>] - FU: Friendly URL Edit Interface Errors</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2503">FC-2503</a>] - Replace tabs with double spaces when outputting js and css in head</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2504">FC-2504</a>] - Bugs in installer getDBTypes</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2507">FC-2507</a>] - editMethod attribute for ft:objectadmin works for "Add" action button but not "Edit"</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2513">FC-2513</a>] - genericNav activeClass attribute not applied to home node</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2517">FC-2517</a>] - jsInHead.cfm and cssInHead.cfm reference nonexistant application.url.cache variable</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2519">FC-2519</a>] - Update deprecated dmXMLExport functionality</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2524">FC-2524</a>] - Filtering in a library picker in combination with ftLibraryData breaks result ordering</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2526">FC-2526</a>] - Hitting enter key for carriage return in formtools textarea submits form</li>
+</ul>
+<h3>Improvement</h3>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-157">FC-157</a>] - Option for refactoring nested tree model</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2430">FC-2430</a>] - No visibility of draft object state in objectAdmin</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2474">FC-2474</a>] - Add support for calling webtop/conjuror/invocation.cfm from a dialog iframe</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2506">FC-2506</a>] - Ability to permanently remove the system generated frienly URL</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2516">FC-2516</a>] - FarCry's request finalisation happens before plugin/project onRequestEnd templates</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2520">FC-2520</a>] - Add a generic category filter to getContentObjects</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2525">FC-2525</a>] - Restrict image upload size in the image formtool</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2530">FC-2530</a>] - The proxyCacheTimeout decorator isn't granular enough - browserCacheTimeout is also needed</li>
+</ul>
+<h3>New Feature</h3>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-2505">FC-2505</a>] - Copy content functionality</li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2511">FC-2511</a>] - Use of loadJS/loadCSS with external libraries</li>
+</ul>
+<div>Enjoy!</div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>release</div>
+</div>
+<div class='post_responses'>
+<h4>575 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Sep 16 2011,  4:22 AM</div>
+<div class='response_name'>Erietta Sapounakis responded:</div>
+</div>
+<div class='response_body'>nice work guys. congrats. as non dev would love to see use case versions of the improvements. I don't get me my geek translations no more.</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

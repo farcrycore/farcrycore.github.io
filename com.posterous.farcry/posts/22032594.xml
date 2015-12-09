@@ -1,0 +1,37 @@
+<item>
+	<title>testMXUnit Selenium Test Tutorial</title>
+	<link>http://farcry.posterous.com/testmxunit-selenium-test-tutorial</link>
+	<pubDate>Mon Jul 05 05:53:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="plugins"><![CDATA[plugins]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/testmxunit-selenium-test-tutorial</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>Due to popular demand (well at least the folks who have been badgering me for an update), I've convinced Blair to put together a quick tutorial on setting up Selenium tests with the testMXUnit framework. The tutorial builds a simple Selenium script for checking a Google search result, shows how the ColdFusion test components are constructed and how simple it is to run the test suite in the FarCry webtop. <p /> <a href="https://farcry.jira.com/wiki/display/TEST/Selenium+Tests">https://farcry.jira.com/wiki/display/TEST/Selenium+Tests</a> <p /> The cool thing about the test suite is that you can use it to build Selenium test suites that run tests against any sort of web application -- just so long as your FarCry installation can reach the application via HTTP. <br /> <div class='p_embed p_image_embed'>
+<img alt="Googletest_9" height="544" src="http://getfile1.posterous.com/getfile/files.posterous.com/temp-2010-07-05/hkdrrpFHjjjBsakinqlkloGfxlEhDEgtCmwnhDopvEubdHsdwEiAIEgGmJyC/googletest_9.png.scaled500.png" width="405" />
+</div>
+ You can do just about anything you would normally in Selenium, and run it through the framework. If you have any questions about how to get your Selenium test going let us know :) <p /> Enjoy!</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Due to popular demand (well at least the folks who have been badgering me for an update), I've convinced Blair to put together a quick tutorial on setting up Selenium tests with the testMXUnit framework. The tutorial builds a simple Selenium scrip...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Jul 05 05:53:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

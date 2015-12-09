@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/01/FarCry%20Version%20Numbering-10346855.html">Previous</a>
+&nbsp; 
+<a href="../../../index-6.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/01/early-birthday-present-lifes-full-of-little-s-0.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>The Magic of Skin Tooltip</h3>
+<div class='post_info'>
+<span class='post_time'>January 20 2010,  8:37 PM</span>
+<span class='author'>&nbsp;by Rob</span>
+</div>
+</div>
+<div class='post_body'><p>In FarCry 6, the old extjs:toolTip tag ( <a href="http://docs.farcrycore.org/trunk/tags/farcry-core-tags-extjs-toolTip.html">http://docs.farcrycore.org/trunk/tags/farcry-core-tags-extjs-toolTip.html</a> ) has been deprecated and replaced with the new skin:tooltip ( <a href="http://docs.farcrycore.org/trunk/tags/farcry-core-tags-skin-tooltip.html">http://docs.farcrycore.org/trunk/tags/farcry-core-tags-skin-tooltip.html</a> ) tag. The end result of the tags is similar, but how you go about using them is a bit different. <p /> With the old extjs:toolTip tag, you set the attribute "toolTip" to the tool tip's text, and then add the content the tool tip applies to within the body of the extjs:toolTip tag. skin:tooltip works differently. <p /> With skin:tooltip, you create a DOM element of some kind, and give that element an id attribute. You can set the "message" attribute, or use the tags content area, to set the tool tip text. You then link the tool tip to the DOM element by setting the "selector" attribute to match the id of the DOM element you created (See example A and B below). <p /> If you are astute, you caught that the "selector" attribute begins with a hash. The reason the hash is necessary is the underpinnings of the new skin:tooltip is jQuery. The "selector" attribute gets passed through to the tool tip jQuery code when rendering the page. In jQuery using a hash indicates an id attribute of a DOM element. <p /> Since you can pass any jQuery selector into the skin:tooltip tag, you can do interesting things with the tool tips. For example, you can set tool tips on anything with a specific class (See example C). <p /> <p><a href="https://gist.github.com/282573">https://gist.github.com/282573</a></p></p></div>
+<div class='post_responses'>
+<h4>1430 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

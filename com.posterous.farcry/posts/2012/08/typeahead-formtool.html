@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2012/08/creating-a-farcry-skeleton.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/12/hinting-at-the-upcoming-dynamic-caching-model.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Typeahead formtool</h3>
+<div class='post_info'>
+<span class='post_time'>August 28 2012,  9:49 PM</span>
+<span class='author'>&nbsp;by Blair</span>
+</div>
+</div>
+<div class='post_body'><div>This is a new formtool in 6.2 that can be used with uuid and array properties (that means that type=&quot;uuid&quot; or type=&quot;array&quot;, and ftType=&quot;typeahead&quot;), turning the field into a type-ahead or autocomplete input.</div> <p /><div><div class='p_embed p_image_embed'>
+<img src='../../../image/2012/08/44028514-typeahead_uuid_select.png'>
+</div>
+<br /></div><p /><div>Unlike the normal uuid and array formtools, typeahead expects a single content type in the ftJoin attribute. We may add support for multiple content types in the future, but one is enough for almost all the use cases of an autocomplete field. It DOES support ftAllowCreate - notice that there is a &quot;Create New Image&quot; option in the above snap.</div> <p /><div>Examples</div><div>UUID Field</div><span style="font-family: courier new,monospace;">&lt;cfproperty </span><br /><span style="font-family: courier new,monospace;">    name=&quot;someImage&quot; type=&quot;uuid&quot; hint=&quot;Related content items.&quot; required=&quot;no&quot; default=&quot;&quot; </span><br /> <span style="font-family: courier new,monospace;">    ftseq=&quot;43&quot; ftfieldset=&quot;Related Content&quot; ftwizardStep=&quot;News Body&quot; ftlabel=&quot;One image&quot;</span><br /><span style="font-family: courier new,monospace;">   </span><span style="font-family: courier new,monospace;"> </span>fttype=&quot;typeahead&quot; ftJoin=&quot;dmImage&quot; /&gt;<br /> <p /> <div style="font-family: courier new,monospace;"><div class='p_embed p_image_embed'>
+<img src='../../../image/2012/08/44028516-typeahead_uuid_novalue.png'>
+</div>
+<br /></div><p />Array Field<br /><span style="font-family: courier new,monospace;">&lt;cfproperty </span><br /><span style="font-family: courier new,monospace;">    name=&quot;multipleImages&quot; type=&quot;array&quot; hint=&quot;Related content items.&quot; required=&quot;no&quot; default=&quot;&quot; </span><br /> <span style=""> </span><span style="font-family: courier new,monospace;">ftseq=&quot;44&quot; ftfieldset=&quot;Related Content&quot; ftwizardStep=&quot;News Body&quot; ftlabel=&quot;Many images&quot;</span><br /> <span style="font-family: courier new,monospace;">  </span><span style="font-family: courier new,monospace;">fttype=&quot;typeahead&quot; ftJoin=&quot;dmImage&quot; /&gt;</span><p />  <div><span style="font-family: courier new,monospace;"><div class='p_embed p_image_embed'>
+<img src='../../../image/2012/08/44028515-typeahead_array_selected.png'>
+</div>
+<br /></span></div><p />Put data inline (the above examples make AJAX requests for matches)<br /><span style="font-family: courier new,monospace;">&lt;cfproperty </span><br /><span style="font-family: courier new,monospace;">  </span><span style="font-family: courier new,monospace;">name=&quot;anotherImage&quot; type=&quot;uuid&quot; hint=&quot;Related content items.&quot; required=&quot;no&quot; default=&quot;&quot; </span><br /> <span style="font-family: courier new,monospace;">  </span><span style="font-family: courier new,monospace;">ftseq=&quot;45&quot; ftfieldset=&quot;Related Content&quot; ftwizardStep=&quot;News Body&quot; ftlabel=&quot;Another image&quot;</span><br /> <div><div><span style="font-family: courier new,monospace;"><span style="">  </span>fttype=&quot;typeahead&quot; ftJoin=&quot;dmImage&quot; ftInlineData=&quot;true&quot; /&gt;</span></div></div></div>
+<div class='post_responses'>
+<h4>267 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Aug 29 2012,  5:07 PM</div>
+<div class='response_name'>Sean Coyne responded:</div>
+</div>
+<div class='response_body'>Sweet!</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

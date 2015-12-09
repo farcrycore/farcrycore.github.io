@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>Form%20Components-14626274.html</string>
+		</array>
+		<array>
+			<string>new-fapi-function-getcontentobjects.html</string>
+		</array>
+		<array>
+			<string>Updating%20FarCry%20CMS%20Features%20FAQ:%20Help%20Needed%20-13256983.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

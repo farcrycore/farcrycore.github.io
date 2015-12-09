@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>baby-whippet-spotted-at-uliveto-for-my-whippe.html</string>
+		</array>
+		<array>
+			<string>Core%20Milestone%206.0.4%20Released-21795863.html</string>
+		</array>
+		<array>
+			<string>core-milestone-605-released.html</string>
+		</array>
+		<array>
+			<string>quick-summary-of-farcry-view-decorators.html</string>
+		</array>
+		<array>
+			<string>testMXUnit%20Selenium%20Test%20Tutorial-22032594.html</string>
+		</array>
+		<array>
+			<string>testMXUnit:%20FarCry%20Testing%20Framework%20Supports%20Selenium-21867567.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

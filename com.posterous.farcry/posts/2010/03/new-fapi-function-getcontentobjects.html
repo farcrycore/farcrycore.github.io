@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/03/Form%20Components-14626274.html">Previous</a>
+&nbsp; 
+<a href="../../../index-5.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/03/Updating%20FarCry%20CMS%20Features%20FAQ:%20Help%20Needed%20-13256983.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>New FAPI function: getContentObjects()</h3>
+<div class='post_info'>
+<span class='post_time'>March 21 2010, 11:21 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>There are a couple of dopplegangers for this functionality in core, buried in FourQ and the database gateways. Both are awkward, and offer little more than arguments for the where and order by clauses. All are about to be deprecated and replaced with getContentObjects() in FarCry 6.0.1. <p /> application.fapi.getContentObjects() massively improves on older methods by: <br />- using dynamic arguments for filtering <br />- handling filters on date columns that can have null values <br />- automatically filtering results by their status <br />- using cfqueryparam for all filter values <p /> The arguments are: <br />- typename (req) <br />- lProperties (default=objectid) <br />- status (default=request.mode. <br />lValidStatus) <br />- orderBy (default=unordered) <br />- [property filters]* <p /> Property filters are arguments in the form propertyname_comparison=value. Supported comparisons are: <br />- eq, neq (equality filters) <br />- in, notin (list filters) <br />- like (standard DB like comparison) <br />- isnull (boolean value to specify whether to return null properties or not) <br />- gt, gte, lt, lte (standard comparisons, null dates always pass these filters) <p /> Examples: <br />qLatestNews = application.fapi.getContentObjects(typename="dmNews",lProperties="objectid,title",publishDate_lt=now(),expiryDate_gt=now(),orderBy="publishDate desc") <br />qLockedHTML = application.fapi.getContentObjects(typename="dmHTML",locked_eq=1) <br />qNotActiveUsers = application.fapi.getContentObjects(typename="dmUser",userstatus_in="inactive,pending") <p /> This FAPI function is only intended to replace the 90% of queries we use the most in webskins. Other functionality like filters on related tables, grouping, and aggregates will still be handled in custom SQL. <p /> Cheers, Blair</div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>fapi</div>
+</div>
+<div class='post_responses'>
+<h4>2358 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<item>
+	<title>Version Controlling FarCry Core</title>
+	<link>http://farcry.posterous.com/version-controlling-farcry-core</link>
+	<pubDate>Fri Jan 22 21:21:15 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/version-controlling-farcry-core</guid>
+	<description></description>
+	<content:encoded><![CDATA[The FarCry Framework, and individual FarCry Plugins are versioned independently and have their own release cycles. Daemon periodically releases what is called a “community distribution” incorporating the framework and a popular set of plugins confirmed to be fully compatible. <p /> Upon each major version release of the framework (for example, 5.0.0 or 5.1.0) a maintenance branch is created. All maintenance bug fixes and enhancements are checked into this branch, and regularly merged into the code mainline (./trunk). The branch is reserved for maintenance fixes only and is consequently very stable. <p /> Periodically, fixes in the maintenance branches are rolled up, tested, and then released as a tagged milestone release. Tagged milestones are available direct from Subversion or as distributed ZIP archives of all the relevant files.]]></content:encoded>
+	<excerpt:encoded><![CDATA[The FarCry Framework, and individual FarCry Plugins are versioned independently and have their own release cycles. Daemon periodically releases what is called a “community distribution” incorporating the framework and a popular set of plugins conf...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Jan 22 21:21:15 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

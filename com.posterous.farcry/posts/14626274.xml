@@ -1,0 +1,32 @@
+<item>
+	<title>Form Components</title>
+	<link>http://farcry.posterous.com/form-components</link>
+	<pubDate>Fri Mar 26 21:35:51 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/form-components</guid>
+	<description></description>
+	<content:encoded><![CDATA[Ever wondered what the components in ./packages/form are all about? Form components unlock the power of formtools just like content types, but are not persisted in the database. Think "forms", think formtools. <p /> Formtools you say? Formtools are one of the things that make working with FarCry awesome. <p /> Let me count the ways: <br />- the library of standard form inputs <br />- automatic javascript and server side validation <br />- handling of fields that need multiple inputs (like dates) <br />- managed file upload <br />- library pickers <br />- image manipulation <br />- uniform formatting <br />- ajax functionality <br />- and much more <p /> The "formtools" engine is all about sophisticated forms that basically build themselves. <p /> But in FarCry 4.x formtools could only be used with content types. A developer was out of luck if they needed a form for data that wasn't destined for the database. Which was a problem when it came to refactoring FarCry's security architecture to support custom user directories and the configuration UI. <p /> Thus "forms" components were born. "Forms" are identical to content types, but all the database persistence functions have been overriden to support in-session storage only. From the point of view of the COAPI framework they can do everything a normal type could do. <p /> This means that a form component can be used in: <br />- ft:object to output a form <br />- ft:processformobjects can detect and process form component posts <p /> For completeness an extra function got added to forms, "process", which is also processed on a successful form post. This makes it possible to keep the UI metadata and data processing in the same component. <p /> A side benefit of all this is that forms can have their own webskins. Since 5.0 the login pages have been overridable the same way as any other webskin. This "side benefit" turns out to be one of the most fantastics things about "forms" but hey, that's another post entirely. <p /> There are a couple of gotcha's to watch out for: <br />- form webskins can't easily be cached because they aren't associated with persistent data <br />- forms can't have array properties since the array formtool makes use of the database <p /> Enjoy "forms". <p /> Cheers, Blair]]></content:encoded>
+	<excerpt:encoded><![CDATA[Ever wondered what the components in ./packages/form are all about? Form components unlock the power of formtools just like content types, but are not persisted in the database. Think "forms", think formtools. Formtools you say? Formtools are one ...]]></excerpt:encoded>	
+
+	<wp:post_date>Fri Mar 26 21:35:51 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

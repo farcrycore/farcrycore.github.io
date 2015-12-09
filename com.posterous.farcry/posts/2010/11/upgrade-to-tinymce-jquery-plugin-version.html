@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/11/random-webdu-beach-sighting.html">Previous</a>
+&nbsp; 
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/10/big-push-for-issue-resolution-bearing-fruit.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Upgrade to TinyMCE jQuery plugin version</h3>
+<div class='post_info'>
+<span class='post_time'>November 11 2010,  8:03 PM</span>
+<span class='author'>&nbsp;by Justin Carter</span>
+</div>
+</div>
+<div class='post_body'><p>We've had some requests for this, so in the upcoming FarCry 6.0.8 release we've upgraded to the latest version of <a href="http://tinymce.moxiecode.com/examples/example_23.php" target="_blank">TinyMCE 3.3.9.2 for jQuery</a> along with jQuery 1.4.3. The jQuery plugin version of TinyMCE will cut down a few kilobytes of code used by the Sizzle engine that is duplicated into the standard TinyMCE package and give you access to the TinyMCE API through the jQuery object - handy!<p /> Also a heads up, if you come across TinyMCE failing to load after updating to the latest p600 (6.0.8+) then check the Configuration / extended richtext.cfc getConfig() method for plugins that no longer exist on the file system in /core/webtop/thirdparty/tiny_mce/plugins and remove them from the plugin list.</p>
+<div>The "zoom" plugin is an obvious culprit, it was removed before TinyMCE 3.x was released and might be hanging around in the configuration of older FarCry 3.x, 4.x and 5.x sites. This seems like a regression in TinyMCE 3.3.x - as older versions seemed to cope with missing plugins - and the current word is that they aren't going to patch the issue, so be aware of lingering config items!</div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>formtools</div>
+</div>
+<div class='post_responses'>
+<h4>5457 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<item>
+	<title>Image Formtool Overhaul</title>
+	<link>http://farcry.posterous.com/image-formtool-overhaul</link>
+	<pubDate>Wed Dec 01 19:58:00 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="formtools"><![CDATA[formtools]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/image-formtool-overhaul</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div>Drawing up the naughty and nice list for Christmas, the Daemonites are looking at releasing a series of very significant changes to the behaviour of the&nbsp;image formtool. These changes will be checked into the 6.0 maintenance branch and trunk. Although they are pretty stable, folks running on the HEAD of the maintenance branch should use caution in just upgrading.</div>
+<p />
+<div>In any event, take a look and let us know what you think. &nbsp;This work has been put together by the mighty Blair based on <a href="https://daemonite.mybalsamiq.com/projects/farcrycore/mockups/2048">the collective thoughts of the Daemonite team</a>.</div>
+<p />
+<div style="font-size: 14px;"><span style="font-size: 13px;"><strong><span style="font-size: medium;">Uber Image Formtool</span></strong></span></div>
+<div>The image formtool has been rewritten to accommodate several new requirements:<br />
+<blockquote style="border-left-style: solid; border-left-color: #cccccc; margin-left: 0px; padding-left: 10px; padding-right: 0px; margin-right: 0px; border-width: 1px;">
+<div>
+<div>
+<div>
+<ul>
+<li>UI for visual selection of crop area (via&nbsp;<a href="http://deepliquid.com/projects/Jcrop/" target="_blank">Jcrop</a>)    
+<ul>
+<li>with intuitive limits on image size ratio and minimum dimensions</li>
+<li>ability to make the JPEG resize quality adjustable</li>
+</ul>
+</li>
+<li>"inline" upload (via&nbsp;<a href="http://www.uploadify.com/" target="_blank">Uploadify</a>)    
+<ul>
+<li>with a fallback "traditional" HTTP post option</li>
+</ul>
+</li>
+<li>Simplified UI that:    
+<ul>
+<li>Has information about the current image</li>
+<li>Unambigously presents the state of the property and what will happen when the user saves</li>
+<li>Has clear links to alternate actions (e.g. autogenerate -&gt; upload custom)</li>
+</ul>
+</li>
+<li>Updated workflow to reflect the best practice that there are "source" fields that are not modified (except to account for extremely large images), and "dependant" images that are cropped and resized versions of a source image.</li>
+</ul>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<div>The Image library is a classic example of all of these requirements in use. Here you can see two image fields: Source Image (a "source" field) and Mid Size Image (a "dependant" field). Notice that the default UI for an empty field is different for each.</div>
+<p><div class='p_embed p_image_embed'>
+<a href="http://getfile5.posterous.com/getfile/files.posterous.com/temp-2010-12-01/ErtipDmhoFjFjbDfoJtIEEFkwBggFgbukGvbAhgyfbFvaiCamchwJkJzJhnw/image_rewrite_1.png.scaled1000.png"><img alt="Image_rewrite_1" height="128" src="http://getfile3.posterous.com/getfile/files.posterous.com/temp-2010-12-01/ErtipDmhoFjFjbDfoJtIEEFkwBggFgbukGvbAhgyfbFvaiCamchwJkJzJhnw/image_rewrite_1.png.scaled500.png" width="500" /></a>
+</div>
+</p>
+<div>When the fields do already contain an image they look like this.<br /><div class='p_embed p_image_embed'>
+<a href="http://getfile3.posterous.com/getfile/files.posterous.com/temp-2010-12-01/JJzCqruqEFyxnEvDmbEmHFiGDiyiFqqonmpohxhdGFevACxqpwJqfbEsixCs/image_rewrite_final.png.scaled1000.png"><img alt="Image_rewrite_final" height="98" src="http://getfile9.posterous.com/getfile/files.posterous.com/temp-2010-12-01/JJzCqruqEFyxnEvDmbEmHFiGDiyiFqqonmpohxhdGFevACxqpwJqfbEsixCs/image_rewrite_final.png.scaled500.png" width="500" /></a>
+</div>
+<strong><span style="font-size: medium;">Source Fields</span></strong><br />The&nbsp;<strong>default upload option</strong>&nbsp;is now "inline" uploading (via&nbsp;<a href="http://www.uploadify.com/" target="_blank">Uploadify</a>). As soon as a user selects an image from the dialog a progress bar appears showing progress with a matching cancel option. I would like to show a screenshot of that but I wasn't quick enough :). There is a shot of the "completed" stage further down.</div>
+<div><div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_1_inlineupload" height="98" src="http://getfile9.posterous.com/getfile/files.posterous.com/temp-2010-12-01/qJlDgCepzacwwvtpCfiqqlrvhxGpeEwbjkbwhDDpiCeHohCpwDFaACJlDnzy/image_rewrite_source_1_inlineupload.png.scaled500.png" width="326" />
+</div>
+</div>
+<div>Hover over the&nbsp;<strong>help icon</strong>&nbsp;to see the image requirements and cropping settings. Source fields will usually only specify allowed file types, while dependant fields will also have specific dimensions, the default crop method, and the default resize quality.</div>
+<div><div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_1_autocropping" height="98" src="http://getfile4.posterous.com/getfile/files.posterous.com/temp-2010-12-01/tgmjFCJoxqDBfeuCihqGJqFkFsgiemECstlAlGJxGJesadkJCixdskFtdgrm/image_rewrite_source_1_autocropping.png.scaled500.png" width="327" />
+</div>
+For people who don't have flash or have other issues with the inline upload, there is the option to&nbsp;<strong>switch between "inline" and "traditional" upload</strong>.<br /><div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_1_switch" height="98" src="http://getfile5.posterous.com/getfile/files.posterous.com/temp-2010-12-01/dpHrIwBcjgivFrtweIscCIcuGsccBsblfhoqEtIpisqfpnvrxfEIGfwCyeoz/image_rewrite_source_1_switch.png.scaled500.png" width="326" />
+</div>
+This swaps in the&nbsp;<strong>standard HTTP file upload input</strong>. NOTE: the&nbsp;<em>inline</em>&nbsp;upload allows users to go on and use the custom cropping tool&nbsp;<em>immediately</em>. Users that use the fallback UI will have to rely on the default crop for the initial save, then re-edit the object to do a custom crop.<div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_1_traditional" height="83" src="http://getfile0.posterous.com/getfile/files.posterous.com/temp-2010-12-01/aGzfqoeIwECtlerJawwvIluuJIFfdhHCoEiJlmvhwgGvIpjjJqBjAtjhsbyF/image_rewrite_source_1_traditional.png.scaled500.png" width="328" />
+</div>
+If there is an&nbsp;<strong>upload error</strong>&nbsp;it is displayed inline.<div class='p_embed p_image_embed'>
+<a href="http://getfile0.posterous.com/getfile/files.posterous.com/temp-2010-12-01/DdeodgzAmxxwoBuvwhhnjcrtocrusnjfbzeHubnzgbEBjJcyeqyFJmzzElyl/image_rewrite_source_2_error.png.scaled1000.png"><img alt="Image_rewrite_source_2_error" height="100" src="http://getfile6.posterous.com/getfile/files.posterous.com/temp-2010-12-01/DdeodgzAmxxwoBuvwhhnjcrtocrusnjfbzeHubnzgbEBjJcyeqyFJmzzElyl/image_rewrite_source_2_error.png.scaled500.png" width="500" /></a>
+</div>
+Once an inline upload is complete an alert is displayed to make it clear that the&nbsp;<strong>file has changed on the server</strong>, even if the object isn't saved. NOTE: according to established behaviour, if the field already has an image attached then the old file is<em>replaced</em>&nbsp;- the new image is given the same filename as the old image and copied over the top.<br /><div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_2_serverchangealert" height="97" src="http://getfile3.posterous.com/getfile/files.posterous.com/temp-2010-12-01/tjECwGdAwueeqdBjrAondyoEnGirlgcmrJqkgpHiIgCyhbpdFcGyFJhDxyjA/image_rewrite_source_2_serverchangealert.png.scaled500.png" width="320" />
+</div>
+The UI is also updated to show&nbsp;<strong>information about the new image</strong>, which gives the user confirmation that upload worked as expected.<br /><div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_2_uploadinfo" height="97" src="http://getfile2.posterous.com/getfile/files.posterous.com/temp-2010-12-01/uEoihbnJzadpnkJzkzcgBgEJBwxGnHjCcvchEtjikzakbpuolaDgGfngHGtj/image_rewrite_source_2_uploadinfo.png.scaled500.png" width="316" />
+</div>
+Finally, the user has the option to&nbsp;<strong>upload a different image</strong>. NOTE: this behaves the same way as uploading an image when there is already a file attached - the new image will have the same name as the old image.<br /><div class='p_embed p_image_embed'>
+<img alt="Image_rewrite_source_2_tryagain" height="96" src="http://getfile7.posterous.com/getfile/files.posterous.com/temp-2010-12-01/IvGesmuacbsdcwEcwrFuIkyDIpEwaaGanosBkncuIrGqjuEdojldibxDCEny/image_rewrite_source_2_tryagain.png.scaled500.png" width="322" />
+</div>
+<strong><span style="font-size: medium;">Dependant Field</span><span style="font-size: medium;">s</span></strong><br />Once again, hover over the&nbsp;<strong>help icon</strong>&nbsp;to see information about the default crop settings and the required image types. Even if the user chooses a custom crop, this will show what the defaults are and the target resize dimensions.<br /><div class='p_embed p_image_embed'>
+<a href="http://getfile7.posterous.com/getfile/files.posterous.com/temp-2010-12-01/gzgmEGAdxDuzArvnswimmobjnaHsCjwlFtdHyqHvyuwtFdgdobdEmJliBEhj/image_rewrite_dependant_1_defaultcrop.png.scaled1000.png"><img alt="Image_rewrite_dependant_1_defaultcrop" height="100" src="http://getfile5.posterous.com/getfile/files.posterous.com/temp-2010-12-01/gzgmEGAdxDuzArvnswimmobjnaHsCjwlFtdHyqHvyuwtFdgdobdEmJliBEhj/image_rewrite_dependant_1_defaultcrop.png.scaled500.png" width="500" /></a>
+</div>
+The user can still choose to&nbsp;<strong>upload a hand-optimised image</strong>&nbsp;from their computer. The UI for this is essentially the same as the upload UI for the source image. NOTE 1: if (and only if) the uploaded image is the wrong size it will&nbsp;<em>still</em>&nbsp;be resized by the server. NOTE 2: if the user chooses to upload they will not have the option to custom crop. This reflects the best-practice that original images are always available through "source" fields should "dependant" images need to be re-cropped.<p /></div>
+<div>The user can&nbsp;<strong>choose to custom crop</strong>&nbsp;their image. NOTE: this option only appears if the edited object already has a source attached or if the user has uploaded a source through the inline UI. If the source is empty or the user has used the fallback "traditional" UI, it will not. You can see this in the first screenshot comparing the "source" and "dependant" fields.</div>
+<div><div class='p_embed p_image_embed'>
+<a href="http://getfile2.posterous.com/getfile/files.posterous.com/temp-2010-12-01/yExwAooqzkkJqzxlhilqiqiHxgytemcpompGglAbcCorBbuAkmpDcngnowpj/image_rewrite_dependant_1_customcrop.png.scaled1000.png"><img alt="Image_rewrite_dependant_1_customcrop" height="100" src="http://getfile9.posterous.com/getfile/files.posterous.com/temp-2010-12-01/yExwAooqzkkJqzxlhilqiqiHxgytemcpompGglAbcCorBbuAkmpDcngnowpj/image_rewrite_dependant_1_customcrop.png.scaled500.png" width="500" /></a>
+</div>
+Thanks to the&nbsp;<a href="http://deepliquid.com/projects/Jcrop/" target="_blank">Jcrop</a>&nbsp;jQuery plugin, we now have a visual tool to&nbsp;<strong>define a custom crop</strong>. This UI respects aspect ratios on fields that define both ftImageWIdth and ftImageHeight (the selection automatically scales the selection according to the ratio - try the thumbnail field of an Image object) and minimum dimensions (this stops a user from selecting an area which is&nbsp;<em>too small</em>&nbsp;and would be&nbsp;<em>scaled up</em>). NOTE: if necessary the image in the selection area is scaled down to fit the size of the dialog. The selection will still reflect the actual size of the source image.<br /><div class='p_embed p_image_embed'>
+<a href="http://getfile8.posterous.com/getfile/files.posterous.com/temp-2010-12-01/wJkJzJhnwIoCBaIqpxCdfEIotrhwolxoeCnhBtnusepjwigIBhrdegAccfmF/image_rewrite_dependant_2_selectcrop.png.scaled1000.png"><img alt="Image_rewrite_dependant_2_selectcrop" height="218" src="http://getfile3.posterous.com/getfile/files.posterous.com/temp-2010-12-01/wJkJzJhnwIoCBaIqpxCdfEIotrhwolxoeCnhBtnusepjwigIBhrdegAccfmF/image_rewrite_dependant_2_selectcrop.png.scaled500.png" width="500" /></a>
+</div>
+While the user selects the best crop area, the info box shows the&nbsp;<strong>details of the selection</strong>. NOTE 1: the dimensions reflect the actual selection size on the source image, not scaled down size (if it was resized to fit the selection area) or the target dimensions of the field. NOTE 2: If the field as a set aspect ratio (meaning both the target width&nbsp;<em>and</em>&nbsp;height is defined) this value will stay set. NOTE 3: The default quality for JPEG resizing is defined with ftQuality. This value can be made editable by setting ftAllowResizeQuality to true, which will switch in a text input. There are plans to make this a&nbsp;<a href="http://jqueryui.com/themeroller/" target="_blank">jQuery UI slider</a>, but that is not part of this release.<br /><div class='p_embed p_image_embed'>
+<a href="http://getfile9.posterous.com/getfile/files.posterous.com/temp-2010-12-01/kAsCdfvmAwFtFemllrfdychDxwbrCimcIiddumgpIIzFsAxDDyFIseknpGak/image_rewrite_dependant_2_cropinfo.png.scaled1000.png"><img alt="Image_rewrite_dependant_2_cropinfo" height="235" src="http://getfile7.posterous.com/getfile/files.posterous.com/temp-2010-12-01/kAsCdfvmAwFtFemllrfdychDxwbrCimcIiddumgpIIzFsAxDDyFIseknpGak/image_rewrite_dependant_2_cropinfo.png.scaled500.png" width="500" /></a>
+</div>
+The custom crop is applied once the user saves. The&nbsp;<strong>confirmation of the custom crop</strong>&nbsp;is shown to them in the mean time.<br /><div class='p_embed p_image_embed'>
+<a href="http://getfile8.posterous.com/getfile/files.posterous.com/temp-2010-12-01/zJCiHkgdzBdfChqlsJlmzevoGsEhbjiCsBBJBGIeEgErAkxcvHyfaeGyeIcw/image_rewrite_dependant_3_customcrop.png.scaled1000.png"><img alt="Image_rewrite_dependant_3_customcrop" height="113" src="http://getfile5.posterous.com/getfile/files.posterous.com/temp-2010-12-01/zJCiHkgdzBdfChqlsJlmzevoGsEhbjiCsBBJBGIeEgErAkxcvHyfaeGyeIcw/image_rewrite_dependant_3_customcrop.png.scaled500.png" width="500" /></a>
+</div>
+If they decide they aren't happy with it, they can still&nbsp;<strong>cancel the custom crop</strong>&nbsp;before saving.</div>
+<p />
+<div>That is all!</div>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Drawing up the naughty and nice list for Christmas, the Daemonites are looking at releasing a series of very significant changes to the behaviour of the image formtool. These changes will be checked into the 6.0 maintenance branch and trunk. Altho...]]></excerpt:encoded>	
+
+	<wp:post_date>Wed Dec 01 19:58:00 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>image-formtool-overhaul</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Sat Dec 04 02:08:43 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Sat Dec 04 02:08:43 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Looking good :)
+
+I like the crop feature, will allow admins to uplaod a single image and crop for thumbnails.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

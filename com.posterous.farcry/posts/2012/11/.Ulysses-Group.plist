@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>167905337.html</string>
+		</array>
+		<array>
+			<string>beta-bootstrap-design-skeleton-on-railo-expre.html</string>
+		</array>
+		<array>
+			<string>cropping-images-right-there-and-then.html</string>
+		</array>
+		<array>
+			<string>drafts-that-aint-draft.html</string>
+		</array>
+		<array>
+			<string>farcry-roadmap-from-2004.html</string>
+		</array>
+		<array>
+			<string>mobile-tablet-webskins.html</string>
+		</array>
+		<array>
+			<string>revamp-of-farcry-docs.html</string>
+		</array>
+		<array>
+			<string>solr-4-update-for-farcry-a-longs-ways-off.html</string>
+		</array>
+		<array>
+			<string>tafe-western-built-on-farcry.html</string>
+		</array>
+	</array>
+	<key>userIconName</key>
+	<string>Folder</string>
+</dict>
+</plist>

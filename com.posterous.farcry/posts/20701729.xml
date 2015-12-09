@@ -1,0 +1,54 @@
+<item>
+	<title>FarCry Community Bug Database, WIKIs &amp; Fisheye</title>
+	<link>http://farcry.posterous.com/farcry-community-bug-database-wikis-and-fishe</link>
+	<pubDate>Mon Jun 21 04:38:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="community"><![CDATA[community]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/farcry-community-bug-database-wikis-and-fishe</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>We have recently migrated all of our FarCry Community infrastructure to the Jira Studio platform -- many thanks to the wonderful crew at Atlassian (<a href="http://www.atlassian.com/)">http://www.atlassian.com/)</a> for their support. Just thought I'd highlight how this might change things and a couple of nice features from the move.</p>
+<p><strong>Jira Studio for FarCry</strong></p>
+<p>Everything is located under one central application located at: <br /> <a href="http://farcry.jira.com/">http://farcry.jira.com/</a></p>
+<p>(There are redirects in place for all the old URLs. If you find a wonky redirect please let me know!)</p>
+<p><strong>Username</strong></p>
+<p><strong></strong>Many of you will have had a different username for both Jira and Confluence under the old system. Both of these have been merged into the new system. Please pick one and stick to it. If you want to get rid of the other one, let me know what it is and I'll arrange its demise. </p>
+<p><strong>Bug Tracking</strong></p>
+<p>This is essentially as it was before, only we've leap frogged to the latest version of JIRA. Note there are lots of nice dashboard features in this version -- take some time to set up your environment, watches and so on; it's worth it.</p>
+<p>Also every FarCry plugin that is hosted on Jira Studio now has its own bug database, and WIKI. You'll start to see plugin specific documentation and roadmaps migrate towards these areas in due course. If you have a plugin that you would like to have hosted here please let me know -- if its useful and actively developed we'd be happy to host it.</p>
+<p><strong>Fisheye: Source Code Reporting</strong></p>
+<p>Fisheye is awesome -- use it. Its the best way to track repo changes and visualise diffs from a browser.</p>
+<p>There is also a complete code review solution -- Crucible -- tucked away in there. I'd like to start collaborating through this in the future. More on this another time.</p>
+<p><strong>Wikis</strong></p>
+<p>All the old WIKIs have been moved. The default Wiki is still the FarCry 5.0 documentation wiki.</p>
+<p>Default Wiki <br /><a href="http://farcry.jira.com/wiki">http://farcry.jira.com/wiki</a></p>
+<p>All Wikis <br /><a href="http://farcry.jira.com/wiki/dashboard.action">http://farcry.jira.com/wiki/dashboard.action</a></p>
+<p>You should notice a lot of *new* wikis.</p>
+<p>Under the new platform, all projects automatically have their own wiki. As a consequence we'll be moving plugin information to the relevant project wiki. If you are working on a public plugin, please feel free to help out and update its wiki :)</p>
+<p>The FarCry Core project wiki will be a portal to the existing documentation areas including the existing Core wiki and <a href="http://docs.farcrycore.org">http://docs.farcrycore.org</a></p>
+<p>Lastly, contribute where you can! This is a great piece of kit and will hopefully give us the tools we need to really manage the FarCry community well.</p>
+<p>Enjoy!</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[We have recently migrated all of our FarCry Community infrastructure to the Jira Studio platform -- many thanks to the wonderful crew at Atlassian (http://www.atlassian.com/) for their support. Just thought I'd highlight how this might change thin...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Jun 21 04:38:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

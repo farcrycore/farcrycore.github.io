@@ -1,0 +1,68 @@
+<item>
+	<title>Hacking the Webtop UI </title>
+	<link>http://farcry.posterous.com/hacking-the-webtop-ui</link>
+	<pubDate>Thu Jan 28 06:39:05 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="formality"><![CDATA[formality]]></category>
+	
+		<category domain="tag" nicename="formtools"><![CDATA[formtools]]></category>
+	
+		<category domain="tag" nicename="webtop"><![CDATA[webtop]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/hacking-the-webtop-ui</guid>
+	<description></description>
+	<content:encoded><![CDATA[      One of the coolest framework changes in Formailty is the ability to load your own CSS and JS libraries, overriding the defaults used in Core.&nbsp; So while its not something we're promoting just yet, there will certainly be an opportunity to start radically customising the Webtop's look and feel - well at least those elements that use JQuery UI.<p />  I quite like the Redmond theme ;)<p />  <div class='p_embed p_image_embed'>
+<a href="http://getfile8.posterous.com/getfile/files.posterous.com/farcry/GMnAwcFnC1XPPoo1bmy2uUpr1VBiUQyR3UEjOXKg8N0wdrgsrGNmEwUUQ8Ti/unknownname.png.scaled.1000.jpg"><img alt="Unknownname" height="282" src="http://getfile7.posterous.com/getfile/files.posterous.com/farcry/gMdoUq3klxnw56bSRDLg4e9UFLeCfHSLhVIHeS8GgyEKYCTAA20SdcjHV2BR/unknownname.png.scaled.500.jpg" width="500" /></a>
+</div>
+<p />  If you like to tinker, applying your own theme is really easy. First you'll need to download or create a jQuery UI theme.&nbsp; Here's a good place to start: <a href="http://jqueryui.com/themeroller/" class="moz-txt-link-freetext">http://jqueryui.com/themeroller/</a><p />  When you unpack the theme, you will only need the CSS and image files -&nbsp; the Javascript is already in FarCry Core.&nbsp; Drop these files somewhere under your webroot, for example:<br /> ./myproject/www/css/redmond<br /> ./myproject/www/css/redmond/images<br /> ./myproject/www/css/redmond/jquery-ui.css<p />  Then in your project's config folder create a file called _serverSpecificVarsAfterInit.cfm with the following contents:<p />  <p><a href="https://gist.github.com/288338">https://gist.github.com/288338</a></p><p />  Enjoy!]]></content:encoded>
+	<excerpt:encoded><![CDATA[One of the coolest framework changes in Formailty is the ability to load your own CSS and JS libraries, overriding the defaults used in Core. So while its not something we're promoting just yet, there will certainly be an opportunity to start radi...]]></excerpt:encoded>	
+
+	<wp:post_date>Thu Jan 28 06:39:05 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>hacking-the-webtop-ui</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Jan 28 13:19:58 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Thu Jan 28 13:19:58 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Nice &amp;very easy to apply new styles. 
++1 for Cupertino. Hot Sneaks looks good but it does not sit right with the main farcry webtop]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Tomek]]></wp:comment_author>
+			<wp:comment_author_email>tomek@kott.fm</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Tue Feb 15 11:46:12 -0800 2011</wp:comment_date>
+			<wp:comment_date_gmt>Tue Feb 15 11:46:12 -0800 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[+1 for &quot;redmond&quot;.  Icons don't seem to work though with the overwritten library. Any thoughts on that?]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

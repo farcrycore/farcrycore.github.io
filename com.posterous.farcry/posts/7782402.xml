@@ -1,0 +1,32 @@
+<item>
+	<title>FarCry Documentation Exports</title>
+	<link>http://farcry.posterous.com/farcry-documentation-exports</link>
+	<pubDate>Sun Nov 22 14:33:45 -0800 2009</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/farcry-documentation-exports</guid>
+	<description></description>
+	<content:encoded><![CDATA[We've been going through a rethink on how FarCry documentation should <br />be done. We're finding that, while there is heaps of documentation, <br />people are having a hard time finding specific solutions. We're <br />really proud of the documentation on <a href="http://docs.farcrycms.org/">http://docs.farcrycms.org/</a>, but <br />realise it doesn't help finding, say, what "wizardID" is on <br />; what it's supposed to do, or that it is even there. <p /> FarCry has an extensive ability to do inline documentation within the <br />code, and we've started to try to pull that out and harness it a bit <br />better. The goal is to get up to date, easy to grep help for FarCry <br />as close to your code writing as possible (and searchable via <br />google++). Additionally, we are working towards smaller, example <br />focused bits. <p /> We've allocated "daemon time" to try to get a base documentation <br />project up, and we have <a href="http://docs.farcrycore.org/">http://docs.farcrycore.org/</a> in a very, very <br />beta state (looks horrible too). However, we'd like to get some <br />feedback on it's content. Additionally, the CFEclipse dictionary, <br />and the textmate bundle are generated along side the documentation so <br />they should auto improve as the documentation improves. <p /> The main page has links to 6 versions of FarCry. p510 is FarCry 5.1.0 <br />documentation, p520 is the head of 5.2.x branch of FarCry (not <br />officially released but mostly stable), and trunk is the main line <br />development for the next major release ie. 5.3 codenamed "Formality" <br />(for all you bleeding edgers). <p /> The top 3 links are documentation of the base of FarCry - Tags, Types, <br />and Components. This is the bare core without any plugins. The bottom <br />3 links are documentation of FarCry with the CMS plugin installed - <br />Tags, Types, and Components. They are only offered as downloadable <br />zips at this time. <p /> Some important things to note <p /> - Deprecated items are not currently being marked as such. This will <br />happen as time allows. <br />- The documentation itself is a bit sparse still. We need to get more <br />documentation actually typed into the code - patches welcome :-D <br />- The Components tree is all Grey because nothing is currently marked <br />as an documented (though most of it is). See "fapi" or "fu" for a <br />good list of things you'll likely want to know. The "scope" part of <br />the Components is very helpful - thats where you can find the method <br />at runtime (if it's auto created). <br />- We don't have any plans to back port this to earlier versions <p /> Enjoy! <p /> PS. Many thanks to Rob for his automated builder magic, and Blair for <br />his doco parsing skills]]></content:encoded>
+	<excerpt:encoded><![CDATA[We've been going through a rethink on how FarCry documentation should be done. We're finding that, while there is heaps of documentation, people are having a hard time finding specific solutions. We're really proud of the documentation on http://d...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Nov 22 14:33:45 -0800 2009</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>farcry-documentation-exports</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

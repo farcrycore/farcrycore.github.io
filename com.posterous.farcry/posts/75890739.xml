@@ -1,0 +1,39 @@
+<item>
+	<title>FarCry Plugins Directory</title>
+	<link>http://farcry.posterous.com/farcry-plugins-directory</link>
+	<pubDate>Mon Oct 17 15:59:27 -0700 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="plugins"><![CDATA[plugins]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/farcry-plugins-directory</guid>
+	<description></description>
+	<content:encoded><![CDATA[<div style="color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">Have rustled up a plugin directory for the <a href="http://www.farcrycore.org" target="_blank">FarCry community</a> -- built on FarCry and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> ;)  It&#39;s early days. Not all the plugins are up there, and the look will change but its a good start. Ultimately, we&#39;ll use this to provide an API service for the FarCry webtop to search, download and install plugins directly through the admin interface -- that&#39;s a ways off yet.<p /><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-color: initial; vertical-align: baseline;"> For now, I give you &quot;Plugins&quot;:</div><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-color: initial; vertical-align: baseline;">   <a href="http://plugins.farcrycore.org/" target="_blank" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-color: initial; vertical-align: baseline; text-decoration: none; color: rgb(17, 85, 204);">http://plugins.farcrycore.org/</a><br /> </div><p /><div style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-color: initial; vertical-align: baseline;"> If you have a plugin you want to add to the directory just send me an email with the details and I&#39;ll add it straight away :)</div></div> <p><div class='p_embed p_image_embed'>
+<a href="http://getfile1.posterous.com/getfile/files.posterous.com/farcry/aC4ApbHRNZ1eT4Dn4c9BkO0fjyLRW4eNSVNXBo9XlEXz514xs7w6cMbiF1Fr/plugins01.png"><img alt="Plugins01" height="347" src="http://getfile2.posterous.com/getfile/files.posterous.com/farcry/f06llb32CpkkLsUwWLKT6B64GaB1lk1ttWVox7qBvfWZJzfvkZMVYjyrRYBl/plugins01.png.scaled.500.jpg" width="500" /></a>
+<a href="http://getfile6.posterous.com/getfile/files.posterous.com/farcry/B3Ps6CoAbKGEnpwVvdtlZKmTws2tpFQKHE2aOARUf4ACn39WlDfs5A6UYKri/plugins02.png"><img alt="Plugins02" height="353" src="http://getfile7.posterous.com/getfile/files.posterous.com/farcry/OTlrwAESmPLiPXPOuqYhZlsuFDLXOYe4GkkiZKUVbmb2vLX8TyNqTiZLjFQg/plugins02.png.scaled.500.jpg" width="500" /></a>
+<a href="http://getfile4.posterous.com/getfile/files.posterous.com/farcry/WeXHszsd6UPYoW22cR0oHaJXKujXPXO5A047Q7hdyGdbxpvZ8mrzhFpTuomS/plugins03.png.scaled.1000.jpg"><img alt="Plugins03" height="540" src="http://getfile2.posterous.com/getfile/files.posterous.com/farcry/o2HTPOhwQKRlN1tJEbPoGPqoffzgpiwCI6219rqXoSRhRzKIwIaNVNUEMlUo/plugins03.png.scaled.500.jpg" width="500" /></a>
+</div>
+</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[Have rustled up a plugin directory for the FarCry community -- built on FarCry and Twitter Bootstrap ;) It's early days. Not all the plugins are up there, and the look will change but its a good start. Ultimately, we'll use this to provide an API ...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Oct 17 15:59:27 -0700 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>farcry-plugins-directory</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/02/repository-changes-for-formality-60-release.html">Previous</a>
+&nbsp; 
+<a href="../../../index-5.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/02/bellabowers-meets-mr-james.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>dmWebskinAncestor Performance Troubles</h3>
+<div class='post_info'>
+<span class='post_time'>February 19 2010,  9:28 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>dmWebskinAncestor is a system content type used to track and manage the relationship of caches in the view. Specifically it tracks where one view is embedded inside another view. This is critical for FarCry's dynamic caching model so that it knows what other views it needs to flush if a content item changes. <p /> If your FarCry project is not performing well it may be due to the size of the dmWebskinAncestor table and/or the absence of any indices (the FarCry installer does *not* apply indices by default). To make matters worse, FarCry 5 was not as efficient as more recent versions of FarCry, tracking the embedding of views even where the view was not cached. This lead to a much bigger table and less efficient queries. <p /> <p><a href="https://gist.github.com/309516">https://gist.github.com/309516</a></p><p /> While you can use additional parameters when creating indexes in other databases (e.g tablespace in oracle etc etc) this basic code should work across most of them. One last thing, when you are updating a project from FarCry 5.x -> 6.x you should truncate this table and apply the above indexes first. <p /> (hat tip to Jason Barnes)</div>
+<div class='post_responses'>
+<h4>1201 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

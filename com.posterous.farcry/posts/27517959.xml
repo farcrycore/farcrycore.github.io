@@ -1,0 +1,43 @@
+<item>
+	<title>Indexing what you want with Verity Plugin</title>
+	<link>http://farcry.posterous.com/indexing-what-you-want-with-verity-plugin</link>
+	<pubDate>Mon Sep 06 19:17:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="plugins"><![CDATA[plugins]]></category>
+	
+		<category domain="tag" nicename="search"><![CDATA[search]]></category>
+	
+		<category domain="tag" nicename="verity"><![CDATA[verity]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/indexing-what-you-want-with-verity-plugin</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>A great feature of the <a href="https://farcry.jira.com/wiki/display/VER/Home">FarCry Verity Plugin</a> is the ability to override what content gets indexed. This is achieved by writing a custom function within the content type that starts with <strong>contentToIndex</strong></p>
+<p>For example, a custom function to allow the ability to restrict content to only show published content (to allow forward publishing)</p>
+<p><p><a href="https://gist.github.com/567756">https://gist.github.com/567756</a></p></p>
+<p>You can actually add multiple functions to the same content type which will then allow you to choose the function you want when you create the verity collection. Simply prefix them with contentToIndex*</p>
+<p>For example,<span>&nbsp;</span><strong>contentToIndexTest</strong><span>&nbsp;</span>and<span>&nbsp;</span><strong>contentToIndexMyCategory</strong>.</p>
+<p>Enjoy!</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[A great feature of the FarCry Verity Plugin is the ability to override what content gets indexed. This is achieved by writing a custom function within the content type that starts with contentToIndex For example, a custom function to allow the abi...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Sep 06 19:17:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>indexing-what-you-want-with-verity-plugin</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

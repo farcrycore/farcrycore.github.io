@@ -1,0 +1,56 @@
+<item>
+	<title>Core Milestone 6.0.11 Released</title>
+	<link>http://farcry.posterous.com/core-milestone-6011-released</link>
+	<pubDate>Sun Mar 06 01:00:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="release"><![CDATA[release]]></category>
+	
+		<category domain="tag" nicename="releasenotes"><![CDATA[releasenotes]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/core-milestone-6011-released</guid>
+	<description></description>
+	<content:encoded><![CDATA[<h2><span style="color: #595959; font-size: 12px; line-height: 21px; font-weight: normal;">
+<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-weight: inherit; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; clear: none; padding: 0px;">The complete list of changes for&nbsp;<a href="https://farcry.jira.com/browse/FC#selectedTab=com.atlassian.jira.plugin.system.project%3Achangelog-panel" style="font-weight: inherit; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; color: #0099cc; text-decoration: none; padding: 0px; margin: 0px;">6.0.x maintenance branch</a>&nbsp;is available online.</p>
+<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-weight: inherit; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; clear: none; padding: 0px;">Download the ZIP for for the 6.0.11 core milestone here:<a href="http://org.farcrycore.s3.amazonaws.com/core/m6011.zip" style="font-weight: inherit; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; color: #0099cc; text-decoration: none; padding: 0px; margin: 0px;">http://org.farcrycore.s3.amazonaws.com/core/m6011.zip</a></p>
+<p style="margin-top: 10px; margin-right: 0px; margin-bottom: 10px; margin-left: 0px; font-weight: inherit; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; clear: none; padding: 0px;">Or alternatively you can update from Subversion (SVN) at this address:<br />svn checkout&nbsp;<a href="https://farcry.jira.com/svn/FC/tags/milestone-6-0-11" style="font-weight: inherit; font-style: inherit; font-size: 12px; font-family: inherit; vertical-align: baseline; color: #0099cc; text-decoration: none; padding: 0px; margin: 0px;">https://farcry.jira.com/svn/FC/tags/milestone-6-0-1</a>1</p>
+</span></h2>
+<h2>Bug</h2>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-2449">FC-2449</a>] -         image formtool source delete option ui update </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2454">FC-2454</a>] -         loadJS &amp; loadCSS lCombineIDs caching issue </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2455">FC-2455</a>] -         Fapi.getContentObjects) not respecting "time" value </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2458">FC-2458</a>] -         Bold heading tags in webtop formtools so that they differentiate from themselves a little better </li>
+</ul>
+<h2>Improvement</h2>
+<ul>
+<li>[<a href="https://farcry.jira.com/browse/FC-2151">FC-2151</a>] -         Form validation does not show message on longchar </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2453">FC-2453</a>] -         Ability to specify basic cache headers (for reverse proxies) in webskins </li>
+<li>[<a href="https://farcry.jira.com/browse/FC-2457">FC-2457</a>] -         While dependent images are being generated the user should see "working" message </li>
+</ul>
+<p>Enjoy!</p>
+<ul>
+</ul>]]></content:encoded>
+	<excerpt:encoded><![CDATA[The complete list of changes for 6.0.x maintenance branch is available online. Download the ZIP for for the 6.0.11 core milestone here:http://org.farcrycore.s3.amazonaws.com/core/m6011.zip Or alternatively you can update from Subversion (SVN) at t...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Mar 06 01:00:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>core-milestone-6011-released</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

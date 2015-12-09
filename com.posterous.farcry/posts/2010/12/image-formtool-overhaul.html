@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2010/12/lund-hagem-architects-built-with-farcry.html">Previous</a>
+&nbsp; 
+<a href="../../../index-3.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2010/11/core-milestone-608-released.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Image Formtool Overhaul</h3>
+<div class='post_info'>
+<span class='post_time'>December  1 2010,  7:58 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'><div>Drawing up the naughty and nice list for Christmas, the Daemonites are looking at releasing a series of very significant changes to the behaviour of the&nbsp;image formtool. These changes will be checked into the 6.0 maintenance branch and trunk. Although they are pretty stable, folks running on the HEAD of the maintenance branch should use caution in just upgrading.</div>
+<p />
+<div>In any event, take a look and let us know what you think. &nbsp;This work has been put together by the mighty Blair based on <a href="https://daemonite.mybalsamiq.com/projects/farcrycore/mockups/2048">the collective thoughts of the Daemonite team</a>.</div>
+<p />
+<div style="font-size: 14px;"><span style="font-size: 13px;"><strong><span style="font-size: medium;">Uber Image Formtool</span></strong></span></div>
+<div>The image formtool has been rewritten to accommodate several new requirements:<br />
+<blockquote style="border-left-style: solid; border-left-color: #cccccc; margin-left: 0px; padding-left: 10px; padding-right: 0px; margin-right: 0px; border-width: 1px;">
+<div>
+<div>
+<div>
+<ul>
+<li>UI for visual selection of crop area (via&nbsp;<a href="http://deepliquid.com/projects/Jcrop/" target="_blank">Jcrop</a>)    
+<ul>
+<li>with intuitive limits on image size ratio and minimum dimensions</li>
+<li>ability to make the JPEG resize quality adjustable</li>
+</ul>
+</li>
+<li>"inline" upload (via&nbsp;<a href="http://www.uploadify.com/" target="_blank">Uploadify</a>)    
+<ul>
+<li>with a fallback "traditional" HTTP post option</li>
+</ul>
+</li>
+<li>Simplified UI that:    
+<ul>
+<li>Has information about the current image</li>
+<li>Unambigously presents the state of the property and what will happen when the user saves</li>
+<li>Has clear links to alternate actions (e.g. autogenerate -&gt; upload custom)</li>
+</ul>
+</li>
+<li>Updated workflow to reflect the best practice that there are "source" fields that are not modified (except to account for extremely large images), and "dependant" images that are cropped and resized versions of a source image.</li>
+</ul>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+<div>The Image library is a classic example of all of these requirements in use. Here you can see two image fields: Source Image (a "source" field) and Mid Size Image (a "dependant" field). Notice that the default UI for an empty field is different for each.</div>
+<p><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169329-image_rewrite_1.png'>
+</div>
+</p>
+<div>When the fields do already contain an image they look like this.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169341-image_rewrite_final.png'>
+</div>
+<strong><span style="font-size: medium;">Source Fields</span></strong><br />The&nbsp;<strong>default upload option</strong>&nbsp;is now "inline" uploading (via&nbsp;<a href="http://www.uploadify.com/" target="_blank">Uploadify</a>). As soon as a user selects an image from the dialog a progress bar appears showing progress with a matching cancel option. I would like to show a screenshot of that but I wasn't quick enough :). There is a shot of the "completed" stage further down.</div>
+<div><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169343-image_rewrite_source_1_inlineupload.png'>
+</div>
+</div>
+<div>Hover over the&nbsp;<strong>help icon</strong>&nbsp;to see the image requirements and cropping settings. Source fields will usually only specify allowed file types, while dependant fields will also have specific dimensions, the default crop method, and the default resize quality.</div>
+<div><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169342-image_rewrite_source_1_autocropping.png'>
+</div>
+For people who don't have flash or have other issues with the inline upload, there is the option to&nbsp;<strong>switch between "inline" and "traditional" upload</strong>.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169345-image_rewrite_source_1_switch.png'>
+</div>
+This swaps in the&nbsp;<strong>standard HTTP file upload input</strong>. NOTE: the&nbsp;<em>inline</em>&nbsp;upload allows users to go on and use the custom cropping tool&nbsp;<em>immediately</em>. Users that use the fallback UI will have to rely on the default crop for the initial save, then re-edit the object to do a custom crop.<div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169346-image_rewrite_source_1_traditional.png'>
+</div>
+If there is an&nbsp;<strong>upload error</strong>&nbsp;it is displayed inline.<div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169347-image_rewrite_source_2_error.png'>
+</div>
+Once an inline upload is complete an alert is displayed to make it clear that the&nbsp;<strong>file has changed on the server</strong>, even if the object isn't saved. NOTE: according to established behaviour, if the field already has an image attached then the old file is<em>replaced</em>&nbsp;- the new image is given the same filename as the old image and copied over the top.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169349-image_rewrite_source_2_serverchangealert.png'>
+</div>
+The UI is also updated to show&nbsp;<strong>information about the new image</strong>, which gives the user confirmation that upload worked as expected.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169351-image_rewrite_source_2_uploadinfo.png'>
+</div>
+Finally, the user has the option to&nbsp;<strong>upload a different image</strong>. NOTE: this behaves the same way as uploading an image when there is already a file attached - the new image will have the same name as the old image.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169350-image_rewrite_source_2_tryagain.png'>
+</div>
+<strong><span style="font-size: medium;">Dependant Field</span><span style="font-size: medium;">s</span></strong><br />Once again, hover over the&nbsp;<strong>help icon</strong>&nbsp;to see information about the default crop settings and the required image types. Even if the user chooses a custom crop, this will show what the defaults are and the target resize dimensions.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169331-image_rewrite_dependant_1_defaultcrop.png'>
+</div>
+The user can still choose to&nbsp;<strong>upload a hand-optimised image</strong>&nbsp;from their computer. The UI for this is essentially the same as the upload UI for the source image. NOTE 1: if (and only if) the uploaded image is the wrong size it will&nbsp;<em>still</em>&nbsp;be resized by the server. NOTE 2: if the user chooses to upload they will not have the option to custom crop. This reflects the best-practice that original images are always available through "source" fields should "dependant" images need to be re-cropped.<p /></div>
+<div>The user can&nbsp;<strong>choose to custom crop</strong>&nbsp;their image. NOTE: this option only appears if the edited object already has a source attached or if the user has uploaded a source through the inline UI. If the source is empty or the user has used the fallback "traditional" UI, it will not. You can see this in the first screenshot comparing the "source" and "dependant" fields.</div>
+<div><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169330-image_rewrite_dependant_1_customcrop.png'>
+</div>
+Thanks to the&nbsp;<a href="http://deepliquid.com/projects/Jcrop/" target="_blank">Jcrop</a>&nbsp;jQuery plugin, we now have a visual tool to&nbsp;<strong>define a custom crop</strong>. This UI respects aspect ratios on fields that define both ftImageWIdth and ftImageHeight (the selection automatically scales the selection according to the ratio - try the thumbnail field of an Image object) and minimum dimensions (this stops a user from selecting an area which is&nbsp;<em>too small</em>&nbsp;and would be&nbsp;<em>scaled up</em>). NOTE: if necessary the image in the selection area is scaled down to fit the size of the dialog. The selection will still reflect the actual size of the source image.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169336-image_rewrite_dependant_2_selectcrop.png'>
+</div>
+While the user selects the best crop area, the info box shows the&nbsp;<strong>details of the selection</strong>. NOTE 1: the dimensions reflect the actual selection size on the source image, not scaled down size (if it was resized to fit the selection area) or the target dimensions of the field. NOTE 2: If the field as a set aspect ratio (meaning both the target width&nbsp;<em>and</em>&nbsp;height is defined) this value will stay set. NOTE 3: The default quality for JPEG resizing is defined with ftQuality. This value can be made editable by setting ftAllowResizeQuality to true, which will switch in a text input. There are plans to make this a&nbsp;<a href="http://jqueryui.com/themeroller/" target="_blank">jQuery UI slider</a>, but that is not part of this release.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169334-image_rewrite_dependant_2_cropinfo.png'>
+</div>
+The custom crop is applied once the user saves. The&nbsp;<strong>confirmation of the custom crop</strong>&nbsp;is shown to them in the mean time.<br /><div class='p_embed p_image_embed'>
+<img src='../../../image/2010/12/18169340-image_rewrite_dependant_3_customcrop.png'>
+</div>
+If they decide they aren't happy with it, they can still&nbsp;<strong>cancel the custom crop</strong>&nbsp;before saving.</div>
+<p />
+<div>That is all!</div></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>formtools</div>
+</div>
+<div class='post_responses'>
+<h4>4704 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Dec  4 2010,  2:08 AM</div>
+<div class='response_name'>Chris Kent responded:</div>
+</div>
+<div class='response_body'>Looking good :)<p>I like the crop feature, will allow admins to uplaod a single image and crop for thumbnails.</p></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

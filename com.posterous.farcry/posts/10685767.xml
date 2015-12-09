@@ -1,0 +1,140 @@
+<item>
+	<title>Working on a Webtop Dashboard </title>
+	<link>http://farcry.posterous.com/working-on-a-webtop-dashboard</link>
+	<pubDate>Wed Jan 27 16:53:10 -0800 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="formality"><![CDATA[formality]]></category>
+	
+		<category domain="tag" nicename="webtop"><![CDATA[webtop]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/working-on-a-webtop-dashboard</guid>
+	<description></description>
+	<content:encoded><![CDATA[      When you first login into the FarCry webtop you're presented with a fairly simple overview of what the various sections of the webtop are about.<p />  <div class='p_embed p_image_embed'>
+<a href="http://getfile3.posterous.com/getfile/files.posterous.com/farcry/iZfMDOer3rwOKr6BPVoGDDuhsG5RcFnrQE0dZueQBRDxfTwc9jFOxfqfzplI/moz-screenshot-6.png.scaled.1000.jpg"><img alt="Moz-screenshot-6" height="317" src="http://getfile2.posterous.com/getfile/files.posterous.com/farcry/pOodffGRXXu9cERTjjQRhi0E8omzps0jYXhQErfXrwjtB8knJgc7lzoHktpF/moz-screenshot-6.png.scaled.500.jpg" width="500" /></a>
+</div>
+<p />  This is a actually placeholder for developers to put in a more interesting overview for a specific FarCry CMS implementation.&nbsp; But in line with our thinking for the next generation FarCry, we want "placeholders" to be the very best they can be from the start.&nbsp; That is, still give folks the option to change the Overview but start with something most people will find very useful and a great starting point for customisation.<p />  So I'm working on a simple dash board for FarCry 6.0. The left hand column has content that you own (ie. where your profile has been assigned as the owner) and the right hand column has information that might be of interest.&nbsp; It's pretty simple at this stage but will have its own webskin you can override easily within your project (or plugins).<p />  <div class='p_embed p_image_embed'>
+<a href="http://getfile9.posterous.com/getfile/files.posterous.com/farcry/co6ASefb3o8o1x56WijuIe4JJxH0Fv9J1FBLQhqjl5FVBvKy3wtNheCiuOgw/moz-screenshot-5.png.scaled.1000.jpg"><img alt="Moz-screenshot-5" height="317" src="http://getfile8.posterous.com/getfile/files.posterous.com/farcry/KEJGtSDMVYj4NDKIaIpNwl5XThhNgl8jvKL5hURpd4MaW3HVHV5RU3iI8Fnx/moz-screenshot-5.png.scaled.500.jpg" width="500" /></a>
+</div>
+<p />  Would you find this useful? What else do you think should go in there?]]></content:encoded>
+	<excerpt:encoded><![CDATA[When you first login into the FarCry webtop you're presented with a fairly simple overview of what the various sections of the webtop are about. Would you find this useful? What else do you think should go in there?]]></excerpt:encoded>	
+
+	<wp:post_date>Wed Jan 27 16:53:10 -0800 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name></wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[AJ Mercer]]></wp:comment_author>
+			<wp:comment_author_email>ajmercer@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Jan 27 17:07:39 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Wed Jan 27 17:07:39 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Maybe recent comments
+
+If you are a sys admin, maybe audit log (eg failed logins)
+Who is logged in - check before bouncing server]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[smebberson]]></wp:comment_author>
+			<wp:comment_author_email>scott@enpresiv.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Jan 27 18:11:27 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Wed Jan 27 18:11:27 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[That's pretty much exactly the same content that FarCry 4 had on the dashboard. I actually liked the move away from that, as with big deployments it used to take ages to load.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Jan 27 21:00:41 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Wed Jan 27 21:00:41 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[@ajmercer &quot;Recent Comments&quot; is actually what is represented in &quot;Recent Activity&quot;. In a generic sense there is a problem with binding content to a specific role like Sys Admin because the presence of that role will depend entirely on the installation. I do like the idea of a &quot;who's logged on&quot; pod though. &lt;br/&gt; &lt;br/&gt;@smebberson The current prototype has DRAFT and PENDING content in a similar fashion to older dash boards. The draft (and review) content is filtered to the specific owner of the content item which is new and more relevant. Note neither of these queries are likely to have any specific performance issues. As to the rest -- &quot;Recent Activity&quot; is new, list of items to be &quot;Reviewed&quot; is new. &lt;br/&gt; &lt;br/&gt;I was thinking of adding any approved content with a publishdate in the future. And like wise any approved content that has past its expirydate date.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Phil Kemp]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Wed Jan 27 23:59:07 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Wed Jan 27 23:59:07 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I don't know if you're already trying to implement this, but here's an idea..
+
+If the page will have it's own webskin, maybe you could have loads of skins that show different parts, such as MyDrafts, Comments, WaitingForApproval, AdminLogs etc. and then all we would need to do for our own overview page is just call &lt;skin:MyDrafts /&gt; or something like that? That way, everyone is happy with what comes as default, it's easy to make it your own, and easy to add your own custom stuff to all this.]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Marco van den Oever]]></wp:comment_author>
+			<wp:comment_author_email>marcovandenoever@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Jan 28 02:15:19 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Thu Jan 28 02:15:19 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I also like the addition of a who's logged on section, maybe all sections under each other instead of left right, or placed in a way that all sections are equally next to each other. ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[]]></wp:comment_author>
+			<wp:comment_author_email></wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Thu Jan 28 23:47:01 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Thu Jan 28 23:47:01 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[@philkemp am working on a webtop dashboard &quot;form&quot; (like a content type without a database table).  So you will be able to override the views from within your own project or plugins. Lots of ideas based on what we've done for clients here over the years, but want to keep this relatively simple and generic in the initial release so it has a broad appeal.
+
+@marco the appearance of a table depends on the presence of relevant content so its difficult to make the two columns have clean horizontals.  Might look at a 70/30 two column split with the smaller column holding things like &quot;who's online&quot;]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+		<wp:comment>
+			<!-- <wp:comment_id>5</wp:comment_id> -->
+			<wp:comment_author><![CDATA[Derek]]></wp:comment_author>
+			<wp:comment_author_email>derekwest@gmail.com</wp:comment_author_email>
+			<wp:comment_author_url></wp:comment_author_url>
+			<wp:comment_date>Fri Jan 29 12:05:52 -0800 2010</wp:comment_date>
+			<wp:comment_date_gmt>Fri Jan 29 12:05:52 -0800 2010</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[Maybe we could vote on proposed ideas? If you have lots of ideas it could be narrowed down pretty quickly by the community.  ]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

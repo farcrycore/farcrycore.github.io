@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>farcry cms</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2009/10/pagination-tags.html">Previous</a>
+&nbsp; 
+<a href="../../../index-7.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2009/10/to-wet-your-openid-tastebuds.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Webskin Usage Summary</h3>
+<div class='post_info'>
+<span class='post_time'>October 21 2009,  3:34 PM</span>
+<span class='author'>&nbsp;by Geoff Bowers</span>
+</div>
+</div>
+<div class='post_body'>Matt was working on the FarCry Blog plugin and needed an easy way to determine which webskins were no longer required. The Webskin Usage Report provides a summary of all webskins in the system and how many times each one has been called on the site. You will need to turn on the logging for a period of time and either wait or trawl through the site yourself. <p /> The following snippet needs to be placed in fourq.cfc just above where the webskin is included. In 5.2 it is in the runView() <p /> <code> 
+&lt;cfif structKeyExists(request.mode, "bLogWebskinUsage") AND request.mode.bLogWebskinUsage&gt; 
+ &lt;cflock type="exclusive" name="webskinUsageQty_#stCurrentView.typename#_#stCurrentView.template#" timeout="1" throwontimeout="false"&gt; 
+ &lt;cfparam name="application.stCoapi.#stCurrentView.typename#.STWEBSKINS.#stCurrentView.template#.webskinUsageQty" default="0" /&gt; 
+ &lt;cfset application.stCoapi[stCurrentView.typename].STWEBSKINS[stCurrentView.template].webskinUsageQty = application.stCoapi[stCurrentView.typename].STWEBSKINS[stCurrentView.template].webskinUsageQty + 1 /&gt; 
+ &lt;/cflock&gt; 
+&lt;/cfif&gt; 
+</code> <p /> To turn on webskin usage logging. Add  into your projects /config/_serverSpecificRequestScope.cfm <p /> The following is a report you can drop into your webtop to review the results. (ie. save in the projects ./customadmin branch and create a reference in your project's webtop XML) <p /> <p><a href="https://gist.github.com/215522">https://gist.github.com/215522</a></p></div>
+<div class='post_responses'>
+<h4>821 views and 0 responses</h4>
+<ul class='post_responses list'>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

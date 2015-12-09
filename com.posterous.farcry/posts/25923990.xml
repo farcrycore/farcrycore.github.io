@@ -1,0 +1,35 @@
+<item>
+	<title>cacheByVars default values</title>
+	<link>http://farcry.posterous.com/cachebyvars-default-values</link>
+	<pubDate>Mon Aug 16 20:11:00 -0700 2010</pubDate>
+	
+	<dc:creator><![CDATA[Geoff Bowers]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="caching"><![CDATA[caching]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://farcry.posterous.com/cachebyvars-default-values</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>cacheByVars is a view decorator who's values are used by the caching layer to identify unique views of the same webskin and object. For example, a single webskin has a paginated result set that means there is a different output depending on page number using something like URL.page. <p /> The vars that might impact the caching are accessed and hashed BEFORE the webskin is executed in order to identify if that execution can be avoided. Unfortunately, there can be a problem if the webskin/view cfparam's one of these variables: the cache layer looks for an item with a null for that variable and doesn't find it, then afterwards caches the item where the variable DOES have a value. <p /> You'll see a fix for this coming through in 6.0.6, where we've added support for defining a default cacheByVars value in the decorator:</p>
+<p>&lt;!--- @@cacheByVars: url.page:1 ---&gt; <p /> In cases where the variable is not found by the caching layer, it is  treated as being equal to the specified value instead. Variables with no  defaults are still supported.&nbsp;</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[cacheByVars is a view decorator who's values are used by the caching layer to identify unique views of the same webskin and object. For example, a single webskin has a paginated result set that means there is a different output depending on page n...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Aug 16 20:11:00 -0700 2010</wp:post_date>
+	<wp:post_date_gmt>%= display_date %></wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_name>cachebyvars-default-values</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>
