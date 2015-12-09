@@ -7,21 +7,21 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            modius.io
-tagline:          'manic musings of modius'
-description:      'An abrasive interpolation of programmatic specificity.'
-url:              http://modius.io
+title:            farcrycore
+tagline:          'farcrycore code committers'
+description:      'Fulminations of the FarCry Core code committers.'
+url:              http://blog.farcrycore.org
 baseurl:          /
 excerpt_separator:	'<!--more-->'
 
 author:
-  name:           'Geoff Bowers'
-  url:            https://twitter.com/modius
+  name:           'Daemonites'
+  url:            https://twitter.com/farcrycore
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+version:          7.2
 
 github:
-  repo:           https://github.com/modius
+  repo:           https://github.com/farcrycore

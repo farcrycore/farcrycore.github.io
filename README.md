@@ -1,5 +1,5 @@
-# modius.io
+# blog.farcrycore.org
 
-> An abrasive interpolation of programmatic specificity.
+> Fulminations of the FarCry Core code committers.
 
 
