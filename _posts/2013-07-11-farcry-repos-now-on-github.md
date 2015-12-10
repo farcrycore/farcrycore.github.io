@@ -3,7 +3,7 @@ layout: post
 title: "FarCry Repos Now On Github"
 date:   2013-07-11
 author: "geoff-bowers"
-categories: documentation
+tags: documentation
 ---
 
 We're moving FarCry version control repos to Github from SVN. While all plugins and related code bases have been moved, the `core` is still in a state of transition; we're still committing to SVN and syncing changes into Github.

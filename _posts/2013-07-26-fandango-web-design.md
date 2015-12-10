@@ -3,7 +3,7 @@ layout: post
 title: "Fandango Web Design"
 date:   2013-07-26
 author: "geoff-bowers"
-categories: project
+tags: project
 ---
 
 > Fandango: A foolish or useless act or thing.

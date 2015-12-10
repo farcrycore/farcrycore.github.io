@@ -3,7 +3,7 @@ layout: post
 title: "FarCry 7 (codename: Shiny) released"
 date:   2014-05-05
 author: "geoff-bowers"
-categories: webtop release
+tags: webtop release
 ---
 
 11 years in the making, the long anticipated **Shiny** release is available.  FarCry 7.0 is an incredible achievement; an enterprise level web publishing platform with incredible flexibility. 'Tailor made content management' has truly been the core focus of this **Shiny** new release.

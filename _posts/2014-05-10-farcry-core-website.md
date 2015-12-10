@@ -3,7 +3,7 @@ layout: post
 title: "True Blue FarCry Core Website"
 date:   2014-05-10
 author: "geoff-bowers"
-categories: project
+tags: project
 ---
 
 A new, [true-blue web site](http://www.farcrycore.org) to go with the release of FarCry 7.0. 

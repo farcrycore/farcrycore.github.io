@@ -3,7 +3,7 @@ layout: post
 title:  "Default Password Encoding for FarCry Users"
 date:   2013-03-30
 author: "geoff-bowers"
-categories: security
+tags: security
 ---
 
 In FarCry Core 6.2 we have switched to hashing user passwords by default.  This means the plain text paswords you may have seen in your usertable are now encrypted; prefixed with something like ```$2a$10$```.

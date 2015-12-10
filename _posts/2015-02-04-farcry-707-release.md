@@ -3,7 +3,7 @@ layout: post
 title: "FarCry 7.0 Maintenance Releases"
 date:   2015-02-04
 author: "geoff-bowers"
-categories: release
+tags: release
 ---
 
 We've been quiet on the blog front but maintenance on the `p700` branch continues apace.

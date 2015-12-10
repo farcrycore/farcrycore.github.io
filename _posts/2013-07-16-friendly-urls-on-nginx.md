@@ -3,7 +3,7 @@ layout: post
 title: "Friendly URLs on NGINX"
 date:   2013-07-16
 author: "geoff-bowers"
-categories: development
+tags: development
 ---
 
 [NGINX](http://nginx.org/) is fast becoming a popular web server for web apps. Daemonite Jason had a bit of a tinker getting FarCry Friendly URLs to work with the NGINX re-write module.

@@ -3,7 +3,7 @@ layout: post
 title: "Posterous FarCry Blog Archive"
 date:   2013-03-27
 author: "geoff-bowers"
-categories: development
+tags: development
 ---
 
 With the move to GitHub repos, we've moved the [FarCry Committers Blog](/com.posterous.farcry/) to GitHub Pages.

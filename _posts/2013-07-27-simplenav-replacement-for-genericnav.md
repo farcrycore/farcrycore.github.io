@@ -3,7 +3,7 @@ layout: post
 title: "simpleNav replacement for genericNav"
 date:   2013-07-27
 author: "geoff-bowers"
-categories: development
+tags: development
 ---
 
 We've been encountering a few issues with single threading of "Query of Queries" on the Railo engine affecting performance on high traffic sites. This lead [Daemonite Justin](https://github.com/justincarter) (@justincarter) to refactor the common `<skin:genericNav>` tag as it uses a few QofQ.

@@ -3,7 +3,7 @@ layout: post
 title: "FarCry 7.0: Shiny progress with 'Seedy Nelly'"
 date:   2013-08-13
 author: "geoff-bowers"
-categories: release
+tags: release
 ---
 
 Work on "Shiny" (FarCry 7.0) has been progressing well, however, we're a bit behind schedule. The alpha release for Shiny is available; it's stable enough for development but missing a couple of major features. You can track progress via commits (https://github.com/farcrycore/core/commits/trunk).  

@@ -3,7 +3,7 @@ layout: post
 title: "FarCry Core 7.1 Release"
 date:   2015-04-23
 author: "geoff-bowers"
-categories: release
+tags: release
 ---
 
 The [FarCry Core 7.1 release](https://github.com/farcrycore/core/releases/tag/7.1.0) adds some cloud friendly improvements, particularly focussing on access to the application scope and some object broker refactoring. There are also many bug fixes and webtop performance tweaks that have been patched recently in 7.0.x maintenance releases.

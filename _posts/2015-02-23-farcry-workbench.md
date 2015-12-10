@@ -3,7 +3,7 @@ layout: post
 title: "FarCry Workbench Project"
 date:   2015-02-23
 author: "geoff-bowers"
-categories: development
+tags: development
 ---
 
 ## Ambition
